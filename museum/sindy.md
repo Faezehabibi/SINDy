@@ -12,9 +12,14 @@ The model **code** for this exhibit can be found [here](https://github.com/NACLa
 ## SINDy 
 SINDy is a data-driven algorithm that discovers the differential equation governing the dynamical systems. It uses symbolic regression to identify differential equation of the system and it solves sparse regression over the pre-defined library of candidate terms. It takes time series gathered dataset of the system and it gives you its describing differential equation.
 
+<p align="center">
+  <img src="../images/museum/sindy/dx.png" width="300">
+  <img src="../images/museum/sindy/dy.png" width="300">
+  <img src="../images/museum/sindy/dz.png" width="300">
+</p>
 
 <p align="center">
-  <img src="../images/museum/sindy/sindy.png" width="700">
+  <img src="../images/museum/sindy/d_xyz.png" width="800">
 </p>
 
 
