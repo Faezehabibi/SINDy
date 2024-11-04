@@ -19,7 +19,7 @@ SINDy is a data-driven algorithm that discovers the differential equation govern
 </p>
 
 <p align="center">
-  <img src="../images/museum/sindy/d_xyz.png" width="800">
+  <img src="../images/museum/sindy/d_xyz.png" width="650">
 </p>
 
 
