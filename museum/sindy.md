@@ -1,18 +1,7 @@
-<style>
-    .reveal .slides {
-        text-align: left;
-    }
-    .reveal .slides section>* {
-        margin-left: 0;
-        margin-right: 0;
-    }
-</style>
-
-
 
 ```mermaid
 graph TD;
-    A-->B;
+    X-->$\dot{X};
     A-->C;
     B-->D;
     C-->D;
