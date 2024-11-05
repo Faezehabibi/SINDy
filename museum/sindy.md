@@ -40,10 +40,12 @@ If $X$ is a system that only depends on variable $t$, a very small change in the
 d\mathbf{X} = \dot{\mathbf{X}(t)}~dt
 ```
 
-
+$$
 \begin{equation}
-E = mc^2 \tag{1}
+    F = ma 
+    \label{eq: test}
 \end{equation}
+$$
 
 
 
