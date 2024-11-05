@@ -13,8 +13,11 @@ The model **code** for this exhibit can be found [here](https://github.com/NACLa
 ## SINDy 
 <div align="justify">
   
-SINDy is a data-driven algorithm that discovers the governing equation of a dynamical system in terms of symbolic differential equation. It involes the symbolic regression and sparse regression to derives the best structure that identifies the dynamical system only from the dataset gathered from system states over time.
-to identify the dynamical structure of the system by sparsification of a pre-defined library coefficients.
+SINDy is a data-driven algorithm that discovers the governing behavior of a dynamical system in terms of symbolic differential equation. It solves the sparse regression problem over the coefficients of pre-defined library that includes $p$ candidate predictors. It tries to find sparse model ($s<p$) that best describes the dynamics (time-derivatives) of the system only from the dataset collected over time. 
+
+
+
+To identify the dynamical structure of the system by sparsification of a pre-defined library coefficients.
 and solves the sparse regression over the 
 the  . It uses symbolic regression to identify the dynamic of the system and it solves sparse regression over the pre-defined library of candidate terms. It takes time series gathered dataset of the system and it gives you its describing differential equation.
 
@@ -29,7 +32,7 @@ The solve linear regression by lasso that is the L1-norm regularized least squar
 
 lasso solution is the sparse model with coefficients corresponding to the relevant features in the library that predicts the motion of the system.
 
-Fitting a sparse model (s<p) 
+ 
 
 
 </div>
