@@ -40,13 +40,6 @@ If $X$ is a system that only depends on variable $t$, a very small change in the
 d\mathbf{X} = \dot{\mathbf{X}(t)}~dt
 ```
 
-$$
-\begin{equation}
-    F = ma 
-    \label{eq: test}
-\end{equation}
-$$
-
 
 
 SINDy models the derivative (a linear operation acting on $dt$) as a linear transformations with:
