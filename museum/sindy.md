@@ -48,7 +48,7 @@ Using the dataset collected in step 1, given the pre-defined function terms, cre
 </p>
 
 <p align="center">
-  <img src="../images/museum/sindy/d_xyz.png" width="650">
+  <img src="../images/museum/sindy/d_xyz.png" width="500">
 </p>
 
 
