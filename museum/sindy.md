@@ -8,6 +8,16 @@
     }
 </style>
 
+
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 # Sparse Identification of Non-linear Dynamical Systems (SINDy)[1]
 
 In this section, we teach, create, simulate, and visualize SINDy model implemented in NGC-Learn library. After going through this demonstration, you will:
