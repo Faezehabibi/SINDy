@@ -19,7 +19,9 @@ the  . It uses symbolic regression to identify the dynamic of the system and it 
 
 SINDy imposes parsimony constraints over symbolic regression (i.e., genetic programming) to describe a dynamical system's behavior by as few terms as possible. In order to select a sparse set of the given features, it adds the LASSO regularizarion (i.e., L1 norm) to the regression problem and solves the sparse regression
 
-The solve linear regression by lasso that is the L1-norm regularized least squares to penalize L1-norm of weights (coefficients)
+The solve linear regression by lasso that is the L1-norm regularized least squares to penalize L1-norm of weights (coefficients).
+
+lasso solution is the sparse model with coefficients corresponding to the relevant features in the library that predicts the motion of the system.
 
 
 <p align="center">
