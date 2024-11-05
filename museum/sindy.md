@@ -41,9 +41,9 @@ d\mathbf{X} = \dot{\mathbf{X}(t)}~dt
 ```
 
 
-$\begin{equation}
+$$\begin{equation}
 E = mc^2 \tag{1}
-\end{equation}$
+\end{equation}$$
 
 
 
