@@ -1,3 +1,13 @@
+<style>
+    .reveal .slides {
+        text-align: left;
+    }
+    .reveal .slides section>* {
+        margin-left: 0;
+        margin-right: 0;
+    }
+</style>
+
 # Sparse Identification of Non-linear Dynamical Systems (SINDy)[1]
 
 In this section, we teach, create, simulate, and visualize SINDy model implemented in NGC-Learn library. After going through this demonstration, you will:
