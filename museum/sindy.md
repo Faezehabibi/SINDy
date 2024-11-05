@@ -10,7 +10,14 @@ The model **code** for this exhibit can be found [here](https://github.com/NACLa
 
 
 ## SINDy 
-SINDy is a data-driven algorithm that discovers the differential equation governing the dynamical systems. It uses symbolic regression to identify differential equation of the system and it solves sparse regression over the pre-defined library of candidate terms. It takes time series gathered dataset of the system and it gives you its describing differential equation.
+SINDy is a data-driven algorithm that discovers the governing equation of a dynamical system in terms of symbolic differential equation. It involes the symbolic regression and sparse regression to derives the best structure that identifies the dynamical system only from the dataset gathered from system states over time.
+to identify the dynamical structure of the system by sparsification of a pre-defined library coefficients.
+and solves the sparse regression over the 
+the  . It uses symbolic regression to identify the dynamic of the system and it solves sparse regression over the pre-defined library of candidate terms. It takes time series gathered dataset of the system and it gives you its describing differential equation.
+
+
+
+They impose parsimony constraints over symbolic regression (i.e., genetic programming) to describe a dynamical system's behavior by as few terms as possible.
 
 <p align="center">
   <img src="../images/museum/sindy/dx.png" width="300">
