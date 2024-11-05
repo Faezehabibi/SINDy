@@ -1,10 +1,8 @@
 
 ```mermaid
 graph TD;
-    X-->$\dot{X};
-    A-->C;
-    B-->D;
-    C-->D;
+    X-->$\dot{X}$;
+    $\dot{X}$-->D;
 ```
 
 # Sparse Identification of Non-linear Dynamical Systems (SINDy)[1]
