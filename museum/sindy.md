@@ -1,7 +1,7 @@
 
 ```mermaid
 graph TD;
-    X-->$\dot{X}$;
+    X-->\dot{X};
     $\dot{X}$-->D;
 ```
 
