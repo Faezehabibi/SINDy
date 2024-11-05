@@ -18,10 +18,9 @@ SINDy is a data-driven algorithm that discovers the governing behavior of a dyna
 
 
 To identify the dynamical structure of the system by sparsification of a pre-defined library coefficients.
-and solves the sparse regression over the 
-the  . It uses symbolic regression to identify the dynamic of the system and it solves sparse regression over the pre-defined library of candidate terms. It takes time series gathered dataset of the system and it gives you its describing differential equation.
 
-SINDy describes the derivative (linear operation acting on △t) as linear transformations
+
+
 of a manually constructed dictionary from the state vector by a coefficient matrix.
 Dictionary learning combined with LASSO (L1-norm) promotes the sparsity of the coefficient matrix
 which allows only governing terms in the dictionary stay non-zero.
@@ -31,14 +30,13 @@ SINDy imposes parsimony constraints over symbolic regression (i.e., genetic prog
 The solve linear regression by lasso that is the L1-norm regularized least squares to penalize L1-norm of weights (coefficients).
 
 lasso solution is the sparse model with coefficients corresponding to the relevant features in the library that predicts the motion of the system.
-
- 
-
-
 </div>
 
 
 ### SINDy Dynamics
+SINDy models the derivative (a linear operation acting on △t) as a linear transformations with:
+`$ hi $`
+
 #### 1: Collecting dataset
 #### 2: Compute state derivatives
 Compute the derivative of the system's states with respect to the time.
