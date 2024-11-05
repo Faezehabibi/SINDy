@@ -34,10 +34,12 @@ lasso solution is the sparse model with coefficients corresponding to the releva
 
 
 ### SINDy Dynamics
-SINDy models the derivative (a linear operation acting on $dt$) as a linear transformations with:
-$$\frac{dX}{dt} = \dot{X} = f(X)$$
 ```math
-\frac{dX}{dt} = \dot{X} = f(X)
+dX = \dot{X(t)} dt
+```
+SINDy models the derivative (a linear operation acting on $dt$) as a linear transformations with:
+```math
+\frac{dX(t)}{dt} = \dot{X(t)} = f(X(t))
 ```
 
 #### 1: Collecting dataset
