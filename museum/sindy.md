@@ -55,24 +55,35 @@ It assumes given a group of candidate functions in the library $\mathbf{\Theta}(
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
 
-# SINDy Algorithm Phases
-
-## Phase 1: Collecting Dataset
+### Phase 1: Data Collection
+- **Purpose**: Gather time-series data from dynamical system
+- **Output**: Measurement matrix X containing state variables
 <p align="center">
   <img src="../images/museum/sindy/X_.png" width="300" alt="Dataset collection showing x, y, z coordinates">
+  <br>
+  <em>Figure 1: State measurements matrix X containing x, y, z coordinates over time</em>
 </p>
 
-## Phase 2: Processing
+### Phase 2: System Identification
 
-### 2.A: Making Library
+#### 2.A: Library Construction
+- **Purpose**: Build library of candidate functions
+- **Process**: Generate combinations of state variables
+- **Output**: Library matrix Θ(X)
 <p align="center">
   <img src="../images/museum/sindy/Theta.png" width="300" alt="Library matrix representation">
+  <br>
+  <em>Figure 2: Generated library matrix containing candidate functions</em>
 </p>
 
-### 2.B: Compute State Derivatives
-Compute the derivative of the system's states with respect to time.
+#### 2.B: State Derivative Computation
+- **Purpose**: Calculate time derivatives of state variables
+- **Process**: Compute d/dt of each state measurement
+- **Output**: Matrix Ẋ containing state derivatives
 <p align="center">
   <img src="../images/museum/sindy/dX_.png" width="300" alt="State derivatives visualization">
+  <br>
+  <em>Figure 3: Matrix of computed state derivatives with respect to time</em>
 </p>
 
 -----------------------------------------------------------------------------
