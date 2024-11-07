@@ -64,13 +64,14 @@ It assumes given a group of candidate functions in the library $\mathbf{\Theta}(
 
 #### Phase 2
 ##### 2.A: Making Library
-##### 2.B: Compute state derivatives
 <p align="center">
-  <img src="../images/museum/sindy/dx.png" width="250">
-  <img src="../images/museum/sindy/dy.png" width="250">
-  <img src="../images/museum/sindy/dz.png" width="250">
+  <img src="../images/museum/sindy/Theta.png" width="300">
 </p>
+##### 2.B: Compute state derivatives
 Compute the derivative of the system's states with respect to the time.
+<p align="center">
+  <img src="../images/museum/sindy/dX_.png" width="100">
+</p>
 
 Using the dataset collected in step 1, given the pre-defined function terms, create the dictionary of candidate predictors for system's differential equations.
 Solve sparse regression
@@ -114,8 +115,14 @@ Solve sparse regression
 Given a set of time-series measurements of a dynamical system state variables ($\mathbf{X}_{(m \times n)}$) we construct:
 
 
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 
-
+<p align="center">
+  <img src="../images/museum/sindy/dx.png" width="250">
+  <img src="../images/museum/sindy/dy.png" width="250">
+  <img src="../images/museum/sindy/dz.png" width="250">
+</p>
 
 
 ### Data Matrix
