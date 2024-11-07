@@ -70,6 +70,7 @@ This phase involves gathering the raw data points representing the system's stat
 
 <tr>
 <td width="70%" valign="top">
+   
 ## Phase 2: Processing
 
 ### 2.A: Making Library
@@ -85,6 +86,8 @@ In this step, we construct a library of potential functions that could describe 
 <td width="70%" valign="top">
 
 ### 2.B: Compute State Derivatives
+Using the dataset collected in step 1, given the pre-defined function terms, create the dictionary of candidate predictors for system's differential equations.
+Solve sparse regressio.
 This step involves calculating the time derivatives of each state variable. We compute ẋ, ẏ, and ż to capture how the system evolves over time.
 
 </td>
@@ -94,35 +97,19 @@ This step involves calculating the time derivatives of each state variable. We c
 </tr>
 </table>
 
+<tr>
+<td width="70%" valign="top">
+   
+## Phase 3: Sequential Thresholding Least Square (STLSQ)
+
+
+### 3.A: Least Square (LSQ)
+### 3.B: Thresholding
+### 3.C: Masking
+### 3.D: Repeat A → B → C until convergence
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
 
-#### Phase 1: Collecting dataset
-
-<p align="center">
-  <img src="../images/museum/sindy/X_.png" width="100">
-</p>
-
-
-#### Phase 2
-##### 2.A: Making Library
-<p align="center">
-  <img src="../images/museum/sindy/Theta.png" width="100">
-</p>
-
-##### 2.B: Compute state derivatives
-Compute the derivative of the system's states with respect to the time. 
-<p align="center">
-  <img src="../images/museum/sindy/dX_.png" width="100">
-</p>
-
-Using the dataset collected in step 1, given the pre-defined function terms, create the dictionary of candidate predictors for system's differential equations.
-Solve sparse regression
-#### Phase 3: Sequential Thresholding Least Square (STLSQ)
-##### 3.A: Least Square (LSQ)
-##### 3.B: Thresholding
-##### 3.C: Masking
-##### 3.D: Repeat A → B → C until convergence
 
 
 
