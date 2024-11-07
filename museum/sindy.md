@@ -57,20 +57,19 @@ It assumes given a group of candidate functions in the library $\mathbf{\Theta}(
 
 <table>
 <tr>
-<td width="20%" valign="top">
+<td width="70%" valign="top">
 
 ## Phase 1: Collecting Dataset
 This phase involves gathering the raw data points representing the system's states across time, capturing the x, y, and z coordinates of the trajectory.
 
 </td>
 <td width="20%" align="center">
-<img src="../images/museum/sindy/X_.png" width="100" alt="Dataset collection showing x, y, z coordinates">
+<img src="../images/museum/sindy/X_.png" width="200" alt="Dataset collection showing x, y, z coordinates">
 </td>
 </tr>
 
 <tr>
-<td width="20%" valign="top">
-
+<td width="70%" valign="top">
 ## Phase 2: Processing
 
 ### 2.A: Making Library
@@ -90,7 +89,7 @@ This step involves calculating the time derivatives of each state variable. We c
 
 </td>
 <td width="50%" align="center">
-<img src="../images/museum/sindy/dX_.png" width="100" alt="State derivatives visualization">
+<img src="../images/museum/sindy/dX_.png" width="200" alt="State derivatives visualization">
 </td>
 </tr>
 </table>
