@@ -57,7 +57,7 @@ It assumes given a group of candidate functions in the library $\mathbf{\Theta}(
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="20%" valign="top">
 
 ## Phase 1: Collecting Dataset
 This phase involves gathering the raw data points representing the system's states across time, capturing the x, y, and z coordinates of the trajectory.
