@@ -45,36 +45,36 @@ It then assumes that this linear operation  $\(\mathbf{f}(\mathbf{X}(t)) \)$ is 
 It assumes given a group of candidate functions in the library $\mathbf{\Theta}(\mathbf{X})$, the coefficient $\mathbf{W}$ that choose the library terms is sparse. In other words, there are only a few functions that exist in the system's Ordinary Differential Equation (ODE). Given these assumptions, SINDy solves the sparse regression using Sequential Thresholded Least-Squares (STLSQ) method.
 
 -----------------------------------------------------------------------------
-
-
 <p align="center">
   <img src="../images/museum/sindy/flow.png" width="900">
 </p>
-
 -----------------------------------------------------------------------------
 <p align="center">
   <img src="../images/museum/sindy/flow_full.jpg" width="800">
 </p>
-
 -----------------------------------------------------------------------------
 
-#### 1: Collecting dataset
-#### 2: Compute state derivatives
-Compute the derivative of the system's states with respect to the time.
-#### 3: Create library of candidate functions
-Using the dataset collected in step 1, given the pre-defined function terms, create the dictionary of candidate predictors for system's differential equations.
-#### 4: Solve sparse regression
-
-##### Solve by sequential thresholded least-squares (STLSQ) algorithm 
-
-
-
-
+#### Phase 1: Collecting dataset
 <p align="center">
   <img src="../images/museum/sindy/dx.png" width="300">
   <img src="../images/museum/sindy/dy.png" width="300">
   <img src="../images/museum/sindy/dz.png" width="300">
 </p>
+
+#### Phase 2
+##### 2.A: Making Library
+##### 2.B: Compute state derivatives
+Compute the derivative of the system's states with respect to the time.
+
+Using the dataset collected in step 1, given the pre-defined function terms, create the dictionary of candidate predictors for system's differential equations.
+Solve sparse regression
+#### Phase 3: Sequential Thresholding Least Square (STLSQ)
+##### 3.A: Least Square (LSQ)
+##### 3.B: Thresholding
+##### 3.C: Masking
+##### 3.D: Repeat A → B → C until convergence
+
+
 
 <p align="center">
   <img src="../images/museum/sindy/d_xyz.png" width="500">
