@@ -146,6 +146,8 @@ Derivative matrix: $\dot{\mathbf{X}}_{(m \times n)}$ (computed numerically)
 
 Library of Candidate Functions: $\Theta(\mathbf{X}) = [\mathbf{1} \quad \mathbf{X} \quad \mathbf{X}^2 \quad \mathbf{X}^3 \quad \sin(\mathbf{X}) \quad \cos(\mathbf{X}) \quad ...]$
 
+
+## Results
 ------------------
 
 
