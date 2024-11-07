@@ -53,7 +53,7 @@ It assumes given a group of candidate functions in the library $\mathbf{\Theta}(
 
 -----------------------------------------------------------------------------
 <p align="center">
-  <img src="../images/museum/sindy/flow_full.png" width="900">
+  <img src="../images/museum/sindy/flow_full.jpg" width="900">
 </p>
 
 -----------------------------------------------------------------------------
