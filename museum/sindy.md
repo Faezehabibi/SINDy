@@ -120,29 +120,12 @@ This step involves calculating the time derivatives of each state variable. We c
 
 
 
-
-### Inputs
-> Time: $ts = [t_0, t_1, \dots,  T]$
-> State matrix: $\mathbf{X}_{(m \times n)}$  (t measurements of n variables)
-
-### Inputs
-
-   **Time**
-* $ts = [t_0,~t_1, \dots,~T]$
-  
-   **State matrix**
-* $\mathbf{X}(t)_{(m \times n)} = [x(t),~~y(t),~~z(t)]$
-
-
-
------------------------------------------------------------------------------
------------------------------------------------------------------------------
 <p align="center">
   <img src="../images/museum/sindy/flow_full.jpg" width="600">
 </p>
 
------------------------------------------------------------------------------
------------------------------------------------------------------------------
+
+
 Given a set of time-series measurements of a dynamical system state variables ($\mathbf{X}_{(m \times n)}$) we construct:
 
 
