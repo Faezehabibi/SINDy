@@ -69,7 +69,7 @@ It assumes given a group of candidate functions in the library $\mathbf{\Theta}(
 </p>
 
 ##### 2.B: Compute state derivatives
-Compute the derivative of the system's states with respect to the time.
+Compute the derivative of the system's states with respect to the time. 
 <p align="center">
   <img src="../images/museum/sindy/dX_.png" width="100">
 </p>
