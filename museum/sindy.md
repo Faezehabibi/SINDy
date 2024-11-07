@@ -63,13 +63,13 @@ It assumes given a group of candidate functions in the library $\mathbf{\Theta}(
 This phase involves gathering the raw data points representing the system's states across time, capturing the x, y, and z coordinates of the trajectory.
 
 </td>
-<td width="50%" align="center">
+<td width="20%" align="center">
 <img src="../images/museum/sindy/X_.png" width="300" alt="Dataset collection showing x, y, z coordinates">
 </td>
 </tr>
 
 <tr>
-<td width="50%" valign="top">
+<td width="20%" valign="top">
 
 ## Phase 2: Processing
 
@@ -77,13 +77,13 @@ This phase involves gathering the raw data points representing the system's stat
 In this step, we construct a library of potential functions that could describe the system dynamics. These functions form the columns of our library matrix Θ(X).
 
 </td>
-<td width="50%" align="center">
+<td width="70%" align="center">
 <img src="../images/museum/sindy/Theta.png" width="300" alt="Library matrix representation">
 </td>
 </tr>
 
 <tr>
-<td width="50%" valign="top">
+<td width="70%" valign="top">
 
 ### 2.B: Compute State Derivatives
 This step involves calculating the time derivatives of each state variable. We compute ẋ, ẏ, and ż to capture how the system evolves over time.
