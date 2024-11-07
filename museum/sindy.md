@@ -95,7 +95,7 @@ This step involves calculating the time derivatives of each state variable. We c
 <img src="../images/museum/sindy/dX_.png" width="200" alt="State derivatives visualization">
 </td>
 </tr>
-</table>
+
 
 <tr>
 <td width="70%" valign="top">
@@ -107,6 +107,14 @@ This step involves calculating the time derivatives of each state variable. We c
 ### 3.B: Thresholding
 ### 3.C: Masking
 ### 3.D: Repeat A → B → C until convergence
+
+
+</td>
+<td width="50%" align="center">
+<img src="../images/museum/sindy/dX_.png" width="200" alt="State derivatives visualization">
+</td>
+</tr>
+</table>
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
 
