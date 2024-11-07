@@ -111,19 +111,12 @@ This step involves calculating the time derivatives of each state variable. We c
 
 </td>
 <td width="50%" align="center">
-<img src="../images/museum/sindy/dX_.png" width="200" alt="State derivatives visualization">
+<img src="../images/museum/sindy/d_xyz.png" width="200" alt="State derivatives visualization">
 </td>
 </tr>
 </table>
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
-
-
-
-
-<p align="center">
-  <img src="../images/museum/sindy/d_xyz.png" width="500">
-</p>
 
 
 
