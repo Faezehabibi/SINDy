@@ -65,7 +65,7 @@ It assumes given a group of candidate functions in the library $\mathbf{\Theta}(
 #### Phase 2
 ##### 2.A: Making Library
 <p align="center">
-  <img src="../images/museum/sindy/Theta.png" width="300">
+  <img src="../images/museum/sindy/Theta.png" width="100">
 </p>
 
 ##### 2.B: Compute state derivatives
