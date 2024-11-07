@@ -45,6 +45,12 @@ It then assumes that this linear operation  $\(\mathbf{f}(\mathbf{X}(t)) \)$ is 
 It assumes given a group of candidate functions in the library $\mathbf{\Theta}(\mathbf{X})$, the coefficient $\mathbf{W}$ that choose the library terms is sparse. In other words, there are only a few functions that exist in the system's Ordinary Differential Equation (ODE). Given these assumptions, SINDy solves the sparse regression using Sequential Thresholded Least-Squares (STLSQ) method.
 
 
+
+<p align="center">
+  <img src="../images/museum/sindy/flow.png" width="900">
+</p>
+
+
 #### 1: Collecting dataset
 #### 2: Compute state derivatives
 Compute the derivative of the system's states with respect to the time.
