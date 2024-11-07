@@ -55,36 +55,45 @@ It assumes given a group of candidate functions in the library $\mathbf{\Theta}(
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
 
-### Phase 1: Data Collection
-- **Purpose**: Gather time-series data from dynamical system
-- **Output**: Measurement matrix X containing state variables
-<p align="center">
-  <img src="../images/museum/sindy/X_.png" width="300" alt="Dataset collection showing x, y, z coordinates">
-  <br>
-  <em>Figure 1: State measurements matrix X containing x, y, z coordinates over time</em>
-</p>
+<table>
+<tr>
+<td width="50%" valign="top">
 
-### Phase 2: System Identification
+## Phase 1: Collecting Dataset
+This phase involves gathering the raw data points representing the system's states across time, capturing the x, y, and z coordinates of the trajectory.
 
-#### 2.A: Library Construction
-- **Purpose**: Build library of candidate functions
-- **Process**: Generate combinations of state variables
-- **Output**: Library matrix Θ(X)
-<p align="center">
-  <img src="../images/museum/sindy/Theta.png" width="300" alt="Library matrix representation">
-  <br>
-  <em>Figure 2: Generated library matrix containing candidate functions</em>
-</p>
+</td>
+<td width="50%" align="center">
+<img src="../images/museum/sindy/X_.png" width="300" alt="Dataset collection showing x, y, z coordinates">
+</td>
+</tr>
 
-#### 2.B: State Derivative Computation
-- **Purpose**: Calculate time derivatives of state variables
-- **Process**: Compute d/dt of each state measurement
-- **Output**: Matrix Ẋ containing state derivatives
-<p align="center">
-  <img src="../images/museum/sindy/dX_.png" width="300" alt="State derivatives visualization">
-  <br>
-  <em>Figure 3: Matrix of computed state derivatives with respect to time</em>
-</p>
+<tr>
+<td width="50%" valign="top">
+
+## Phase 2: Processing
+
+### 2.A: Making Library
+In this step, we construct a library of potential functions that could describe the system dynamics. These functions form the columns of our library matrix Θ(X).
+
+</td>
+<td width="50%" align="center">
+<img src="../images/museum/sindy/Theta.png" width="300" alt="Library matrix representation">
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+### 2.B: Compute State Derivatives
+This step involves calculating the time derivatives of each state variable. We compute ẋ, ẏ, and ż to capture how the system evolves over time.
+
+</td>
+<td width="50%" align="center">
+<img src="../images/museum/sindy/dX_.png" width="300" alt="State derivatives visualization">
+</td>
+</tr>
+</table>
 
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
