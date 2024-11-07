@@ -66,9 +66,9 @@ It assumes given a group of candidate functions in the library $\mathbf{\Theta}(
 ##### 2.A: Making Library
 ##### 2.B: Compute state derivatives
 <p align="center">
-  <img src="../images/museum/sindy/dx.png" width="100">
-  <img src="../images/museum/sindy/dy.png" width="100">
-  <img src="../images/museum/sindy/dz.png" width="100">
+  <img src="../images/museum/sindy/dx.png" width="250">
+  <img src="../images/museum/sindy/dy.png" width="250">
+  <img src="../images/museum/sindy/dz.png" width="250">
 </p>
 Compute the derivative of the system's states with respect to the time.
 
