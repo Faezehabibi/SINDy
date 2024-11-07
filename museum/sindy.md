@@ -64,7 +64,7 @@ This phase involves gathering the raw data points representing the system's stat
 
 </td>
 <td width="20%" align="center">
-<img src="../images/museum/sindy/X_.png" width="200" alt="Dataset collection showing x, y, z coordinates">
+<img src="../images/museum/sindy/X_.png" width="150" alt="Dataset collection showing x, y, z coordinates">
 </td>
 </tr>
 
@@ -92,7 +92,7 @@ This step involves calculating the time derivatives of each state variable. We c
 
 </td>
 <td width="50%" align="center">
-<img src="../images/museum/sindy/dX_.png" width="200" alt="State derivatives visualization">
+<img src="../images/museum/sindy/dX_.png" width="150" alt="State derivatives visualization">
 </td>
 </tr>
 
@@ -111,7 +111,7 @@ This step involves calculating the time derivatives of each state variable. We c
 
 </td>
 <td width="50%" align="center">
-<img src="../images/museum/sindy/d_xyz.png" width="200" alt="State derivatives visualization">
+<img src="../images/museum/sindy/d_xyz.png" width="300" alt="State derivatives visualization">
 </td>
 </tr>
 </table>
