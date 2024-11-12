@@ -21,8 +21,6 @@ SINDy is a data-driven algorithm that discovers the governing behavior of a dyna
 
 
 ### SINDy Dynamics
-
-
 <!--
 To identify the dynamical structure of the system by sparsification of a pre-defined library coefficients.
 of a manually constructed dictionary from the state vector by a coefficient matrix.
@@ -33,10 +31,12 @@ The solve linear regression by lasso that is the L1-norm regularized least squar
 lasso solution is the sparse model with coefficients corresponding to the relevant features in the library that predicts the motion of the system.
 -->
 
+#### Background
+
+
 
 If $X$ is a system that only depends on variable $t$, a very small change in the independant variable ($dt$) can cause changing the system by $dX$ amount. 
-```math
-d\mathbf{X} = \dot{\mathbf{X}(t)}~dt
+```math d\mathbf{X} = \dot{\mathbf{X}(t)}~dt
 ```
 
 SINDy models the derivative (a linear operation acting on $dt$) as a linear transformations with:
