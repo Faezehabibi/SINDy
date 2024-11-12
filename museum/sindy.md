@@ -1,9 +1,6 @@
 # Sparse Identification of Non-linear Dynamical Systems (SINDy)[1]
 
-In[^1] this section, we teach, create, simulate, and visualize the Sparse Identification of Non-linear Dynamical Systems (SINDy) [1] model implemention in NGC-Learn library (JAX). After going through this demonstration, you will:
-<div align="justify">
-   j
-</div>
+In this section, we teach, create, simulate, and visualize the Sparse Identification of Non-linear Dynamical Systems (SINDy) [1] model implemention in NGC-Learn library (JAX). After going through this demonstration, you will:
 
 1.  Learn how to discover the differential equation of a dynamical system using SINDy algorithm only by the stapshots from the system.
 2.  Learn how to build polynomial libraries with arbitrary order out of the dataset.
@@ -21,7 +18,6 @@ The model **code** for this exhibit can be found [here](https://github.com/NACLa
 SINDy is a data-driven algorithm that discovers the governing behavior of a dynamical system in terms of symbolic differential equation. It solves the sparse regression problem over the coefficients of pre-defined library that includes $p$ candidate predictors. It tries to find sparse model that only uses $s$ predictors out of $p$ ($s<p$) that best describes the dynamics (time-derivatives) of the system only from the dataset collected over time. SINDy assumes systems follow parsimonious theorem where the balace between the complexity and accuracy results generalization.
 </div>
 
-[^1]: This is the first footnote.
 [^note]: This is another footnote with a word identifier.
 
 ### SINDy Dynamics
@@ -43,7 +39,10 @@ If $X$ is a system that only depends on variable $t$, a very small change in the
 ```math
 d\mathbf{X} = \mathbf{\dot{X}}(t)~dt
 ```
-SINDy models the derivative (a linear operation that acts on $dt$ and gives the differential that is the linearization approximation of the taylor series od the function) as a linear transformations with:
+SINDy models the derivative[^1] as a linear transformations with:
+
+[^1]: Derivative is a linear operation that acts on $dt$ and gives the differential that is the linearization approximation of the taylor series od the function
+
 ```math
 \frac{d\mathbf{X}(t)}{dt} = \dot{\mathbf{X}(t)} = \mathbf{f}(\mathbf{X}(t))
 ```
