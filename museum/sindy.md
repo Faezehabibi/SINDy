@@ -20,18 +20,6 @@ SINDy is a data-driven algorithm that discovers the governing behavior of a dyna
 
 
 ### SINDy Dynamics
-<!--
-To identify the dynamical structure of the system by sparsification of a pre-defined library coefficients.
-of a manually constructed dictionary from the state vector by a coefficient matrix.
-Dictionary learning combined with LASSO (L1-norm) promotes the sparsity of the coefficient matrix
-which allows only governing terms in the dictionary stay non-zero.
-SINDy imposes parsimony constraints over symbolic regression (i.e., genetic programming) to describe a dynamical system's behavior by as few terms as possible. In order to select a sparse set of the given features, it adds the LASSO regularizarion (i.e., L1 norm) to the regression problem and solves the sparse regression
-The solve linear regression by lasso that is the L1-norm regularized least squares to penalize L1-norm of weights (coefficients).
-lasso solution is the sparse model with coefficients corresponding to the relevant features in the library that predicts the motion of the system.
--->
-
-#### Background
-
 
 
 If $X$ is a system that only depends on variable $t$, a very small change in the independant variable ($dt$) can cause changing the system by $dX$ amount. 
@@ -49,16 +37,25 @@ It then assumes that this linear operation, $\mathbf{f}(\mathbf{X}(t))$ is a mat
 ```
 It assumes given a group of candidate functions in the library $\mathbf{\Theta}(\mathbf{X})$, the coefficient $\mathbf{W}$ of choose the library terms is **sparse**. In other words, there are only a few functions that exist in the system's differential equation. Given these assumptions, SINDy solves the sparse regression problem to find the $\mathbf{W}$ that maps the library selected terms to each feature of the system.
 
+
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
 <p align="center">
   <img src="../images/museum/sindy/flow.png" width="1000">
 </p>
 
-
-
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
+
+<!--
+Dictionary learning combined with LASSO (L1-norm) promotes the sparsity of the coefficient matrix
+which allows only governing terms in the dictionary stay non-zero.
+SINDy imposes parsimony constraints over symbolic regression (i.e., genetic programming) to describe a dynamical system's behavior by as few terms as possible. In order to select a sparse set of the given features, it adds the LASSO regularizarion (i.e., L1 norm) to the regression problem and solves the sparse regression
+The solve linear regression by lasso that is the L1-norm regularized least squares to penalize L1-norm of weights (coefficients).
+lasso solution is the sparse model with coefficients corresponding to the relevant features in the library that predicts the motion of the system.
+-->
+
+
 
 <table>
 <tr>
@@ -80,6 +77,8 @@ This phase involves gathering the raw data points representing the system's stat
 
 ### 2.A: Making Library
 In this step, we construct a library of potential functions that could describe the system dynamics. These functions form the columns of our library matrix Θ(X).
+To identify the dynamical structure of the system by sparsification of a pre-defined library coefficients.
+of a manually constructed dictionary from the state vector by a coefficient matrix.
 
 </td>
 <td width="70%" align="center">
