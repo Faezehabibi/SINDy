@@ -38,18 +38,16 @@ If $X$ is a system that only depends on variable $t$, a very small change in the
 ```math
 d\mathbf{X} = \mathbf{\dot{X}}(t)~dt
 ```
-SINDy models the derivative[^1] as a linear transformations with:
-
-[^1]: Derivative is a linear operation that acts on $dt$ and gives the differential that is the linearization approximation of the taylor series od the function
-
+SINDy models the derivative[^1] (a linear operation) as a linear transformations with:
+[^1]: Derivative is a linear operation that acts on dt and gives the differential that is the linearization approximation of the taylor series of the function.
 ```math
-\frac{d\mathbf{X}(t)}{dt} = \dot{\mathbf{X}(t)} = \mathbf{f}(\mathbf{X}(t))
+\frac{d\mathbf{X}(t)}{dt} = \mathbf{\dot{X}}(t) = \mathbf{f}(\mathbf{X}(t))
 ```
-It then assumes that this linear operation  $\(\mathbf{f}(\mathbf{X}(t)) \)$ is a matrix multiplication that linearly combines the relevant predictors to describe the system's equation.
+It then assumes that this linear operation, $\mathbf{f}(\mathbf{X}(t))$ is a matrix multiplication that linearly combines the relevant predictors to describe the system's equation.
 ```math
 \mathbf{f}(\mathbf{X}(t)) = \mathbf{\Theta}(\mathbf{X})~\mathbf{W}
 ```
-It assumes given a group of candidate functions in the library $\mathbf{\Theta}(\mathbf{X})$, the coefficient $\mathbf{W}$ that choose the library terms is sparse. In other words, there are only a few functions that exist in the system's Ordinary Differential Equation (ODE). Given these assumptions, SINDy solves the sparse regression using Sequential Thresholded Least-Squares (STLSQ) method.
+It assumes given a group of candidate functions in the library $\mathbf{\Theta}(\mathbf{X})$, the coefficient $\mathbf{W}$ of choose the library terms is **sparse**. In other words, there are only a few functions that exist in the system's differential equation. Given these assumptions, SINDy solves the sparse regression problem to find the $\mathbf{W}$ that maps the library selected terms to each feature of the system.
 
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
