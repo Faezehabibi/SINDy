@@ -1,11 +1,12 @@
 # Sparse Identification of Non-linear Dynamical Systems (SINDy)[1]
 <div align="justify">
-In this section, we teach, create, simulate, and visualize SINDy model implemented in NGC-Learn library. After going through this demonstration, you will:
+In this section, we teach, create, simulate, and visualize the Sparse Identification of Non-linear Dynamical Systems (SINDy) [1] model implemention in NGC-Learn library (JAX). After going through this demonstration, you will:
 </div>
 
-1.  Learn how to build a SINDy model of time-series dataset, generated using Ordinary Differential Equations (ODE) of known dynamical systems used in [1].
-2.  Learn how to build polynomial libraries of given dataset with arbitrary order.
+1.  Learn how to discover the differential equation of a dynamical system using SINDy algorithm only by the stapshots from the system.
+2.  Learn how to build polynomial libraries with arbitrary order out of the dataset.
 3.  Learn how to solve the sparse regression problem by iteratively performing the least squares (LSQ) method followed by thresholding-- Sequential Thresholding Least Square (STLSQ)-- for the given model.
+   
    
 The model **code** for this exhibit can be found [here](https://github.com/NACLab/ngc-museum/exhibits/sindy/sindy.py).
 
