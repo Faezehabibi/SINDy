@@ -17,7 +17,13 @@ The model **code** for this exhibit can be found [here](https://github.com/NACLa
 <div align="justify">
   
 SINDy is a data-driven algorithm that discovers the governing behavior of a dynamical system in terms of symbolic differential equation. It solves the sparse regression problem over the coefficients of pre-defined library that includes $p$ candidate predictors. It tries to find sparse model that only uses $s$ predictors out of $p$ ($s<p$) that best describes the dynamics (time-derivatives) of the system only from the dataset collected over time. SINDy assumes systems follow parsimonious theorem where the balace between the complexity and accuracy results generalization.
+</div>
 
+
+### SINDy Dynamics
+
+
+<!--
 To identify the dynamical structure of the system by sparsification of a pre-defined library coefficients.
 of a manually constructed dictionary from the state vector by a coefficient matrix.
 Dictionary learning combined with LASSO (L1-norm) promotes the sparsity of the coefficient matrix
@@ -25,10 +31,8 @@ which allows only governing terms in the dictionary stay non-zero.
 SINDy imposes parsimony constraints over symbolic regression (i.e., genetic programming) to describe a dynamical system's behavior by as few terms as possible. In order to select a sparse set of the given features, it adds the LASSO regularizarion (i.e., L1 norm) to the regression problem and solves the sparse regression
 The solve linear regression by lasso that is the L1-norm regularized least squares to penalize L1-norm of weights (coefficients).
 lasso solution is the sparse model with coefficients corresponding to the relevant features in the library that predicts the motion of the system.
-</div>
+-->
 
-
-### SINDy Dynamics
 
 If $X$ is a system that only depends on variable $t$, a very small change in the independant variable ($dt$) can cause changing the system by $dX$ amount. 
 ```math
