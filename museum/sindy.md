@@ -35,16 +35,14 @@ lasso solution is the sparse model with coefficients corresponding to the releva
 
 
 
-If $X$ is a system that only depends on variable $t$, a very small change in the independant variable ($dt$) can cause changing the system by $dX$ amount. ```math
+If $X$ is a system that only depends on variable $t$, a very small change in the independant variable ($dt$) can cause changing the system by $dX$ amount. 
+```math
 d\mathbf{X} = \dot{\mathbf{X}(t)}~dt
 ```
-
 SINDy models the derivative (a linear operation acting on $dt$) as a linear transformations with:
-
 ```math
 \frac{d\mathbf{X}(t)}{dt} = \dot{\mathbf{X}(t)} = \mathbf{f}(\mathbf{X}(t))
 ```
-
 It then assumes that this linear operation  $\(\mathbf{f}(\mathbf{X}(t)) \)$ is a matrix multiplication that linearly combines the relevant predictors to describe the system's equation.
 ```math
 \mathbf{f}(\mathbf{X}(t)) = \mathbf{\Theta}(\mathbf{X})~\mathbf{W}
