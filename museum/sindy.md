@@ -37,9 +37,9 @@ lasso solution is the sparse model with coefficients corresponding to the releva
 
 If $X$ is a system that only depends on variable $t$, a very small change in the independant variable ($dt$) can cause changing the system by $dX$ amount. 
 ```math
-d\mathbf{X} = \mathbf{\ddot{X}}(t)~dt
+d\mathbf{X} = \mathbf{\dot{X}}(t)~dt
 ```
-SINDy models the derivative (a linear operation acting on $dt$) as a linear transformations with:
+SINDy models the derivative (a linear operation that acts on $dt$ and gives the differential that is the linearization approximation of the taylor series od the function) as a linear transformations with:
 ```math
 \frac{d\mathbf{X}(t)}{dt} = \dot{\mathbf{X}(t)} = \mathbf{f}(\mathbf{X}(t))
 ```
