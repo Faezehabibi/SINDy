@@ -1,6 +1,6 @@
 # Sparse Identification of Non-linear Dynamical Systems (SINDy)[1]
 <div align="justify">
-In this section, we teach, create, simulate, and visualize the Sparse Identification of Non-linear Dynamical Systems (SINDy) [1] model implemention in NGC-Learn library (JAX). After going through this demonstration, you will:[^1]
+In[^1] this section, we teach, create, simulate, and visualize the Sparse Identification of Non-linear Dynamical Systems (SINDy) [1] model implemention in NGC-Learn library (JAX). After going through this demonstration, you will:
 </div>
 
 1.  Learn how to discover the differential equation of a dynamical system using SINDy algorithm only by the stapshots from the system.
@@ -19,6 +19,7 @@ The model **code** for this exhibit can be found [here](https://github.com/NACLa
 SINDy is a data-driven algorithm that discovers the governing behavior of a dynamical system in terms of symbolic differential equation. It solves the sparse regression problem over the coefficients of pre-defined library that includes $p$ candidate predictors. It tries to find sparse model that only uses $s$ predictors out of $p$ ($s<p$) that best describes the dynamics (time-derivatives) of the system only from the dataset collected over time. SINDy assumes systems follow parsimonious theorem where the balace between the complexity and accuracy results generalization.
 </div>
 
+[^1]: if
 
 ### SINDy Dynamics
 <!--
