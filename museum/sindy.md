@@ -133,12 +133,6 @@ D-->
 <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">
 </p>
 </td>
-
-<td width="50%" valign="top">
-<p align="center">
-<img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">
-</p>
-</td>
 </tr>
 
 
