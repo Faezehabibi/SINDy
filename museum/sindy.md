@@ -150,16 +150,16 @@ Solving the Sparse Regression problem (SR) can be done with various method such 
 
 <tr>
    <table>  
-<tr>
-   <td colspan="3"> 
+   <tr>
+      <td colspan="3"> 
       
-## Phase 3: Sequential Thresholding Least Square (STLSQ)
+### Solving SR by Sequential Thresholding Least Square (STLSQ)
    </td>
 </tr>  
 <tr>
    <td> 
 
-### 3.A: Least Square method (LSQ) → $\mathbf{W}$ 
+#### 3.A: Least Square method (LSQ) → $\mathbf{W}$ 
 Finds library coefficients by solving the following regression problem $\mathbf{Ẋ} = \mathbf{\Theta}\mathbf{W}$ analytically $\mathbf{W}  = (\mathbf{\Theta}^T \mathbf{\Theta})^{-1} \mathbf{\Theta}^T \mathbf{Ẋ}$ 
    </td>
    <td> 
@@ -177,7 +177,7 @@ Finds library coefficients by solving the following regression problem $\mathbf{
 <tr>
    <td> 
    
-### 3.B: Thresholding → $\mathbf{W_s}$
+#### 3.B: Thresholding → $\mathbf{W_s}$
 Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that corresponds to the effective terms in the library.
    </td>
    <td> 
@@ -189,7 +189,7 @@ Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that correspo
 <tr>
    <td> 
    
-### 3.C: Masking → $\mathbf{\Theta_s}$
+#### 3.C: Masking → $\mathbf{\Theta_s}$
 Sparsifies $\mathbf{\Theta}$ by keeping only the corresponding terms in $\mathbf{W}$ that are kept.
    </td>
    <td> 
@@ -203,7 +203,7 @@ Sparsifies $\mathbf{\Theta}$ by keeping only the corresponding terms in $\mathbf
 <tr>
    <td> 
    
-### 3.D: Repeat A → B → C until convergence
+#### 3.D: Repeat A → B → C until convergence
 Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and find the new $\mathbf{W}$ and repreat steps B and C everytime.
    </td>
    <td> 
