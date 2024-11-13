@@ -115,7 +115,7 @@ D-->
 <table>
 
 <tr>
-<td width="70%" valign="top">
+<td width="100%" valign="top">
    
 ## Phase 3: Sequential Thresholding Least Square (STLSQ)
 </tr>
@@ -147,8 +147,10 @@ Sparsifies $\mathbf{\Theta}$ by keeping only the corresponding terms in $\mathbf
 ### 3.D: Repeat A → B → C until convergence
 Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and find the new $\mathbf{W}$ and repreat steps B and C everytime.
 
+</tr>
+<tr>
 </td>
-<td width="50%" align="center">
+<td width="30%" align="center">
 <img src="../images/museum/sindy/flow_full.jpg" width="400" alt="State derivatives visualization">
   <img src="../images/museum/sindy/dx.png" width="170">
   <img src="../images/museum/sindy/dy.png" width="170">
