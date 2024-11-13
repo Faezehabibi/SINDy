@@ -160,7 +160,7 @@ Solving the Sparse Regression problem (SR) can be done with various method such 
    <tr>
       <td colspan="3"> 
                <p align="center">
-         <img src="../images/museum/sindy/STLSQ.png" width="500" alt="State derivatives visualization">
+         <img src="../images/museum/sindy/STLSQ.png" width="800" alt="State derivatives visualization">
          </p>
    </td>
 </tr>  
