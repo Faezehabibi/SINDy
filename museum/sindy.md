@@ -160,7 +160,7 @@ Solving the Sparse Regression problem (SR) can be done with various method such 
    <tr>
       <td colspan="3"> 
                <p align="center">
-         <img src="../images/museum/sindy/STLSQ.png" width="670" alt="State derivatives visualization">
+         <img src="../images/museum/sindy/STLSQ.png" width="500" alt="State derivatives visualization">
          </p>
    </td>
 </tr>  
@@ -174,7 +174,7 @@ Finds library coefficients by solving the following regression problem $\mathbf{
    </td>
    <td> 
          <p align="center">
-         <img src="../images/museum/sindy/flow_full.jpg" width="670" alt="State derivatives visualization">
+         <img src="../images/museum/sindy/flow_full.jpg" width="200" alt="State derivatives visualization">
          </p>
    </td>
 </tr>
@@ -187,7 +187,7 @@ Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that correspo
    </td>
    <td> 
          <p align="center">
-         <img src="../images/museum/sindy/flow_full.jpg" width="670" alt="State derivatives visualization">
+         <img src="../images/museum/sindy/flow_full.jpg" width="200" alt="State derivatives visualization">
          </p>
    </td>
 </tr>
@@ -199,7 +199,7 @@ Sparsifies $\mathbf{\Theta}$ by keeping only the corresponding terms in $\mathbf
    </td>
    <td> 
          <p align="center">
-         <img src="../images/museum/sindy/flow_full.jpg" width="670" alt="State derivatives visualization">
+         <img src="../images/museum/sindy/flow_full.jpg" width="200" alt="State derivatives visualization">
          </p>
    </td>
 </tr>
@@ -213,7 +213,7 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
    </td>
    <td> 
          <p align="center">
-         <img src="../images/museum/sindy/flow_full.jpg" width="670" alt="State derivatives visualization">
+         <img src="../images/museum/sindy/flow_full.jpg" width="200" alt="State derivatives visualization">
          </p>
    </td>
 </tr>
