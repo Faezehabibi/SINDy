@@ -82,7 +82,7 @@ This phase involves gathering the raw data points representing the system's stat
 <tr>
    <td> A </td>
    <td> B </td>
-   <td rowspan="3"> J </td>
+   <td rowspan="4"> J </td>
 </tr>
 
 
