@@ -20,7 +20,6 @@ SINDy is a data-driven algorithm that discovers the governing behavior of a dyna
 
 ### SINDy Dynamics
 
-
 If $X$ is a system that only depends on variable $t$, a very small change in the independant variable ($dt$) can cause changing the system by $dX$ amount. 
 ```math
 d\mathbf{X} = \mathbf{Ẋ}(t)~dt
@@ -119,11 +118,11 @@ of a manually constructed dictionary from the state vector by a coefficient matr
 ## Phase 3: Sequential Thresholding Least Square (STLSQ)
 
 
-### 3.A: Least Square method (LSQ): Finds $\mathbf{W}$ 
+### 3.A: Least Square method (LSQ) → $\mathbf{W}$ 
 Finds library coefficients by solving the following regression problem $\mathbf{Ẋ} = \mathbf{\Theta}\mathbf{W}$ analytically $\mathbf{W}  = (\mathbf{\Theta}^T \mathbf{\Theta})^{-1} \mathbf{\Theta}^T \mathbf{Ẋ}$ 
 
-### 3.B: Thresholding: Sparsifies $\mathbf{W}$
-By keeping only some terms in $\mathbf{W}$ that corresponds to the effective terms in the library.
+### 3.B: Thresholding→ $\mathbf{W_s}$
+Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that corresponds to the effective terms in the library.
 
 ### 3.C: Masking
 ### 3.D: Repeat A → B → C until convergence
