@@ -86,7 +86,7 @@ This phase involves gathering the raw data points representing the system's stat
       
 ## Phase 2: Processing
    </td>
-      <td rowspan="3"> 
+      <td rowspan="3" colspan="2"> 
          <p align="center">
          <img src="../images/museum/sindy/P2.png" width="10000">
          </p>
