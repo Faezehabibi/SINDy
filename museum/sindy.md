@@ -118,8 +118,10 @@ D-->
 <td width="100%" valign="top">
    
 ## Phase 3: Sequential Thresholding Least Square (STLSQ)
+</td>
+</tr>
 
-
+<tr>
 <td width="100%" valign="top">
 <p align="center">
 <img src="../images/museum/sindy/dX_.jpg" width="100" alt="State derivatives visualization">
