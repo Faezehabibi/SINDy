@@ -321,6 +321,10 @@ $$
    
    ## Linear-3D
 
+$\dot{x} = -0.1x + 2y$
+$\dot{y} = -2x - 0.1y$
+$\dot{z} = -0.3z$
+
 
 $\begin{aligned}
 \dot{x} &= -0.1x + 2y \\
