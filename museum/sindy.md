@@ -74,30 +74,6 @@ This phase involves gathering the raw data points representing the system's stat
 </tr>
 
 </table>
-<table>
-
-
-   
-<tr>
-   <td> 
-      <table>
-      <tr>
-         <td> A </td>
-         <td> A </td>
-      </tr>
-      <tr>
-         <td> B </td>
-         <td> B </td>
-      </tr>
-      <tr>
-         <td> C </td>
-         <td> C </td>
-      </tr>
-      </table>
-   </td>
-   <td rowspan="3"> B </td>
-</tr>
-</table>
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 
@@ -155,6 +131,8 @@ In this step, using the dataset collected in step 1, we calculating the time der
 
 </table>
 
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
 
 
 
@@ -191,7 +169,7 @@ Finds library coefficients by solving the following regression problem $\mathbf{
          <img src="../images/museum/sindy/flow_full.jpg" width="670" alt="State derivatives visualization">
          </p>
    </td>
-   <td rowspan="3"> 
+   <td rowspan="4"> 
          <p align="center">
          <img src="../images/museum/sindy/flow_full.jpg" width="670" alt="State derivatives visualization">
          </p>
@@ -199,12 +177,42 @@ Finds library coefficients by solving the following regression problem $\mathbf{
 </tr>
 
 <tr>
-   <td> E </td>
-   <td> F </td>
+   <td> 
+   
+### 3.B: Thresholding → $\mathbf{W_s}$
+Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that corresponds to the effective terms in the library.
+   </td>
+   <td> 
+         <p align="center">
+         <img src="../images/museum/sindy/flow_full.jpg" width="670" alt="State derivatives visualization">
+         </p>
+   </td>
 </tr>
 <tr>
-   <td> G </td>
-   <td> H </td>
+   <td> 
+   
+### 3.C: Masking → $\mathbf{\Theta_s}$
+Sparsifies $\mathbf{\Theta}$ by keeping only the corresponding terms in $\mathbf{W}$ that are kept.
+   </td>
+   <td> 
+         <p align="center">
+         <img src="../images/museum/sindy/flow_full.jpg" width="670" alt="State derivatives visualization">
+         </p>
+   </td>
+</tr>
+
+
+<tr>
+   <td> 
+   
+### 3.D: Repeat A → B → C until convergence
+Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and find the new $\mathbf{W}$ and repreat steps B and C everytime.
+   </td>
+   <td> 
+         <p align="center">
+         <img src="../images/museum/sindy/flow_full.jpg" width="670" alt="State derivatives visualization">
+         </p>
+   </td>
 </tr>
 
 
