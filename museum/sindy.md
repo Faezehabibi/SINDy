@@ -115,30 +115,30 @@ D-->
 <table>
 
 <tr>
-<td width="100%" valign="top">
+<td width="70%" valign="top">
    
 ## Phase 3: Sequential Thresholding Least Square (STLSQ)
 </td>
 </tr>
 
 <tr>
-<td width="100%" valign="top">
+<td width="70%" valign="top">
 <p align="center">
 <img src="../images/museum/sindy/dx.png" width="100" alt="State derivatives visualization">
 </p>
 </td>
 </tr>
+</table>
 
-
+<table>
 <tr>
 <td width="70%" valign="top">
+   
 ### 3.A: Least Square method (LSQ) → $\mathbf{W}$ 
 Finds library coefficients by solving the following regression problem $\mathbf{Ẋ} = \mathbf{\Theta}\mathbf{W}$ analytically $\mathbf{W}  = (\mathbf{\Theta}^T \mathbf{\Theta})^{-1} \mathbf{\Theta}^T \mathbf{Ẋ}$ 
 </tr>
 
 
-</table>
-<table>
 
 <tr>
 <td width="70%" valign="top">
