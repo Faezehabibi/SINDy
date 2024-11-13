@@ -218,7 +218,13 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
    </td>
 </tr>
 
-
+<tr>
+      <td colspan="3"> 
+   <p align="center">
+   <img src="../images/museum/sindy/flow.png" width="500">
+   </p>
+   </td>
+</tr>  
 
 </table>
 </tr>
