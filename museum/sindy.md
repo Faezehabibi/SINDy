@@ -66,7 +66,7 @@ This phase involves gathering the raw data points representing the system's stat
 </tr>
 
 </table>
-
+<table>
 
 
 <tr>
