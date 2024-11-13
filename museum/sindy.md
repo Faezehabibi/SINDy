@@ -55,7 +55,7 @@ SINDy's dynamics can be presented in 3 main phases according to the figure 1.
 <td width="70%" valign="top">
 
 ## Phase 1: Collecting Dataset
------------------------------------------------------------------------------
+
 This phase involves gathering the raw data points representing the system's states across time; In this example, capturing the x, y, and z coordinates of the system's states in this.
 
 </td>
@@ -74,7 +74,7 @@ This phase involves gathering the raw data points representing the system's stat
 ## Phase 2: Processing
 
 ### 2.A: Making Library
-In this step, we construct a library of potential functions (predictors) out of the raw data vectors created in phase 1 that could describe the system dynamics. These functions form the columns of our library matrix $\mathbf{\Theta}(\mathbf{X})$. To identify the dynamical structure of the system this library of candidate functions appear in the regression problem to propose the model's structure that later the coefficient matrix will give weight to them according to the problem setup. Assuming sparse models for the system, by sparsification (LASSO or thresholding weigths) decide which structure best describe the system's behavior using predictors. 
+In this step, using the dataset collected in step 1, given the pre-defined function terms, we construct the dictionary of candidate predictors for system's differential equations. These functions form the columns of our library matrix $\mathbf{\Theta}(\mathbf{X})$. To identify the dynamical structure of the system this library of candidate functions appear in the regression problem to propose the model's structure that later the coefficient matrix will give weight to them according to the problem setup. Assuming sparse models for the system, by sparsification (LASSO or thresholding weigths) decide which structure best describe the system's behavior using predictors. 
 
 
 </td>
@@ -102,8 +102,7 @@ of a manually constructed dictionary from the state vector by a coefficient matr
 
 
 ### 2.B: Compute State Derivatives
-Using the dataset collected in step 1, given the pre-defined function terms, create the dictionary of candidate predictors for system's differential equations.
-Solve sparse regressio.
+
 This step involves calculating the time derivatives of each state variable. We compute ẋ, ẏ, and ż to capture how the system evolves over time.
 
 </td>
