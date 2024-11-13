@@ -320,8 +320,7 @@ $$\begin{cases}
    <td> 
    
    ## Linear-3D
-   jsndckjsncjks jsndckjsncjks jsndckjsncjks 
-   jsndckjsncjks jsndckjsncjks jsndckjsncjks 
+$\begin{aligned} \dot{x} &= -0.1x + 2.0y \ \dot{y} &= -2.0x - 0.1y \end{aligned}$
    </td>
    <td> 
       <p align="center">
