@@ -14,7 +14,6 @@ The model **code** for this exhibit can be found [here](https://github.com/NACLa
 
 ## SINDy 
 <div align="justify">
-  
 SINDy is a data-driven algorithm that discovers the governing behavior of a dynamical system in terms of symbolic differential equation. It solves the sparse regression problem over the coefficients of pre-defined library that includes $p$ candidate predictors. It tries to find sparse model that only uses $s$ predictors out of $p$ ($s<p$) that best describes the dynamics (time-derivatives) of the system only from the dataset collected over time. SINDy assumes systems follow parsimonious theorem where the balace between the complexity and accuracy results generalization.
 </div>
 
@@ -35,14 +34,27 @@ SINDy assumes thatt this linear operation, $\mathbf{f}(\mathbf{X}(t))$ is a matr
 ```math
 \mathbf{f}(\mathbf{X}(t)) = \mathbf{\Theta}(\mathbf{X})~\mathbf{W}
 ```
+
+<div align="justify">
 Given a group of candidate functions in the library $\mathbf{\Theta}(\mathbf{X})$, the coefficient $\mathbf{W}$ of choose the library terms is **sparse**. In other words, there are only a few functions that exist in the system's differential equation. Given these assumptions, SINDy solves the sparse regression problem to find the $\mathbf{W}$ that maps the library selected terms to each feature of the system.
-
-
+</div>
 -----------------------------------------------------------------------------
------------------------------------------------------------------------------
+SINDy's dynamics can be presented in 3 main phases fig
+
 <p align="center">
   <img src="../images/museum/sindy/flow.png" width="1000">
+       <figcaption>Your caption text here</figcaption>
 </p>
+
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1000]{flow.png}
+    \caption{Flow diagram illustrating the three phases: Data Collection, Library Formation/Derivative Computation, and Sequential Thresholding Least Square method for sparse matrix computation.}
+    \label{fig:flow-diagram}
+\end{figure}
 
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
