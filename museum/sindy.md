@@ -104,7 +104,7 @@ Library of Candidate Functions: $\Theta(\mathbf{X}) = [\mathbf{1} \quad \mathbf{
    </td>
    <td> 
          <p align="center">
-         <img src="../images/museum/sindy/Theta.png" width="3000">
+         <img src="../images/museum/sindy/Xtheta.png" width="3000">
          </p>
    </td>
 </tr>
