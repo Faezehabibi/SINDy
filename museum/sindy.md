@@ -298,9 +298,10 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
    
    ## Linear-2D
    
-$$\dot{x} = -0.1x + 2.0y$$
-
-$$\dot{y} = -2.0x - 0.1y$$
+$$ \begin{cases}
+\dot{x} = -0.1x + 2.0y \\
+\dot{y} = -2.0x - 0.1y
+\end{cases}$$
    
 
    </td>
