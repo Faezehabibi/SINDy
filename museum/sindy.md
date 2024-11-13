@@ -110,8 +110,6 @@ In this step, using the dataset collected in step 1, we calculating the time der
 </table>
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-
-
 <table>
 <tr>
 <td colspan="2">
@@ -133,13 +131,14 @@ In this step, using the dataset collected in step 1, we calculating the time der
 
 
 <tr>
-<td width="50%" valign="top">
+<td>
    
 ### 3.A: Least Square method (LSQ) → $\mathbf{W}$ 
 Finds library coefficients by solving the following regression problem $\mathbf{Ẋ} = \mathbf{\Theta}\mathbf{W}$ analytically $\mathbf{W}  = (\mathbf{\Theta}^T \mathbf{\Theta})^{-1} \mathbf{\Theta}^T \mathbf{Ẋ}$ 
+
 </td>
 
-<td width="50%" valign="top">
+<td>
 <p align="center">
 <img src="../images/museum/sindy/dx.png" width="100" alt="State derivatives visualization">
 </p>
