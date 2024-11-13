@@ -31,11 +31,11 @@ SINDy models the derivative[^1] (a linear operation) as a linear transformations
 ```math
 \frac{d\mathbf{X}(t)}{dt} = \mathbf{\dot{X}}(t) = \mathbf{f}(\mathbf{X}(t))
 ```
-It then assumes that this linear operation, $\mathbf{f}(\mathbf{X}(t))$ is a matrix multiplication that linearly combines the relevant predictors to describe the system's equation.
+SINDy assumes thatt this linear operation, $\mathbf{f}(\mathbf{X}(t))$ is a matrix multiplication that linearly combines the relevant predictors to describe the system's equation.
 ```math
 \mathbf{f}(\mathbf{X}(t)) = \mathbf{\Theta}(\mathbf{X})~\mathbf{W}
 ```
-It assumes given a group of candidate functions in the library $\mathbf{\Theta}(\mathbf{X})$, the coefficient $\mathbf{W}$ of choose the library terms is **sparse**. In other words, there are only a few functions that exist in the system's differential equation. Given these assumptions, SINDy solves the sparse regression problem to find the $\mathbf{W}$ that maps the library selected terms to each feature of the system.
+Given a group of candidate functions in the library $\mathbf{\Theta}(\mathbf{X})$, the coefficient $\mathbf{W}$ of choose the library terms is **sparse**. In other words, there are only a few functions that exist in the system's differential equation. Given these assumptions, SINDy solves the sparse regression problem to find the $\mathbf{W}$ that maps the library selected terms to each feature of the system.
 
 
 -----------------------------------------------------------------------------
