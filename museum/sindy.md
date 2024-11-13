@@ -60,11 +60,9 @@ D-->
 ## Phase 1: Collecting Dataset → $\mathbf{X}_{(m \times n)}$
 This phase involves gathering the raw data points representing the system's states across time; In this example, capturing the x, y, and z coordinates of the system's states in this.
 </td>
-
-<td width="20%" align="center">
+<td width="20%" align="top">
 <img src="../images/museum/sindy/X_.png" width="150" alt="Dataset collection showing x, y, z coordinates">
 </td>
-
 </tr>
 
 
@@ -83,7 +81,7 @@ Given a set of time-series measurements of a dynamical system state variables ($
 Library of Candidate Functions: $\Theta(\mathbf{X}) = [\mathbf{1} \quad \mathbf{X} \quad \mathbf{X}^2 \quad \mathbf{X}^3 \quad \sin(\mathbf{X}) \quad \cos(\mathbf{X}) \quad ...]$
 </td>
 
-<td width="20%" align="center">
+<td width="20%" align="top">
 <img src="../images/museum/sindy/Theta.png" width="300" alt="Library matrix representation">
 </td>
 
