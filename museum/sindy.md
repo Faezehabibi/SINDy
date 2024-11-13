@@ -55,13 +55,13 @@ D-->
 <table>
    
 <tr>
-<td width="100%" valign="top">
+<td width="70%" valign="top">
    
 ## Phase 1: Collecting Dataset → $\mathbf{X}_{(m \times n)}$
 This phase involves gathering the raw data points representing the system's states across time; In this example, capturing the x, y, and z coordinates of the system's states in this.
 </td>
 
-<td width="100%" align="center">
+<td width="20%" align="center">
 <img src="../images/museum/sindy/X_.png" width="150" alt="Dataset collection showing x, y, z coordinates">
 </td>
 
