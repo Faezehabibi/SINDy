@@ -122,7 +122,7 @@ D-->
 
 <td width="100%" valign="top">
 <p align="center">
-<img src="../images/museum/sindy/flow_full.jpg" width="650" alt="State derivatives visualization">
+<img src="../images/museum/sindy/dX_.jpg" width="100" alt="State derivatives visualization">
 </p>
 </td>
 </tr>
@@ -138,7 +138,7 @@ Finds library coefficients by solving the following regression problem $\mathbf{
 <tr>
 <td width="20%" valign="top">
 <p align="center">
-<img src="../images/museum/sindy/flow_full.jpg" width="650" alt="State derivatives visualization">
+<img src="../images/museum/sindy/dX_.jpg" width="100" alt="State derivatives visualization">
 </p>
 </td>
 </tr>
@@ -153,7 +153,7 @@ Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that correspo
 <tr>
 <td width="20%" valign="top">
 <p align="center">
-<img src="../images/museum/sindy/flow_full.jpg" width="650" alt="State derivatives visualization">
+<img src="../images/museum/sindy/dX_.jpg" width="100" alt="State derivatives visualization">
 </p>
 </td>
 </tr>
@@ -168,7 +168,7 @@ Sparsifies $\mathbf{\Theta}$ by keeping only the corresponding terms in $\mathbf
 <tr>
 <td width="20%" valign="top">
 <p align="center">
-<img src="../images/museum/sindy/flow_full.jpg" width="650" alt="State derivatives visualization">
+<img src="../images/museum/sindy/dX_.jpg" width="100" alt="State derivatives visualization">
 </p>
 </td>
 </tr>
