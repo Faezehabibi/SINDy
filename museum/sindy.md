@@ -39,15 +39,14 @@ SINDy assumes thatt this linear operation, $\mathbf{f}(\mathbf{X}(t))$ is a matr
 Given a group of candidate functions in the library $\mathbf{\Theta}(\mathbf{X})$, the coefficient $\mathbf{W}$ of choose the library terms is **sparse**. In other words, there are only a few functions that exist in the system's differential equation. Given these assumptions, SINDy solves the sparse regression problem to find the $\mathbf{W}$ that maps the library selected terms to each feature of the system.
 </div>
 
------------------------------------------------------------------------------
-
-SINDy's dynamics can be presented in 3 main phases fig
+SINDy's dynamics can be presented in 3 main phases according to the figure 1. 
 
 <p align="center">
   <img src="../images/museum/sindy/flow.png" width="1000">
    
-**Flow of three phases in SINDy:** **Phase1)** Data collection: making the vector of the system's states that are changing in time. **Phase2A)** Library formation: manually creating the library of candidate predictors that could appear in the model. **Phase2B)** Derivative computation: using the data collected in phase 1 and compute its derivative with respect to time. **Phase3)**  Solving the sparse regression problem (here with STLSQ).
+**Figure 1:** **Flow of three phases in SINDy.** **Phase-1)** Data collection: making the vector of the system's states that are changing in time. **Phase-2A)** Library formation: manually creating the library of candidate predictors that could appear in the model. **Phase-2B)** Derivative computation: using the data collected in phase 1 and compute its derivative with respect to time. **Phase-3)**  Solving the sparse regression problem (here with STLSQ).
 </p>
+
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
 
