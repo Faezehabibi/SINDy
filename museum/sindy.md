@@ -88,7 +88,7 @@ This phase involves gathering the raw data points representing the system's stat
    </td>
       <td rowspan="3"> 
          <p align="center">
-         <img src="../images/museum/sindy/P2.png" width="10000" alt="Dataset collection showing x, y, z coordinatess">
+         <img src="../images/museum/sindy/P2.png" width="10000" alt="Dataset coordinatess">
          </p>
    </td>
 </tr>
@@ -105,7 +105,7 @@ Library of Candidate Functions: $\Theta(\mathbf{X}) = [\mathbf{1} \quad \mathbf{
    </td>
    <td> 
          <p align="center">
-            <img src="../images/museum/sindy/Theta.png" width="3000" alt="Dataset collection showing x, y, z coordinates">
+            <img src="../images/museum/sindy/Theta.png" width="3000" alt="Dataset collection showing x, ">
          </p>
    </td>
 </tr>
@@ -120,7 +120,7 @@ In this step, using the dataset collected in step 1, we calculating the time der
    </td>
    <td> 
          <p align="center">
-<img src="../images/museum/sindy/dX_.png" width="200" alt="Dataset collection showing x, y, z coordinates">
+<img src="../images/museum/sindy/dX_.png" width="200" alt="coordinates">
          </p>
    </td>
 </tr>
