@@ -1,60 +1,4 @@
-<table>
-    <tr>  
-          <th>
-                    Phase 3: Solving Sparse Regression (SR)
-          </th>
-          <th>
-                    Sequential Thresholding Least Square (STLSQ)
-          </th>
-    </tr>
-    <tr>
-          <td colspan="2">
-                    <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">
-                    
-          </td>
-    </tr>
-    <tr>  
-          <td>
-                    ### 3.A: Least Square method (LSQ) → $\mathbf{W}$ 
-                      Finds library coefficients by solving the following regression problem
-                      $\mathbf{Ẋ} = \mathbf{\Theta}\mathbf{W}$ analytically $\mathbf{W}  = (\mathbf{\Theta}^T \mathbf{\Theta})^{-1} \mathbf{\Theta}^T \mathbf{Ẋ}$ 
-          </td>     
-          <td>     
-                    <p align="center">
-                    <img src="../images/museum/sindy/dx.png" width="100" alt="State derivatives visualization">
-                    </p>
-          </td>     
-    </tr>
-    <tr>  
-          <td>      
-                      ### 3.B: Thresholding → $\mathbf{W_s}$
-                      Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that corresponds to the effective terms in the library.
-          </td>     
-          <td>     
-                    <p align="center">
-                    <img src="../images/museum/sindy/dx.png" width="100" alt="State derivatives visualization">
-                    </p>
-          </td>   
-    </tr>
 
-    <tr>  
-          <td>      <!-- --------------------------------------------------------------------------- -->
-                    Normal cell
-          </td>     <!-- --------------------------------------------------------------------------- -->
-          <td>      <!-- --------------------------------------------------------------------------- -->
-                    hjk
-          </td>     <!-- --------------------------------------------------------------------------- -->
-    </tr>
-    <tr>
-          <td>
-                    This spans two columns
-          </td>
-          <td>
-                    Normal cell
-          </td>
-    </tr>
-</table>
--->
 
 
 # Sparse Identification of Non-linear Dynamical Systems (SINDy)[1]
@@ -173,17 +117,15 @@ In this step, using the dataset collected in step 1, we calculating the time der
 
 
 <table>
-
 <tr>
-<td width="100%" valign="top">
-   
+<td width="70%" valign="top">
 ## Phase 3: Sequential Thresholding Least Square (STLSQ)
+</td>
 
+<td width="30%" valign="top">
 <p align="center">
 <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">
 </p>
-
-
 
 </td>
 </tr>
