@@ -103,7 +103,7 @@ Library of Candidate Functions: $\Theta(\mathbf{X}) = [\mathbf{1} \quad \mathbf{
             <img src="../images/museum/sindy/Theta.png" width="1000" alt="Dataset collection showing x, y, z coordinates">
          </p>
    </td>
-   <td rowspan="2", colspan="2"> 
+   <td rowspan="2", colspan="3"> 
          <p align="center">
          <img src="../images/museum/sindy/P2.png" width="1000" alt="Dataset collection showing x, y, z coordinates">
          </p>
