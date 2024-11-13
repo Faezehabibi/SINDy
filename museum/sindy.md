@@ -110,29 +110,27 @@ In this step, using the dataset collected in step 1, we calculating the time der
 
 
 
+
+
+<!--
 | Left-aligned | Center-aligned | 
 |:-------------|:-------------:|
 | Left         | Center        | 
 | A         | <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">          | 
 | B         | <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">          | 
 | C         | <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">          | 
-
-
-<!--
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 D-->
 
 <table>
 
 <tr>
-<td width="70%" valign="top">
+<td width="50%" valign="top">
    
 ## Phase 3: Sequential Thresholding Least Square (STLSQ)
 </td>
-</tr>
 
-<tr>
-<td width="70%" valign="top">
+<td width="50%" valign="top">
 <p align="center">
 <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">
 </p>
@@ -143,12 +141,12 @@ D-->
 
 
 <tr>
-<td width="70%" valign="top">
+<td width="50%" valign="top">
    
 ### 3.A: Least Square method (LSQ) → $\mathbf{W}$ 
 Finds library coefficients by solving the following regression problem $\mathbf{Ẋ} = \mathbf{\Theta}\mathbf{W}$ analytically $\mathbf{W}  = (\mathbf{\Theta}^T \mathbf{\Theta})^{-1} \mathbf{\Theta}^T \mathbf{Ẋ}$ 
 </td>
-<td width="20%" valign="top">
+<td width="50%" valign="top">
 <p align="center">
 <img src="../images/museum/sindy/dx.png" width="100" alt="State derivatives visualization">
 </p>
@@ -158,12 +156,12 @@ Finds library coefficients by solving the following regression problem $\mathbf{
 
 
 <tr>
-<td width="70%" valign="top">
+<td width="50%" valign="top">
    
 ### 3.B: Thresholding → $\mathbf{W_s}$
 Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that corresponds to the effective terms in the library.
 </td>
-<td width="20%" valign="top">
+<td width="50%" valign="top">
 <p align="center">
 <img src="../images/museum/sindy/dx.png" width="100" alt="State derivatives visualization">
 </p>
@@ -171,12 +169,12 @@ Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that correspo
 </tr>
 
 <tr>
-<td width="70%" valign="top">
+<td width="50%" valign="top">
    
 ### 3.C: Masking → $\mathbf{\Theta_s}$
 Sparsifies $\mathbf{\Theta}$ by keeping only the corresponding terms in $\mathbf{W}$ that are kept.
 </td>
-<td width="20%" valign="top">
+<td width="50%" valign="top">
 <p align="center">
 <img src="../images/museum/sindy/dx.png" width="100" alt="State derivatives visualization">
 </p>
