@@ -283,8 +283,7 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
    <td> 
    
    ## Lorenz
-   jsndckjsncjks jsndckjsncjks jsndckjsncjks 
-   jsndckjsncjks jsndckjsncjks jsndckjsncjks 
+$$\left{\begin{matrix} \dot{x} = -0.1x + 2.0y \ \dot{y} = -2.0x - 0.1y \end{matrix}\right.$$
    </td>
    <td> 
       <p align="center">
