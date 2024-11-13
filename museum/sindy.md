@@ -97,9 +97,8 @@ In this step, using the dataset collected in step 1, we calculating the time der
 </td>
 </tr>
 
-
 <tr>
-<td width="70%" valign="top">
+<td width="20%" valign="top">
 
 
 
