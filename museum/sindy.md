@@ -269,10 +269,12 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
    <td> 
    
    ## Oscillator
+   jsndckjsncjks jsndckjsncjks jsndckjsncjks 
+   jsndckjsncjks jsndckjsncjks jsndckjsncjks 
    </td>
    <td> 
       <p align="center">
-        <img src="../images/museum/sindy/oscillator.png" width="300">
+        <img src="../images/museum/sindy/oscillator.png" width="500">
       </p>
    </td>
 </tr>
@@ -281,10 +283,12 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
    <td> 
    
    ## Lorenz
+   jsndckjsncjks jsndckjsncjks jsndckjsncjks 
+   jsndckjsncjks jsndckjsncjks jsndckjsncjks 
    </td>
    <td> 
       <p align="center">
-        <img src="../images/museum/sindy/lorenz.png" width="300">
+        <img src="../images/museum/sindy/lorenz.png" width="500">
       </p>
    </td>
 </tr>
@@ -293,10 +297,12 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
    <td> 
    
    ## Linear-2D
+   jsndckjsncjks jsndckjsncjks jsndckjsncjks 
+   jsndckjsncjks jsndckjsncjks jsndckjsncjks 
    </td>
    <td> 
       <p align="center">
-        <img src="../images/museum/sindy/linear_2D.png" width="300">
+        <img src="../images/museum/sindy/linear_2D.png" width="500">
       </p>
    </td>
 </tr>
@@ -305,10 +311,12 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
    <td> 
    
    ## Linear-3D
+   jsndckjsncjks jsndckjsncjks jsndckjsncjks 
+   jsndckjsncjks jsndckjsncjks jsndckjsncjks 
    </td>
    <td> 
       <p align="center">
-        <img src="../images/museum/sindy/linear_3D.png" width="300">
+        <img src="../images/museum/sindy/linear_3D.png" width="500">
       </p>
    </td>
 </tr>
@@ -317,10 +325,12 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
    <td> 
    
    ## Cubic-2D
+   jsndckjsncjks jsndckjsncjks jsndckjsncjks 
+   jsndckjsncjks jsndckjsncjks jsndckjsncjks 
    </td>
    <td> 
       <p align="center">
-        <img src="../images/museum/sindy/cubic_2D.png" width="300">
+        <img src="../images/museum/sindy/cubic_2D.png" width="500">
       </p>
    </td>
 </tr>
