@@ -52,13 +52,13 @@ SINDy's dynamics can be presented in 3 main phases according to the figure 1.
 <table>
    
 <tr>
-<td width="70%" valign="top">
+<td width="100%" valign="top">
    
 ## Phase 1: Collecting Dataset → $\mathbf{X}_{(m \times n)}$
 This phase involves gathering the raw data points representing the system's states across time; In this example, capturing the x, y, and z coordinates of the system's states in this.
 </td>
 
-<td width="20%" align="center">
+<td width="100%" align="center">
 <img src="../images/museum/sindy/X_.png" width="150" alt="Dataset collection showing x, y, z coordinates">
 </td>
 </tr>
@@ -76,7 +76,7 @@ Given a set of time-series measurements of a dynamical system state variables ($
 Library of Candidate Functions: $\Theta(\mathbf{X}) = [\mathbf{1} \quad \mathbf{X} \quad \mathbf{X}^2 \quad \mathbf{X}^3 \quad \sin(\mathbf{X}) \quad \cos(\mathbf{X}) \quad ...]$
 </td>
 
-<td width="70%" align="center">
+<td width="20%" align="center">
 <img src="../images/museum/sindy/Theta.png" width="300" alt="Library matrix representation">
 </td>
 </tr>
@@ -96,18 +96,21 @@ In this step, using the dataset collected in step 1, we calculating the time der
 
 
 <tr>
-<td width="70%" valign="top">
+<td width="100%" valign="top">
    
 ## Phase 3: Sequential Thresholding Least Square (STLSQ)
 </tr>
 
 <tr>
-<td width="20%" valign="top">
-<img src="../images/museum/sindy/flow_full.jpg" width="400" alt="State derivatives visualization">
+<td width="100%" valign="top">
+<img src="../images/museum/sindy/flow_full.jpg" width="670" alt="State derivatives visualization">
 </td>
 </tr>
 
 
+<tr>
+<td width="70%" valign="top">
+   
 ### 3.A: Least Square method (LSQ) → $\mathbf{W}$ 
 Finds library coefficients by solving the following regression problem $\mathbf{Ẋ} = \mathbf{\Theta}\mathbf{W}$ analytically $\mathbf{W}  = (\mathbf{\Theta}^T \mathbf{\Theta})^{-1} \mathbf{\Theta}^T \mathbf{Ẋ}$ 
 
