@@ -45,11 +45,10 @@ SINDy's dynamics can be presented in 3 main phases fig
 
 <p align="center">
   <img src="../images/museum/sindy/flow.png" width="1000">
-</p>
+
 
 **Flow diagram illustrating the three phases:** Data Collection, Library Formation/Derivative Computation, and Sequential Thresholding Least Square method for sparse matrix computation.
-
-
+</p>
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
 
