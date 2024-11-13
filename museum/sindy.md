@@ -142,7 +142,7 @@ Solving the Sparse Regression problem (SR) can be done with various method such 
 </td>
 <td width="30%" align="top">
    <p align="center">
-   <img src="../images/museum/sindy/SR.png" width="400" alt="Dataset collection showing x, y, z coordinates">
+
    <img src="../images/museum/sindy/SRin.png" width="400" alt="Dataset collection showing x, y, z coordincates">
    </p>
 </td>
