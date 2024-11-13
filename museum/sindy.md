@@ -6,7 +6,7 @@ In this section, we teach, create, simulate, and visualize the Sparse Identifica
 2.  Learn how to build polynomial libraries with arbitrary order out of the dataset.
 3.  Learn how to solve the sparse regression problem in 2 ways
    - Iteratively finding the coefficient matrix by gradient descent.
-   - Iteratively performing the least squares (LSQ) method followed by thresholding-- Sequential Thresholding Least Square (STLSQ)-- for the given model.
+   - Iteratively performing the least squares (LSQ) method followed by thresholding-- Sequential Thresholding Least Square (STLSQ) for the given model.
    
    
 The model **code** for this exhibit can be found [here](https://github.com/NACLab/ngc-museum/exhibits/sindy/sindy.py).
