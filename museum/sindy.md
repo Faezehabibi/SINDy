@@ -66,7 +66,9 @@ SINDy's dynamics can be presented in 3 main phases according to the figure 1.
 This phase involves gathering the raw data points representing the system's states across time; In this example, capturing the x, y, and z coordinates of the system's states in this.
 </td>
 <td width="30%" align="top">
-<img src="../images/museum/sindy/X_.png" width="150" alt="Dataset collection showing x, y, z coordinates">
+   <p align="center">
+   <img src="../images/museum/sindy/X_.png" width="150" alt="Dataset collection showing x, y, z coordinates">
+   </p>
 </td>
 </tr>
 
