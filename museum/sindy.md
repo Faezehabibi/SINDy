@@ -71,7 +71,7 @@ This phase involves gathering the raw data points representing the system's stat
    
 ## Phase 2: Processing
 
-### 2.A: Making Library
+### 2.A: Making Library  → $\mathbf{\Theta}_{(m \times p)}$
 In this step, using the dataset collected in step 1, given the pre-defined function terms, we construct the dictionary of candidate predictors for system's differential equations. These functions form the columns of our library matrix $\mathbf{\Theta}(\mathbf{X})$. To identify the dynamical structure of the system this library of candidate functions appear in the regression problem to propose the model's structure that later the coefficient matrix will give weight to them according to the problem setup. Assuming sparse models for the system, by sparsification (LASSO or thresholding weigths) decide which structure best describe the system's behavior using predictors. 
 </td>
 
@@ -83,7 +83,7 @@ In this step, using the dataset collected in step 1, given the pre-defined funct
 <tr>
 <td width="70%" valign="top">
    
-### 2.B: Compute State Derivatives
+### 2.B: Compute State Derivatives → $\mathbf{Ẋ}_{(m \times n)}$
 In this step, using the dataset collected in step 1, we calculating the time derivatives of each state variable with respect to time. In this example, we compute ẋ, ẏ, and ż to capture how the system evolves over time.
 </td>
 
