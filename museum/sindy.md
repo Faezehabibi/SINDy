@@ -155,18 +155,18 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
 
 
 
-
------------------------------------------------------------------------------
 <!--
+-----------------------------------------------------------------------------
 Dictionary learning combined with LASSO (L1-norm) promotes the sparsity of the coefficient matrix which allows only governing terms in the dictionary stay non-zero.
 
 The solve linear regression by lasso that is the L1-norm regularized least squares to penalize L1-norm of weights (coefficients).
 lasso solution is the sparse model with coefficients corresponding to the relevant features in the library that predicts the motion of the system.
 
 of a manually constructed dictionary from the state vector by a coefficient matrix.
--->
------------------------------------------------------------------------------
 
+-----------------------------------------------------------------------------o
+
+-->
 
 
 
