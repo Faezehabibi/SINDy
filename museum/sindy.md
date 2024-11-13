@@ -269,11 +269,9 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
    <td> 
    
    ## Oscillator
-$$
-\mathbf{ẋ} = \mu_1x + \sigma xy 
-\mathbf{ẏ} = \mu_2y + (\omega + \alpha y + \beta z)z - \sigma x^2
-\mathbf{ż} = \mu_2z - (\omega + \alpha y + \beta z)y
-$$
+$$\mathbf{ẋ} = \mu_1x + \sigma xy \\
+\mathbf{ẏ} = \mu_2y + (\omega + \alpha y + \beta z)z - \sigma x^2 \\
+\mathbf{ż} = \mu_2z - (\omega + \alpha y + \beta z)y$$
    </td>
    <td> 
       <p align="center">
