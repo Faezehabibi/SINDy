@@ -289,8 +289,8 @@ $\mathbf{ż} = \mu_2\mathbf{z} - (\omega + \alpha \mathbf{y} + \beta \mathbf{z})
    
    ## Lorenz
    
-$\mathbf{ẋ} = 10~(\mathbf{y} - \mathbf{x})$ \
-$\mathbf{ẏ} = \mathbf{x}~(28 - \mathbf{z}) - \mathbf{y}$ \
+$\mathbf{ẋ} = 10(\mathbf{y} - \mathbf{x})$ \
+$\mathbf{ẏ} = \mathbf{x}(28 - \mathbf{z}) - \mathbf{y}$ \
 $\mathbf{ż} = \mathbf{xy} - \frac{8}{3}~\mathbf{z}$
 
    </td>
