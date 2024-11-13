@@ -1,65 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            max-width: 800px;
-            margin: 20px auto;
-        }
-        
-        td {
-            border: 1px solid #333;
-            padding: 10px;
-            background-color: #f0f0f0;
-        }
-        
-        /* Different row heights */
-        .row-small {
-            height: 50px;
-        }
-        
-        .row-medium {
-            height: 100px;
-        }
-        
-        .row-large {
-            height: 150px;
-        }
-        
-        /* Different column widths */
-        .col-20 {
-            width: 20%;
-        }
-        
-        .col-30 {
-            width: 30%;
-        }
-        
-        .col-40 {
-            width: 40%;
-        }
-        
-        .col-50 {
-            width: 50%;
-        }
-        
-        /* Vertical text alignment variations */
-        .top {
-            vertical-align: top;
-        }
-        
-        .middle {
-            vertical-align: middle;
-        }
-        
-        .bottom {
-            vertical-align: bottom;
-        }
-    </style>
-</head>
-<body>
+<table>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+  </tr>
+  <tr>
+    <td colspan="3">This cell spans all three columns</td>
+  </tr>
+  <tr>
+    <td>Normal cell</td>
+    <td colspan="2">This cell spans two columns</td>
+  </tr>
+  <tr>
+    <td colspan="2">This spans two columns</td>
+    <td>Normal cell</td>
+  </tr>
+</table>
 
 
 # Sparse Identification of Non-linear Dynamical Systems (SINDy)[1]
@@ -303,6 +259,3 @@ of a manually constructed dictionary from the state vector by a coefficient matr
 ## References
 <b>[1]</b> Brunton SL, Proctor JL, Kutz JN. Discovering governing equations from data by sparse identification of nonlinear dynamical systems. Proc Natl Acad Sci U S A. 2016 Apr 12;113(15):3932-7. doi: 10.1073/pnas.1517384113. Epub 2016 Mar 28. PMID: 27035946; PMCID: PMC4839439.
 
-
-</body>
-</html>
