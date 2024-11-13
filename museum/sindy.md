@@ -67,7 +67,7 @@ This phase involves gathering the raw data points representing the system's stat
 
 
 <tr>
-<td width="100%" valign="top">
+<td width="70%" valign="top">
    
 ## Phase 2: Processing
 
@@ -76,14 +76,6 @@ In this step, using the dataset collected in step 1, given the pre-defined funct
 Given a set of time-series measurements of a dynamical system state variables ($\mathbf{X}_{(m \times n)}$) we construct:
 Library of Candidate Functions: $\Theta(\mathbf{X}) = [\mathbf{1} \quad \mathbf{X} \quad \mathbf{X}^2 \quad \mathbf{X}^3 \quad \sin(\mathbf{X}) \quad \cos(\mathbf{X}) \quad ...]$
 </td>
-</tr>
-
-<tr>
-<td width="100%" valign="top">
-<img src="../images/museum/sindy/flow_full.jpg" width="400" alt="State derivatives visualization">
-</td>
-</tr>
-
 
 <td width="70%" align="center">
 <img src="../images/museum/sindy/Theta.png" width="300" alt="Library matrix representation">
@@ -112,6 +104,13 @@ In this step, using the dataset collected in step 1, we calculating the time der
 <p align="center">
 
 </p>
+
+
+<tr>
+<td width="100%" valign="top">
+<img src="../images/museum/sindy/flow_full.jpg" width="400" alt="State derivatives visualization">
+</td>
+</tr>
 
 
 ### 3.A: Least Square method (LSQ) → $\mathbf{W}$ 
