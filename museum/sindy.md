@@ -137,7 +137,7 @@ Finds library coefficients by solving the following regression problem $\mathbf{
 </tr>
 
 <tr>
-<td width="100%" valign="top">
+<td width="20%" valign="top">
 <p align="center">
 <img src="../images/museum/sindy/flow_full.jpg" width="650" alt="State derivatives visualization">
 </p>
@@ -152,7 +152,7 @@ Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that correspo
 </tr>
 
 <tr>
-<td width="100%" valign="top">
+<td width="20%" valign="top">
 <p align="center">
 <img src="../images/museum/sindy/flow_full.jpg" width="650" alt="State derivatives visualization">
 </p>
@@ -167,7 +167,7 @@ Sparsifies $\mathbf{\Theta}$ by keeping only the corresponding terms in $\mathbf
 </tr>
 
 <tr>
-<td width="100%" valign="top">
+<td width="20%" valign="top">
 <p align="center">
 <img src="../images/museum/sindy/flow_full.jpg" width="650" alt="State derivatives visualization">
 </p>
