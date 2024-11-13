@@ -98,6 +98,10 @@ In this step, using the dataset collected in step 1, we calculating the time der
    
 ## Phase 3: Sequential Thresholding Least Square (STLSQ)
 
+<p align="center">
+
+</p>
+
 
 ### 3.A: Least Square method (LSQ) → $\mathbf{W}$ 
 Finds library coefficients by solving the following regression problem $\mathbf{Ẋ} = \mathbf{\Theta}\mathbf{W}$ analytically $\mathbf{W}  = (\mathbf{\Theta}^T \mathbf{\Theta})^{-1} \mathbf{\Theta}^T \mathbf{Ẋ}$ 
@@ -116,7 +120,7 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
 
 </td>
 <td width="50%" align="center">
-<img src="../images/museum/sindy/d_xyz.png" width="300" alt="State derivatives visualization">
+<img src="../images/museum/sindy/flow_full.jpg" width="400" alt="State derivatives visualization">
 </td>
 </tr>
 </table>
@@ -140,9 +144,7 @@ of a manually constructed dictionary from the state vector by a coefficient matr
 
 
 
-<p align="center">
-  <img src="../images/museum/sindy/flow_full.jpg" width="600">
-</p>
+
 
 
 
