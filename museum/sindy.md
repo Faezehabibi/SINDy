@@ -78,9 +78,9 @@ In this step, using the dataset collected in step 1, given the pre-defined funct
 <td width="70%" align="center">
 <img src="../images/museum/sindy/Theta.png" width="300" alt="Library matrix representation">
 </td>
+</tr>
 
-
-
+<tr>
 <td width="70%" valign="top">
    
 ### 2.B: Compute State Derivatives
