@@ -124,7 +124,7 @@ D-->
 <tr>
 <td width="100%" valign="top">
 <p align="center">
-<img src="../images/museum/sindy/dX_.jpg" width="100" alt="State derivatives visualization">
+<img src="../images/museum/sindy/dx.png" width="100" alt="State derivatives visualization">
 </p>
 </td>
 </tr>
@@ -132,18 +132,11 @@ D-->
 
 <tr>
 <td width="70%" valign="top">
-   
 ### 3.A: Least Square method (LSQ) → $\mathbf{W}$ 
 Finds library coefficients by solving the following regression problem $\mathbf{Ẋ} = \mathbf{\Theta}\mathbf{W}$ analytically $\mathbf{W}  = (\mathbf{\Theta}^T \mathbf{\Theta})^{-1} \mathbf{\Theta}^T \mathbf{Ẋ}$ 
 </tr>
 
-<tr>
-<td width="20%" valign="top">
-<p align="center">
-<img src="../images/museum/sindy/dX_.jpg" width="100" alt="State derivatives visualization">
-</p>
-</td>
-</tr>
+
 -----------------------------------------------------------------------------
 <tr>
 <td width="70%" valign="top">
@@ -155,7 +148,7 @@ Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that correspo
 <tr>
 <td width="20%" valign="top">
 <p align="center">
-<img src="../images/museum/sindy/dX_.jpg" width="100" alt="State derivatives visualization">
+<img src="../images/museum/sindy/dx.png" width="100" alt="State derivatives visualization">
 </p>
 </td>
 </tr>
@@ -170,7 +163,7 @@ Sparsifies $\mathbf{\Theta}$ by keeping only the corresponding terms in $\mathbf
 <tr>
 <td width="20%" valign="top">
 <p align="center">
-<img src="../images/museum/sindy/dX_.jpg" width="100" alt="State derivatives visualization">
+<img src="../images/museum/sindy/dx.png" width="100" alt="State derivatives visualization">
 </p>
 </td>
 </tr>
