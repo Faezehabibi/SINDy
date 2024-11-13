@@ -121,6 +121,9 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
 </td>
 <td width="50%" align="center">
 <img src="../images/museum/sindy/flow_full.jpg" width="400" alt="State derivatives visualization">
+  <img src="../images/museum/sindy/dx.png" width="250">
+  <img src="../images/museum/sindy/dy.png" width="250">
+  <img src="../images/museum/sindy/dz.png" width="250">
 </td>
 </tr>
 </table>
@@ -154,11 +157,7 @@ Given a set of time-series measurements of a dynamical system state variables ($
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
 
-<p align="center">
-  <img src="../images/museum/sindy/dx.png" width="250">
-  <img src="../images/museum/sindy/dy.png" width="250">
-  <img src="../images/museum/sindy/dz.png" width="250">
-</p>
+
 
 
 ### Data Matrix
