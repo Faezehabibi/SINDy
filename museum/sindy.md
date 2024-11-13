@@ -131,61 +131,6 @@ In this step, using the dataset collected in step 1, we calculating the time der
 </table>
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-
-<table>
-
-<tr>
-<td width="70%" valign="top">
-   
-## Phase 2: Processing
-</td>
-
-<td rowspan="3">
-   <p align="center">
-   <img src="../images/museum/sindy/P2.png" width="300" alt="Dataset collection showing x, y, z coordinates">
-   </p>
-</td>
-</tr>
-
-
-
-<tr>
-<td width="70%" valign="top">
-   
-### 2.A: Making Library  → $\mathbf{\Theta}_{(m \times p)}$
-In this step, using the dataset collected in step 1, given the pre-defined function terms, we construct the dictionary of candidate predictors for system's differential equations. These functions form the columns of our library matrix $\mathbf{\Theta}(\mathbf{X})$. To identify the dynamical structure of the system this library of candidate functions appear in the regression problem to propose the model's structure that later the coefficient matrix will give weight to them according to the problem setup. Assuming sparse models for the system, by sparsification (LASSO or thresholding weigths) decide which structure best describe the system's behavior using predictors. 
-Given a set of time-series measurements of a dynamical system state variables ($\mathbf{X}_{(m \times n)}$) we construct:
-Library of Candidate Functions: $\Theta(\mathbf{X}) = [\mathbf{1} \quad \mathbf{X} \quad \mathbf{X}^2 \quad \mathbf{X}^3 \quad \sin(\mathbf{X}) \quad \cos(\mathbf{X}) \quad ...]$
-</td>
-
-<td width="30%" align="top">
-   <p align="center">
-<img src="../images/museum/sindy/Theta.png" width="300" alt="Dataset collection showing x, y, z coordinates">
-   </p>
-</td>
-</tr>
-
-
-
-
-<tr>
-<td width="70%" valign="top">
-   
-### 2.B: Compute State Derivatives → $\mathbf{Ẋ}_{(m \times n)}$
-Given a set of time-series measurements of a dynamical system state variables $\mathbf{X}_{(m \times n)}$ we construct the derivative matrix: $\dot{\mathbf{X}}_{(m \times n)}$ (computed numerically)
-In this step, using the dataset collected in step 1, we calculating the time derivatives of each state variable with respect to time. In this example, we compute ẋ, ẏ, and ż to capture how the system evolves over time.
-
-
-</td>
-<td width="30%" align="top">
-   <p align="center">
-<img src="../images/museum/sindy/dX_.png" width="150" alt="Dataset collection showing x, y, z coordinates">
-   </p>
-</td>
-</tr>
-
-</table>
-
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 
