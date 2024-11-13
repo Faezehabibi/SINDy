@@ -86,9 +86,8 @@ Library of Candidate Functions: $\Theta(\mathbf{X}) = [\mathbf{1} \quad \mathbf{
 <td width="20%" align="center">
 <img src="../images/museum/sindy/Theta.png" width="300" alt="Library matrix representation">
 </td>
-</tr>
 
-<tr>
+
 <td width="70%" valign="top">
    
 ### 2.B: Compute State Derivatives → $\mathbf{Ẋ}_{(m \times n)}$
@@ -114,7 +113,7 @@ D-->
 
 <tr>
 <td width="100%" valign="center">
-<img src="../images/museum/sindy/flow_full.jpg" width="670" alt="State derivatives visualization">
+<img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">
 </td>
 </tr>
 
