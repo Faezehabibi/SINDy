@@ -143,9 +143,7 @@ Finds library coefficients by solving the following regression problem $\mathbf{
    
 ### 3.B: Thresholding → $\mathbf{W_s}$
 Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that corresponds to the effective terms in the library.
-</tr>
-
-<tr>
+</td>
 <td width="20%" valign="top">
 <p align="center">
 <img src="../images/museum/sindy/dx.png" width="100" alt="State derivatives visualization">
@@ -158,9 +156,7 @@ Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that correspo
    
 ### 3.C: Masking → $\mathbf{\Theta_s}$
 Sparsifies $\mathbf{\Theta}$ by keeping only the corresponding terms in $\mathbf{W}$ that are kept.
-</tr>
-
-<tr>
+</td>
 <td width="20%" valign="top">
 <p align="center">
 <img src="../images/museum/sindy/dx.png" width="100" alt="State derivatives visualization">
