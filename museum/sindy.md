@@ -55,6 +55,7 @@ SINDy's dynamics can be presented in 3 main phases according to the figure 1.
 <td width="70%" valign="top">
 
 ## Phase 1: Collecting Dataset
+-----------------------------------------------------------------------------
 This phase involves gathering the raw data points representing the system's states across time; In this example, capturing the x, y, and z coordinates of the system's states in this.
 
 </td>
