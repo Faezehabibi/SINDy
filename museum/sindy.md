@@ -120,7 +120,7 @@ In this step, using the dataset collected in step 1, we calculating the time der
    </td>
    <td colspan="1"> 
          <p align="center">
-<img src="../images/museum/sindy/dX_.png" width="1500" alt="Dataset collection showing x, y, z coordinates">
+<img src="../images/museum/sindy/dX_.png" width="500" alt="Dataset collection showing x, y, z coordinates">
          </p>
    </td>
 </tr>
