@@ -3,6 +3,10 @@
           <th>
                     Phase 3: Solving Sparse Regression (SR)
           </th>
+                          <!-- ------------------------------------------------------------------------------------------ -->
+          <th>
+                    Sequential Thresholding Least Square (STLSQ)
+          </th>
     </tr>
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
     <tr>
@@ -17,6 +21,30 @@
                     <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">
                     </p>
           </td>
+    </tr>
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+    <tr>  
+          <td>      <!-- --------------------------------------------------------------------------- -->
+                    ### 3.A: Least Square method (LSQ) → $\mathbf{W}$ 
+
+                      Finds library coefficients by solving the following regression problem
+                      $\mathbf{Ẋ} = \mathbf{\Theta}\mathbf{W}$ analytically $\mathbf{W}  = (\mathbf{\Theta}^T \mathbf{\Theta})^{-1} \mathbf{\Theta}^T \mathbf{Ẋ}$ 
+
+          </td>     <!-- --------------------------------------------------------------------------- -->
+          <td>      <!-- --------------------------------------------------------------------------- -->
+                    <p align="center">
+                    <img src="../images/museum/sindy/dx.png" width="100" alt="State derivatives visualization">
+                    </p>
+          </td>     <!-- --------------------------------------------------------------------------- -->
+    </tr>
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+    <tr>  
+          <td>      <!-- --------------------------------------------------------------------------- -->
+                    Normal cell
+          </td>     <!-- --------------------------------------------------------------------------- -->
+          <td>      <!-- --------------------------------------------------------------------------- -->
+                    hjk
+          </td>     <!-- --------------------------------------------------------------------------- -->
     </tr>
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
     <tr>  
