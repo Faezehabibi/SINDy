@@ -121,8 +121,10 @@ D-->
 </tr>
 
 <tr>
-<td width="100%" valign="center">
-<img src="../images/museum/sindy/flow_full.jpg" width="450" alt="State derivatives visualization">
+<td width="100%" valign="top">
+<p align="center">
+<img src="../images/museum/sindy/flow_full.jpg" width="650" alt="State derivatives visualization">
+</p>
 </td>
 </tr>
 
