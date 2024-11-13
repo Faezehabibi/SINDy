@@ -38,36 +38,15 @@ SINDy assumes thatt this linear operation, $\mathbf{f}(\mathbf{X}(t))$ is a matr
 <div align="justify">
 Given a group of candidate functions in the library $\mathbf{\Theta}(\mathbf{X})$, the coefficient $\mathbf{W}$ of choose the library terms is **sparse**. In other words, there are only a few functions that exist in the system's differential equation. Given these assumptions, SINDy solves the sparse regression problem to find the $\mathbf{W}$ that maps the library selected terms to each feature of the system.
 </div>
+
 -----------------------------------------------------------------------------
 
 SINDy's dynamics can be presented in 3 main phases fig
 
 <p align="center">
   <img src="../images/museum/sindy/flow.png" width="1000">
-       <figcaption>Your caption text here</figcaption>
+       <figcaption>*Flow diagram illustrating the three phases: Data Collection, Library Formation/Derivative Computation, and Sequential Thresholding Least Square method for sparse matrix computation.*</figcaption>
 </p>
-
------------------------------------------------------------------------------
------------------------------------------------------------------------------
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=1000]{"../images/museum/sindy/flow.png"}
-    \caption{Flow diagram illustrating the three phases: Data Collection, Library Formation/Derivative Computation, and Sequential Thresholding Least Square method for sparse matrix computation.}
-    \label{fig:flow-diagram}
-\end{figure}
-
-
-
-<figure>
-    <img src="../images/museum/sindy/flow.png" alt="Three-phase data processing pipeline">
-    <figcaption>Flow diagram illustrating the three phases: Data Collection, Library Formation/Derivative Computation, and Sequential Thresholding Least Square method for sparse matrix computation.</figcaption>
-</figure>
-
-
-
-![Three-phase data processing pipeline]("../images/museum/sindy/flow.png")
-*Flow diagram illustrating the three phases: Data Collection, Library Formation/Derivative Computation, and Sequential Thresholding Least Square method for sparse matrix computation.*
 
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
