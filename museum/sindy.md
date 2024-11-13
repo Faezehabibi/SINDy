@@ -48,15 +48,6 @@ SINDy's dynamics can be presented in 3 main phases according to the figure 1.
 **Figure 1:** **Flow of three phases in SINDy.** **Phase-1)** Data collection: capturing system's states that are changing in time and making the state vector. **Phase-2A)** Library formation: manually creating the library of candidate predictors that could appear in the model. **Phase-2B)** Derivative computation: using the data collected in phase 1 and compute its derivative with respect to time. **Phase-3)**  Solving the sparse regression problem (here with STLSQ).
 </p>
 
------------------------------------------------------------------------------
-<!--
-Dictionary learning combined with LASSO (L1-norm) promotes the sparsity of the coefficient matrix
-which allows only governing terms in the dictionary stay non-zero.
-SINDy imposes parsimony constraints over symbolic regression (i.e., genetic programming) to describe a dynamical system's behavior by as few terms as possible. In order to select a sparse set of the given features, it adds the LASSO regularizarion (i.e., L1 norm) to the regression problem and solves the sparse regression
-The solve linear regression by lasso that is the L1-norm regularized least squares to penalize L1-norm of weights (coefficients).
-lasso solution is the sparse model with coefficients corresponding to the relevant features in the library that predicts the motion of the system.
--->
------------------------------------------------------------------------------
 
 
 <table>
@@ -74,13 +65,16 @@ This phase involves gathering the raw data points representing the system's stat
 
 <tr>
 <td width="70%" valign="top">
+
+
+
+
    
 ## Phase 2: Processing
 
 ### 2.A: Making Library
-In this step, we construct a library of potential functions that could describe the system dynamics. These functions form the columns of our library matrix \mathbf{\Theta}(\mathbf{X}).
-To identify the dynamical structure of the system by sparsification of a pre-defined library coefficients.
-of a manually constructed dictionary from the state vector by a coefficient matrix.
+In this step, we construct a library of potential functions (predictors) out of the raw data vectors created in phase 1 that could describe the system dynamics. These functions form the columns of our library matrix $\mathbf{\Theta}(\mathbf{X})$. To identify the dynamical structure of the system this library of candidate functions appear in the regression problem to propose the model's structure that later the coefficient matrix will give weight to them according to the problem setup. Assuming sparse models for the system, by sparsification (LASSO or thresholding weigths) decide which structure best describe the system's behavior using predictors. 
+
 
 </td>
 <td width="70%" align="center">
@@ -90,6 +84,21 @@ of a manually constructed dictionary from the state vector by a coefficient matr
 
 <tr>
 <td width="70%" valign="top">
+
+
+-----------------------------------------------------------------------------
+<!--
+Dictionary learning combined with LASSO (L1-norm) promotes the sparsity of the coefficient matrix
+which allows only governing terms in the dictionary stay non-zero.
+SINDy imposes parsimony constraints over symbolic regression (i.e., genetic programming) to describe a dynamical system's behavior by as few terms as possible. In order to select a sparse set of the given features, it adds the LASSO regularizarion (i.e., L1 norm) to the regression problem and solves the sparse regression
+The solve linear regression by lasso that is the L1-norm regularized least squares to penalize L1-norm of weights (coefficients).
+lasso solution is the sparse model with coefficients corresponding to the relevant features in the library that predicts the motion of the system.
+
+of a pre-defined library coefficients.
+of a manually constructed dictionary from the state vector by a coefficient matrix.
+-->
+-----------------------------------------------------------------------------
+
 
 ### 2.B: Compute State Derivatives
 Using the dataset collected in step 1, given the pre-defined function terms, create the dictionary of candidate predictors for system's differential equations.
