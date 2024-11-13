@@ -213,7 +213,7 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
    </td>
    <td> 
          <p align="center">
-         <img src="../images/museum/sindy/flow_full.jpg" width="300" alt="State derivatives visualization">
+         <img src="../images/museum/sindy/iterin.png" width="500" alt="State derivatives visualization">
          </p>
    </td>
 </tr>
