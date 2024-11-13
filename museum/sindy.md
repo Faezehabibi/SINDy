@@ -326,6 +326,22 @@ $$
 \mathbf{ẏ} = -2x - 0.1y
 \mathbf{ż} = -0.3z
 $$
+
+```math
+\mathbf{ẋ} = -0.1x + 2y \\
+\mathbf{ẏ} = -2x - 0.1y \\
+\mathbf{ż} = -0.3z \\
+```
+
+```math
+\begin{cases}
+\mathbf{ẋ} = -0.1x + 2y \\
+\mathbf{ẏ} = -2x - 0.1y \\
+\mathbf{ż} = -0.3z \\
+\end{cases}
+```
+
+
    </td>
    <td> 
       <p align="center">
