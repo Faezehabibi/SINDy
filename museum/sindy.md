@@ -71,10 +71,7 @@ This phase involves gathering the raw data points representing the system's stat
 </tr>
 
 </table>
-
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-
-
 <table>
 
 <tr>
@@ -95,6 +92,7 @@ Library of Candidate Functions: $\Theta(\mathbf{X}) = [\mathbf{1} \quad \mathbf{
 
 
 
+
 <tr>
 <td width="70%" valign="top">
    
@@ -111,9 +109,7 @@ In this step, using the dataset collected in step 1, we calculating the time der
 
 </table>
 
-
-
-
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 
 <table>
@@ -121,7 +117,9 @@ In this step, using the dataset collected in step 1, we calculating the time der
 <td width="70%" valign="top">
 ## Phase 3: Sequential Thresholding Least Square (STLSQ)
 </td>
+</tr>
 
+<tr>
 <td width="30%" valign="top">
 <p align="center">
 <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">
@@ -194,6 +192,7 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
  
 
 
+-----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
 
 
