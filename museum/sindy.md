@@ -39,20 +39,16 @@ SINDy assumes thatt this linear operation, $\mathbf{f}(\mathbf{X}(t))$ is a matr
 Given a group of candidate functions in the library $\mathbf{\Theta}(\mathbf{X})$, the coefficient $\mathbf{W}$ of choose the library terms is **sparse**. In other words, there are only a few functions that exist in the system's differential equation. Given these assumptions, SINDy solves the sparse regression problem to find the $\mathbf{W}$ that maps the library selected terms to each feature of the system.
 </div>
 
+
 SINDy's dynamics can be presented in 3 main phases according to the figure 1. 
 
 <p align="center">
   <img src="../images/museum/sindy/flow.png" width="1000">
    
-**Figure 1:** **Flow of three phases in SINDy.** **Phase-1)** Data collection: making the vector of the system's states that are changing in time. **Phase-2A)** Library formation: manually creating the library of candidate predictors that could appear in the model. **Phase-2B)** Derivative computation: using the data collected in phase 1 and compute its derivative with respect to time. **Phase-3)**  Solving the sparse regression problem (here with STLSQ).
+**Figure 1:** **Flow of three phases in SINDy.** **Phase-1)** Data collection: capturing system's states that are changing in time and making the state vector. **Phase-2A)** Library formation: manually creating the library of candidate predictors that could appear in the model. **Phase-2B)** Derivative computation: using the data collected in phase 1 and compute its derivative with respect to time. **Phase-3)**  Solving the sparse regression problem (here with STLSQ).
 </p>
 
 -----------------------------------------------------------------------------
------------------------------------------------------------------------------
-
-
-
-
 <!--
 Dictionary learning combined with LASSO (L1-norm) promotes the sparsity of the coefficient matrix
 which allows only governing terms in the dictionary stay non-zero.
@@ -60,7 +56,7 @@ SINDy imposes parsimony constraints over symbolic regression (i.e., genetic prog
 The solve linear regression by lasso that is the L1-norm regularized least squares to penalize L1-norm of weights (coefficients).
 lasso solution is the sparse model with coefficients corresponding to the relevant features in the library that predicts the motion of the system.
 -->
-
+-----------------------------------------------------------------------------
 
 
 <table>
@@ -68,7 +64,7 @@ lasso solution is the sparse model with coefficients corresponding to the releva
 <td width="70%" valign="top">
 
 ## Phase 1: Collecting Dataset
-This phase involves gathering the raw data points representing the system's states across time, capturing the x, y, and z coordinates of the trajectory.
+This phase involves gathering the raw data points representing the system's states across time; In this example, capturing the x, y, and z coordinates of the system's states in this.
 
 </td>
 <td width="20%" align="center">
@@ -82,7 +78,7 @@ This phase involves gathering the raw data points representing the system's stat
 ## Phase 2: Processing
 
 ### 2.A: Making Library
-In this step, we construct a library of potential functions that could describe the system dynamics. These functions form the columns of our library matrix Θ(X).
+In this step, we construct a library of potential functions that could describe the system dynamics. These functions form the columns of our library matrix \mathbf{\Theta}(\mathbf{X}).
 To identify the dynamical structure of the system by sparsification of a pre-defined library coefficients.
 of a manually constructed dictionary from the state vector by a coefficient matrix.
 
