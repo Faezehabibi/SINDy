@@ -48,6 +48,9 @@ SINDy's dynamics can be presented in 3 main phases according to the figure 1.
 </p>
 
 
+<!--
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+D-->
 
 <table>
    
@@ -61,9 +64,13 @@ This phase involves gathering the raw data points representing the system's stat
 <td width="100%" align="center">
 <img src="../images/museum/sindy/X_.png" width="150" alt="Dataset collection showing x, y, z coordinates">
 </td>
+
 </tr>
 
 
+<!--
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+D-->
 
 <tr>
 <td width="70%" valign="top">
@@ -94,6 +101,10 @@ In this step, using the dataset collected in step 1, we calculating the time der
 </td>
 </tr>
 
+<!--
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+D-->
+
 
 <tr>
 <td width="100%" valign="top">
@@ -102,7 +113,7 @@ In this step, using the dataset collected in step 1, we calculating the time der
 </tr>
 
 <tr>
-<td width="100%" valign="top">
+<td width="100%" valign="center">
 <img src="../images/museum/sindy/flow_full.jpg" width="670" alt="State derivatives visualization">
 </td>
 </tr>
@@ -153,6 +164,7 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
   <img src="../images/museum/sindy/cubic_2D.png" width="300">
   <img src="../images/museum/sindy/linear_3D.png" width="300">
 </p>
+
 
 
 
