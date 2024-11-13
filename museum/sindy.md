@@ -26,16 +26,16 @@
                     </p>
           </td>     
     </tr>
-</table>
-
-<!-- 
     <tr>  
-          <td>      <!-- --------------------------------------------------------------------------- -->
-                    Normal cell
-          </td>     <!-- --------------------------------------------------------------------------- -->
-          <td>      <!-- --------------------------------------------------------------------------- -->
-                    hjk
-          </td>     <!-- --------------------------------------------------------------------------- -->
+          <td>      
+                      ### 3.B: Thresholding → $\mathbf{W_s}$
+                      Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that corresponds to the effective terms in the library.
+          </td>     
+          <td>     
+                    <p align="center">
+                    <img src="../images/museum/sindy/dx.png" width="100" alt="State derivatives visualization">
+                    </p>
+          </td>   
     </tr>
 
     <tr>  
