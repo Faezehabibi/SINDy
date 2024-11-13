@@ -134,16 +134,49 @@ D-->
    
 ### 3.A: Least Square method (LSQ) → $\mathbf{W}$ 
 Finds library coefficients by solving the following regression problem $\mathbf{Ẋ} = \mathbf{\Theta}\mathbf{W}$ analytically $\mathbf{W}  = (\mathbf{\Theta}^T \mathbf{\Theta})^{-1} \mathbf{\Theta}^T \mathbf{Ẋ}$ 
+</tr>
 
+<tr>
+<td width="100%" valign="top">
+<p align="center">
+<img src="../images/museum/sindy/flow_full.jpg" width="650" alt="State derivatives visualization">
+</p>
+</td>
+</tr>
 -----------------------------------------------------------------------------
+<tr>
+<td width="70%" valign="top">
+   
 ### 3.B: Thresholding → $\mathbf{W_s}$
 Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that corresponds to the effective terms in the library.
+</tr>
 
+<tr>
+<td width="100%" valign="top">
+<p align="center">
+<img src="../images/museum/sindy/flow_full.jpg" width="650" alt="State derivatives visualization">
+</p>
+</td>
+</tr>
 -----------------------------------------------------------------------------
+<tr>
+<td width="70%" valign="top">
+   
 ### 3.C: Masking → $\mathbf{\Theta_s}$
 Sparsifies $\mathbf{\Theta}$ by keeping only the corresponding terms in $\mathbf{W}$ that are kept.
+</tr>
 
+<tr>
+<td width="100%" valign="top">
+<p align="center">
+<img src="../images/museum/sindy/flow_full.jpg" width="650" alt="State derivatives visualization">
+</p>
+</td>
+</tr>
 -----------------------------------------------------------------------------
+<tr>
+<td width="70%" valign="top">
+   
 ### 3.D: Repeat A → B → C until convergence
 Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and find the new $\mathbf{W}$ and repreat steps B and C everytime.
 
