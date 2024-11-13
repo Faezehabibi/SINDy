@@ -88,7 +88,7 @@ This phase involves gathering the raw data points representing the system's stat
    </td>
       <td rowspan="3", colspan="2"> 
          <p align="center">
-         <img src="../images/museum/sindy/P2.png" width="10000" alt="Dataset collection showing x, y, z coordinatess">
+         <img src="../images/museum/sindy/P2.png" width="20000" alt="Dataset collection showing x, y, z coordinatess">
          </p>
    </td>
 </tr>
@@ -120,7 +120,7 @@ In this step, using the dataset collected in step 1, we calculating the time der
    </td>
    <td colspan="1"> 
          <p align="center">
-<img src="../images/museum/sindy/dX_.png" width="3000" alt="Dataset collection showing x, y, z coordinates">
+<img src="../images/museum/sindy/dX_.png" width="1500" alt="Dataset collection showing x, y, z coordinates">
          </p>
    </td>
 </tr>
