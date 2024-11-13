@@ -52,7 +52,7 @@ SINDy's dynamics can be presented in 3 main phases fig
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=1000]{flow.png}
+    \includegraphics[width=1000]{"../images/museum/sindy/flow.png"}
     \caption{Flow diagram illustrating the three phases: Data Collection, Library Formation/Derivative Computation, and Sequential Thresholding Least Square method for sparse matrix computation.}
     \label{fig:flow-diagram}
 \end{figure}
@@ -60,13 +60,13 @@ SINDy's dynamics can be presented in 3 main phases fig
 
 
 <figure>
-    <img src="your-flow-diagram.png" alt="Three-phase data processing pipeline">
+    <img src="../images/museum/sindy/flow.png" alt="Three-phase data processing pipeline">
     <figcaption>Flow diagram illustrating the three phases: Data Collection, Library Formation/Derivative Computation, and Sequential Thresholding Least Square method for sparse matrix computation.</figcaption>
 </figure>
 
 
 
-![Three-phase data processing pipeline](flow.png)
+![Three-phase data processing pipeline]("../images/museum/sindy/flow.png")
 *Flow diagram illustrating the three phases: Data Collection, Library Formation/Derivative Computation, and Sequential Thresholding Least Square method for sparse matrix computation.*
 
 -----------------------------------------------------------------------------
