@@ -154,15 +154,6 @@ In this step, using the dataset collected in step 1, we calculating the time der
 
 
 
-<!--
-| Left-aligned | Center-aligned | 
-|:-------------|:-------------:|
-| Left         | Center        | 
-| A         | <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">          | 
-| B         | <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">          | 
-| C         | <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">          | 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 
 <table>
 
@@ -240,9 +231,23 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
 </table>
  
 
-D-->
 
 -----------------------------------------------------------------------------
+
+
+
+
+
+<!--
+| Left-aligned | Center-aligned | 
+|:-------------|:-------------:|
+| Left         | Center        | 
+| A         | <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">          | 
+| B         | <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">          | 
+| C         | <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">          | 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
 
 
 ## Results
