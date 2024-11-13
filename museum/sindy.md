@@ -5,7 +5,7 @@
           </th>
           <!-- ------------------------------------------------------------------------------------------ -->
           <th>
-                    Phase 3: Sequential Thresholding Least Square (STLSQ)
+                    colspaN
           </th>
     </tr>
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
