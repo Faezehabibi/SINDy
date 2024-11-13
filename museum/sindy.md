@@ -20,11 +20,11 @@
     </tr>
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
     <tr>  
-          <td colspan="2">      <!-- --------------------------------------------------------------------------- -->
+          <td>      <!-- --------------------------------------------------------------------------- -->
                     Normal cell
           </td>     <!-- --------------------------------------------------------------------------- -->
           <td>      <!-- --------------------------------------------------------------------------- -->
-                    This cell spans two columns
+                    
           </td>     <!-- --------------------------------------------------------------------------- -->
     </tr>
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
