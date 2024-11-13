@@ -54,7 +54,7 @@ SINDy's dynamics can be presented in 3 main phases according to the figure 1.
 <tr>
 <td width="70%" valign="top">
    
-## Phase 1: Collecting Dataset
+## Phase 1: Collecting Dataset → $\mathbf{X}_{(m \times n)}$
 This phase involves gathering the raw data points representing the system's states across time; In this example, capturing the x, y, and z coordinates of the system's states in this.
 </td>
 
@@ -145,13 +145,6 @@ of a manually constructed dictionary from the state vector by a coefficient matr
 -->
 -----------------------------------------------------------------------------
 
-
-
-
-
-
-
-Given a set of time-series measurements of a dynamical system state variables ($\mathbf{X}_{(m \times n)}$) we construct:
 
 
 -----------------------------------------------------------------------------
