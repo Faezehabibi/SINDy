@@ -88,7 +88,9 @@ Library of Candidate Functions: $\Theta(\mathbf{X}) = [\mathbf{1} \quad \mathbf{
 </td>
 
 <td width="30%" align="top">
+   <p align="center">
 <img src="../images/museum/sindy/Theta.png" width="300" alt="Dataset collection showing x, y, z coordinates">
+   </p>
 </td>
 </tr>
 
@@ -105,7 +107,9 @@ In this step, using the dataset collected in step 1, we calculating the time der
 
 </td>
 <td width="30%" align="top">
+   <p align="center">
 <img src="../images/museum/sindy/dX_.png" width="150" alt="Dataset collection showing x, y, z coordinates">
+   </p>
 </td>
 </tr>
 
@@ -125,7 +129,6 @@ In this step, using the dataset collected in step 1, we calculating the time der
 <p align="center">
 <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">
 </p>
-
 </td>
 </tr>
 
