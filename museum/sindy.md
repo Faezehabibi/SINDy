@@ -47,10 +47,10 @@ SINDy's dynamics can be presented in 3 main phases according to the figure 1.
 ------------------------------------------------------------------------------------------
 
 <p align="center">
-  <img src="../images/museum/sindy/flow.png" width="1000">
+  <img src="../images/museum/sindy/flow_SR.png" width="1000">
 
 ------------------------------------------------------------------------------------------
-**Figure 1:** **Flow of three phases in SINDy.** **Phase-1)** Data collection: capturing system's states that are changing in time and making the state vector. **Phase-2A)** Library formation: manually creating the library of candidate predictors that could appear in the model. **Phase-2B)** Derivative computation: using the data collected in phase 1 and compute its derivative with respect to time. **Phase-3)**  Solving the sparse regression problem (here with STLSQ).
+**Figure 1:** **Flow of three phases in SINDy.** **Phase-1)** Data collection: capturing system's states that are changing in time and making the state vector. **Phase-2A)** Library formation: manually creating the library of candidate predictors that could appear in the model. **Phase-2B)** Derivative computation: using the data collected in phase 1 and compute its derivative with respect to time. **Phase-3)**  Solving the sparse regression problem.
 </p>
 
 
@@ -114,6 +114,18 @@ In this step, using the dataset collected in step 1, we calculating the time der
 </tr>
 
 </table>
+
+
+
+
+<p align="center">
+  <img src="../images/museum/sindy/flow.png" width="500">
+
+------------------------------------------------------------------------------------------
+**Figure 1:** **Flow of three phases in SINDy.** **Phase-1)** Data collection: capturing system's states that are changing in time and making the state vector. **Phase-2A)** Library formation: manually creating the library of candidate predictors that could appear in the model. **Phase-2B)** Derivative computation: using the data collected in phase 1 and compute its derivative with respect to time. **Phase-3)**  Solving the sparse regression problem with STLSQ.
+</p>
+
+
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 <table>
