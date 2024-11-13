@@ -46,7 +46,7 @@ SINDy's dynamics can be presented in 3 main phases fig
 <p align="center">
   <img src="../images/museum/sindy/flow.png" width="1000">
    
-**Flow of three phases in SINDy:** Phase 1) Data collection: making the vector of the system's states that are changing in time. **Phase 2A)** Library formation: manually creating the library of candidate predictors that could appear in the model. **Phase 2B)** Derivative computation: using the data collected in phase 1 and compute its derivative with respect to time. **Phase 3)**  Solving the sparse regression problem (here with STLSQ).
+**Flow of three phases in SINDy:** **Phase1)** Data collection: making the vector of the system's states that are changing in time. **Phase2A)** Library formation: manually creating the library of candidate predictors that could appear in the model. **Phase2B)** Derivative computation: using the data collected in phase 1 and compute its derivative with respect to time. **Phase3)**  Solving the sparse regression problem (here with STLSQ).
 </p>
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
