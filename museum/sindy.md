@@ -23,12 +23,12 @@ SINDy is a data-driven algorithm that discovers the governing behavior of a dyna
 
 If $X$ is a system that only depends on variable $t$, a very small change in the independant variable ($dt$) can cause changing the system by $dX$ amount. 
 ```math
-d\mathbf{X} = \mathbf{ẋ}(t)~dt
+d\mathbf{X} = \mathbf{Ẋ}(t)~dt
 ```
 SINDy models the derivative[^1] (a linear operation) as a linear transformations with:
 [^1]: Derivative is a linear operation that acts on dt and gives the differential that is the linearization approximation of the taylor series of the function.
 ```math
-\frac{d\mathbf{X}(t)}{dt} = \mathbf{ẋ}(t) = \mathbf{f}(\mathbf{X}(t))
+\frac{d\mathbf{X}(t)}{dt} = \mathbf{Ẋ}(t) = \mathbf{f}(\mathbf{X}(t))
 ```
 SINDy assumes thatt this linear operation, $\mathbf{f}(\mathbf{X}(t))$ is a matrix multiplication that linearly combines the relevant predictors to describe the system's equation.
 ```math
