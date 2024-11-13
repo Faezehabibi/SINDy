@@ -34,9 +34,9 @@ SINDy assumes thatt this linear operation, $\mathbf{f}(\mathbf{X}(t))$ is a matr
 \mathbf{f}(\mathbf{X}(t)) = \mathbf{\Theta}(\mathbf{X})~\mathbf{W}
 ```
 
-<div align="justify">
+
 Given a group of candidate functions in the library $\mathbf{\Theta}(\mathbf{X})$, the coefficient $\mathbf{W}$ of choose the library terms is **sparse**. In other words, there are only a few functions that exist in the system's differential equation. Given these assumptions, SINDy solves the sparse regression problem to find the $\mathbf{W}$ that maps the library selected terms to each feature of the system. SINDy imposes parsimony constraints over symbolic regression (i.e., genetic programming) to describe a dynamical system's behavior by as few terms as possible. In order to select a sparse set of the given features, it adds the LASSO regularizarion (i.e., L1 norm) to the regression problem and solves the sparse regression or solves the regression problem by STLSQ. Here we desceibe STLSQ in third step of the SINDy dynamics.
-</div>
+
 
 
 SINDy's dynamics can be presented in 3 main phases according to the figure 1. 
@@ -66,8 +66,13 @@ This phase involves gathering the raw data points representing the system's stat
 </tr>
 
 </table>
-<table>
 
+<!--
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+D-->
+
+
+<table>
 
 <tr>
 <td width="70%" valign="top">
@@ -107,54 +112,17 @@ In this step, using the dataset collected in step 1, we calculating the time der
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 D-->
 
-
-
-
-
 <table>
 
 <tr>
 <td width="70%" valign="top">
-   
-## Phase 2: Processing
-
-### 2.A: Making Library  → $\mathbf{\Theta}_{(m \times p)}$
-In this step, using the dataset collected in step 1, given the pre-defined function terms, we construct the dictionary of candidate predictors for system's differential equations. These functions form the columns of our library matrix $\mathbf{\Theta}(\mathbf{X})$. To identify the dynamical structure of the system this library of candidate functions appear in the regression problem to propose the model's structure that later the coefficient matrix will give weight to them according to the problem setup. Assuming sparse models for the system, by sparsification (LASSO or thresholding weigths) decide which structure best describe the system's behavior using predictors. 
-Given a set of time-series measurements of a dynamical system state variables ($\mathbf{X}_{(m \times n)}$) we construct:
-Library of Candidate Functions: $\Theta(\mathbf{X}) = [\mathbf{1} \quad \mathbf{X} \quad \mathbf{X}^2 \quad \mathbf{X}^3 \quad \sin(\mathbf{X}) \quad \cos(\mathbf{X}) \quad ...]$
-</td>
-
-<td width="20%" align="top">
-<img src="../images/museum/sindy/Theta.png" width="300" alt="Library matrix representation">
-</td>
-
-
-<td width="70%" valign="top">
-   
-### 2.B: Compute State Derivatives → $\mathbf{Ẋ}_{(m \times n)}$
-Given a set of time-series measurements of a dynamical system state variables $\mathbf{X}_{(m \times n)}$ we construct the derivative matrix: $\dot{\mathbf{X}}_{(m \times n)}$ (computed numerically)
-In this step, using the dataset collected in step 1, we calculating the time derivatives of each state variable with respect to time. In this example, we compute ẋ, ẏ, and ż to capture how the system evolves over time.
-</td>
-
-<td width="20%" align="center">
-<img src="../images/museum/sindy/dX_.png" width="130" alt="State derivatives visualization">
-</td>
-</tr>
-
-<!--
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-D-->
-
-
-<tr>
-<td width="100%" valign="top">
    
 ## Phase 3: Sequential Thresholding Least Square (STLSQ)
 </tr>
 
 <tr>
 <td width="100%" valign="center">
-<img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">
+<img src="../images/museum/sindy/flow_full.jpg" width="450" alt="State derivatives visualization">
 </td>
 </tr>
 
