@@ -119,9 +119,12 @@ of a manually constructed dictionary from the state vector by a coefficient matr
 ## Phase 3: Sequential Thresholding Least Square (STLSQ)
 
 
-### 3.A: Least Square method (LSQ): $(\mathbf{\Theta}^T \mathbf{\Theta})^{-1} \mathbf{\Theta}^T \mathbf{Ẋ} = \mathbf{W}$ 
-Finds library coefficients by solving the following regression problem $\mathbf{Ẋ} = \mathbf{\Theta}\mathbf{W}$ 
-### 3.B: Thresholding
+### 3.A: Least Square method (LSQ): Finds $\mathbf{W}$ 
+Finds library coefficients by solving the following regression problem $\mathbf{Ẋ} = \mathbf{\Theta}\mathbf{W}$ analytically $\mathbf{W}  = (\mathbf{\Theta}^T \mathbf{\Theta})^{-1} \mathbf{\Theta}^T \mathbf{Ẋ}$ 
+
+### 3.B: Thresholding: Sparsifies $\mathbf{W}$
+By keeping only some terms in $\mathbf{W}$ that corresponds to the effective terms in the library.
+
 ### 3.C: Masking
 ### 3.D: Repeat A → B → C until convergence
 
