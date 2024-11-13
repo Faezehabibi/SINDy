@@ -108,6 +108,13 @@ In this step, using the dataset collected in step 1, we calculating the time der
 
 </table>
 
+
+
+| Left-aligned | Center-aligned | Right-aligned |
+|:-------------|:-------------:|---------------:|
+| Left         | Center        | Right         |
+| Text         | Text          | Text          |
+
 <!--
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 D-->
@@ -115,10 +122,14 @@ D-->
 <table>
 
 <tr>
-<td width="100%" valign="top">
+<td width="70%" valign="top">
    
 ## Phase 3: Sequential Thresholding Least Square (STLSQ)
+</td>
+</tr>
 
+<tr>
+<td width="70%" valign="top">
 <p align="center">
 <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">
 </p>
