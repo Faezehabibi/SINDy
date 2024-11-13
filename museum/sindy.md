@@ -85,7 +85,7 @@ Given a set of time-series measurements of a dynamical system state variables ($
 Library of Candidate Functions: $\Theta(\mathbf{X}) = [\mathbf{1} \quad \mathbf{X} \quad \mathbf{X}^2 \quad \mathbf{X}^3 \quad \sin(\mathbf{X}) \quad \cos(\mathbf{X}) \quad ...]$
 </td>
 
-<td width="20%" align="top">
+<td width="30%" align="top">
 <img src="../images/museum/sindy/Theta.png" width="300" alt="Dataset collection showing x, y, z coordinates">
 </td>
 </tr>
@@ -101,7 +101,7 @@ In this step, using the dataset collected in step 1, we calculating the time der
 
 
 </td>
-<td width="20%" align="top">
+<td width="30%" align="top">
 <img src="../images/museum/sindy/dX_.png" width="150" alt="Dataset collection showing x, y, z coordinates">
 </td>
 </tr>
@@ -120,7 +120,7 @@ In this step, using the dataset collected in step 1, we calculating the time der
 | B         | <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">          | 
 | C         | <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">          | 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-D-->
+
 
 <table>
 
@@ -198,6 +198,7 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
 </table>
  
 
+D-->
 
 -----------------------------------------------------------------------------
 
