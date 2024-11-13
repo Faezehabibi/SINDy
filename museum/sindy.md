@@ -9,9 +9,8 @@
     </tr>
     <tr>
           <td colspan="2">
-                    <p align="center">
                     <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">
-                    </p>
+                    
           </td>
     </tr>
     <tr>  
