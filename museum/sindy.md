@@ -82,9 +82,14 @@ This phase involves gathering the raw data points representing the system's stat
 
    
 <tr>
-   <td colspan="4"> 
+   <td colspan="2"> 
       
 ## Phase 2: Processing
+   </td>
+      <td rowspan="3", colspan="2"> 
+         <p align="center">
+         <img src="../images/museum/sindy/P2.png" width="1000" alt="Dataset collection showing x, y, z coordinates">
+         </p>
    </td>
 </tr>
 
@@ -101,11 +106,6 @@ Library of Candidate Functions: $\Theta(\mathbf{X}) = [\mathbf{1} \quad \mathbf{
    <td colspan="1"> 
          <p align="center">
             <img src="../images/museum/sindy/Theta.png" width="1000" alt="Dataset collection showing x, y, z coordinates">
-         </p>
-   </td>
-   <td rowspan="2", colspan="3"> 
-         <p align="center">
-         <img src="../images/museum/sindy/P2.png" width="1000" alt="Dataset collection showing x, y, z coordinates">
          </p>
    </td>
 </tr>
