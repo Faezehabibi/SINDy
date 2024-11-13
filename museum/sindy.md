@@ -14,7 +14,7 @@ The model **code** for this exhibit can be found [here](https://github.com/NACLa
 
 ## SINDy 
 <div align="justify">
-SINDy is a data-driven algorithm that discovers the governing behavior of a dynamical system in terms of symbolic differential equation. It solves the sparse regression problem over the coefficients of pre-defined library that includes $p$ candidate predictors. It tries to find sparse model that only uses $s$ predictors out of $p$ where $s \leq p$ that best describes the dynamics (time-derivatives) of the system only from the dataset collected over time. SINDy assumes systems follow parsimonious theorem where the balace between the complexity and accuracy results generalization.
+SINDy is a data-driven algorithm that discovers the governing behavior of a dynamical system in terms of symbolic differential equation. It solves the sparse regression problem over the coefficients of pre-defined library that includes $p$ candidate predictors. It tries to find sparse model that only uses $s$ predictors out of $p$ where $s\leqp$ that best describes the dynamics (time-derivatives) of the system only from the dataset collected over time. SINDy assumes systems follow parsimonious theorem where the balace between the complexity and accuracy results generalization.
 </div>
 
 
@@ -119,7 +119,7 @@ of a manually constructed dictionary from the state vector by a coefficient matr
 ## Phase 3: Sequential Thresholding Least Square (STLSQ)
 
 
-### 3.A: Least Square (LSQ)
+### 3.A: Least Square method (LSQ)
 ### 3.B: Thresholding
 ### 3.C: Masking
 ### 3.D: Repeat A → B → C until convergence
