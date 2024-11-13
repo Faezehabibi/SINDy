@@ -257,6 +257,25 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
 
 ## Results
 
+<table>
+<th>
+   Model
+</th>
+<th>
+   Results
+</th>
+
+<tr>
+   <td> A </td>
+   <td> B </td>
+</tr>
+
+<tr>
+   <td> C </td>
+   <td> D </td>
+</tr>
+   
+</table>
 
 <p align="center">
   <img src="../images/museum/sindy/lorenz.png" width="300">
