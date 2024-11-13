@@ -93,7 +93,7 @@ In this step, using the dataset collected in step 1, we calculating the time der
 
 </td>
 <td width="20%" align="center">
-<img src="../images/museum/sindy/dX_.png" width="150" alt="State derivatives visualization">
+<img src="../images/museum/sindy/dX_.png" width="130" alt="State derivatives visualization">
 </td>
 </tr>
 
