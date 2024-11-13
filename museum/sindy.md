@@ -30,7 +30,7 @@ SINDy models the derivative[^1] (a linear operation) as a linear transformations
 ```math
 \frac{d\mathbf{X}(t)}{dt} = \mathbf{Ẋ}(t) = \mathbf{f}(\mathbf{X}(t))
 ```
-SINDy assumes thatt this linear operation, $\mathbf{f}(\mathbf{X}(t))$ is a matrix multiplication that linearly combines the relevant predictors to describe the system's equation.
+SINDy assumes thatt this linear operation, $ \mathbf{f}(\mathbf{X}(t)) $ is a matrix multiplication that linearly combines the relevant predictors to describe the system's equation.
 ```math
 \mathbf{f}(\mathbf{X}(t)) = \mathbf{\Theta}(\mathbf{X})~\mathbf{W}
 ```
