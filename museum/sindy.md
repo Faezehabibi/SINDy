@@ -137,6 +137,9 @@ Finds library coefficients by solving the following regression problem $\mathbf{
 </tr>
 
 
+</table>
+<table>
+
 <tr>
 <td width="70%" valign="top">
    
