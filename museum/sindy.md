@@ -156,6 +156,16 @@ Solving the Sparse Regression problem (SR) can be done with various method such 
 ### Solving SR by Sequential Thresholding Least Square (STLSQ)
    </td>
 </tr>  
+
+   <tr>
+      <td colspan="3"> 
+               <p align="center">
+         <img src="../images/museum/sindy/STLSQ.png" width="670" alt="State derivatives visualization">
+         </p>
+   </td>
+</tr>  
+
+
 <tr>
    <td> 
 
@@ -163,11 +173,6 @@ Solving the Sparse Regression problem (SR) can be done with various method such 
 Finds library coefficients by solving the following regression problem $\mathbf{Ẋ} = \mathbf{\Theta}\mathbf{W}$ analytically $\mathbf{W}  = (\mathbf{\Theta}^T \mathbf{\Theta})^{-1} \mathbf{\Theta}^T \mathbf{Ẋ}$ 
    </td>
    <td> 
-         <p align="center">
-         <img src="../images/museum/sindy/flow_full.jpg" width="670" alt="State derivatives visualization">
-         </p>
-   </td>
-   <td rowspan="4"> 
          <p align="center">
          <img src="../images/museum/sindy/flow_full.jpg" width="670" alt="State derivatives visualization">
          </p>
