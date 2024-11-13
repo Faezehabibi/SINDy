@@ -100,12 +100,12 @@ Library of Candidate Functions: $\Theta(\mathbf{X}) = [\mathbf{1} \quad \mathbf{
    </td>
    <td> 
          <p align="center">
-         <img src="../images/museum/sindy/Theta.jpg" width="670" alt="State derivatives visualization">
+         <img src="../images/museum/sindy/Theta.jpg" width="100" alt="c">
          </p>
    </td>
    <td rowspan="2"> 
          <p align="center">
-         <img src="../images/museum/sindy/P2.jpg" width="670" alt="State derivatives visualization">
+         <img src="../images/museum/sindy/P2.jpg" width="100" alt="e">
          </p>
    </td>
 </tr>
@@ -120,7 +120,7 @@ In this step, using the dataset collected in step 1, we calculating the time der
    </td>
    <td> 
          <p align="center">
-         <img src="../images/museum/sindy/dX_.jpg" width="670" alt="State derivatives visualization">
+         <img src="../images/museum/sindy/dX_.jpg" width="100" alt="h">
          </p>
    </td>
 </tr>
