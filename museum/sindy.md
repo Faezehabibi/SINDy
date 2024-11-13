@@ -322,9 +322,9 @@ $$
    ## Linear-3D
 
 $$
-\mathbf{ẋ} = -0.1x + 2y
-\mathbf{ẏ} = -2x - 0.1y
-\mathbf{ż} = -0.3z
+\mathbf{ẋ} = -0.1x + 2y \\
+\mathbf{ẏ} = -2x - 0.1y \\
+\mathbf{ż} = -0.3z \\
 $$
 
 ```math
@@ -334,11 +334,9 @@ $$
 ```
 
 ```latex
-\begin{cases}
 \mathbf{ẋ} = -0.1x + 2y \\
 \mathbf{ẏ} = -2x - 0.1y \\
 \mathbf{ż} = -0.3z \\
-\end{cases}
 ```
 
 
