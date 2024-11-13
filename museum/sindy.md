@@ -1,20 +1,42 @@
 <table>
-  <tr>
-    <th>Header 1</th>
-    <th>Header 2</th>
-    <th>Header 3</th>
-  </tr>
-  <tr>
-    <td colspan="3">This cell spans all three columns</td>
-  </tr>
-  <tr>
-    <td>Normal cell</td>
-    <td colspan="2">This cell spans two columns</td>
-  </tr>
-  <tr>
-    <td colspan="2">This spans two columns</td>
-    <td>Normal cell</td>
-  </tr>
+    <tr>  <!-- ------------------------------------------------------------------------------------------ -->
+          <th>
+                    Header 1
+          </th>
+          <!-- ------------------------------------------------------------------------------------------ -->
+          <th>
+                    Header 2
+          </th>
+          <!-- ------------------------------------------------------------------------------------------ -->
+          <th>
+                    Header 3
+          </th>
+    </tr>
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+    <tr>
+          <td colspan="3">
+                    This cell spans all three columns
+          </td>
+    </tr>
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+    <tr>  
+          <td>      <!-- --------------------------------------------------------------------------- -->
+                    Normal cell
+          </td>     <!-- --------------------------------------------------------------------------- -->
+          <td colspan="2">      <!-- --------------------------------------------------------------------------- -->
+                    This cell spans two columns
+          </td>     <!-- --------------------------------------------------------------------------- -->
+    </tr>
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+    <tr>
+          <td colspan="2">
+                    This spans two columns
+          </td>
+          <!-- ------------------------------------------------------------------------------------------ -->
+          <td>
+                    Normal cell
+          </td>
+    </tr>
 </table>
 
 
