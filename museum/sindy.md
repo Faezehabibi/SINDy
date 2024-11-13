@@ -39,6 +39,7 @@ SINDy assumes thatt this linear operation, $\mathbf{f}(\mathbf{X}(t))$ is a matr
 Given a group of candidate functions in the library $\mathbf{\Theta}(\mathbf{X})$, the coefficient $\mathbf{W}$ of choose the library terms is **sparse**. In other words, there are only a few functions that exist in the system's differential equation. Given these assumptions, SINDy solves the sparse regression problem to find the $\mathbf{W}$ that maps the library selected terms to each feature of the system.
 </div>
 -----------------------------------------------------------------------------
+
 SINDy's dynamics can be presented in 3 main phases fig
 
 <p align="center">
@@ -56,8 +57,23 @@ SINDy's dynamics can be presented in 3 main phases fig
     \label{fig:flow-diagram}
 \end{figure}
 
+
+
+<figure>
+    <img src="your-flow-diagram.png" alt="Three-phase data processing pipeline">
+    <figcaption>Flow diagram illustrating the three phases: Data Collection, Library Formation/Derivative Computation, and Sequential Thresholding Least Square method for sparse matrix computation.</figcaption>
+</figure>
+
+
+
+![Three-phase data processing pipeline](flow.png)
+*Flow diagram illustrating the three phases: Data Collection, Library Formation/Derivative Computation, and Sequential Thresholding Least Square method for sparse matrix computation.*
+
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
+
+
+
 
 <!--
 Dictionary learning combined with LASSO (L1-norm) promotes the sparsity of the coefficient matrix
