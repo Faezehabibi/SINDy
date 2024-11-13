@@ -113,7 +113,7 @@ In this step, using the dataset collected in step 1, we calculating the time der
 | Left-aligned | Center-aligned | Right-aligned |
 |:-------------|:-------------:|---------------:|
 | Left         | Center        | Right         |
-| Text         | Text          | Text          |
+| Text         | Text          | <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">          |
 
 <!--
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
