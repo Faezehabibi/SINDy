@@ -18,7 +18,7 @@
     <tr>
           <td colspan="2">
                     <p align="center">
-                    <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">
+                    <img src="../images/museum/sindy/flow_full.jpg" width="100" alt="State derivatives visualization">
                     </p>
           </td>
     </tr>
@@ -30,7 +30,7 @@
                       Finds library coefficients by solving the following regression problem
                       $\mathbf{Ẋ} = \mathbf{\Theta}\mathbf{W}$ analytically $\mathbf{W}  = (\mathbf{\Theta}^T \mathbf{\Theta})^{-1} \mathbf{\Theta}^T \mathbf{Ẋ}$ 
 
-          </td>     <!-- --------------------------------------------------------------------------- -->
+          </td>     
           <td>      <!-- --------------------------------------------------------------------------- -->
                     <p align="center">
                     <img src="../images/museum/sindy/dx.png" width="100" alt="State derivatives visualization">
