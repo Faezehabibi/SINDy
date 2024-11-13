@@ -266,27 +266,66 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
 </th>
 
 <tr>
-   <td> A </td>
-   <td> B </td>
+   <td> 
+   
+   ## Oscillator
+   </td>
+   <td> 
+      <p align="center">
+        <img src="../images/museum/sindy/oscillator.png" width="300">
+      </p>
+   </td>
 </tr>
 
 <tr>
-   <td> C </td>
-   <td> D </td>
+   <td> 
+   
+   ## Lorenz
+   </td>
+   <td> 
+      <p align="center">
+        <img src="../images/museum/sindy/lorenz.png" width="300">
+      </p>
+   </td>
+</tr>
+
+<tr>
+   <td> 
+   
+   ## Linear-2D
+   </td>
+   <td> 
+      <p align="center">
+        <img src="../images/museum/sindy/linear_2D.png" width="300">
+      </p>
+   </td>
+</tr>
+
+<tr>
+   <td> 
+   
+   ## Linear-3D
+   </td>
+   <td> 
+      <p align="center">
+        <img src="../images/museum/sindy/linear_3D.png" width="300">
+      </p>
+   </td>
+</tr>
+
+<tr>
+   <td> 
+   
+   ## Cubic-2D
+   </td>
+   <td> 
+      <p align="center">
+        <img src="../images/museum/sindy/cubic_2D.png" width="300">
+      </p>
+   </td>
 </tr>
    
 </table>
-
-<p align="center">
-  <img src="../images/museum/sindy/lorenz.png" width="300">
-  <img src="../images/museum/sindy/oscillator.png" width="300">
-</p>
-
-<p align="center">
-  <img src="../images/museum/sindy/linear_2D.png" width="300">
-  <img src="../images/museum/sindy/cubic_2D.png" width="300">
-  <img src="../images/museum/sindy/linear_3D.png" width="300">
-</p>
 
 
 
