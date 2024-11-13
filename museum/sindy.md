@@ -5,19 +5,21 @@
           </th>
           <!-- ------------------------------------------------------------------------------------------ -->
           <th>
-                    Header 2
+                    Phase 3: Sequential Thresholding Least Square (STLSQ)
           </th>
     </tr>
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
     <tr>
           <td colspan="2">
-                    This cell spans all three columns
+                    ## Phase 3: Sequential Thresholding Least Square (STLSQ)
           </td>
     </tr>
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
     <tr>
           <td colspan="2">
-                    This cell spans all three columns
+                    <p align="center">
+                    <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">
+                    </p>
           </td>
     </tr>
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
@@ -167,6 +169,9 @@ In this step, using the dataset collected in step 1, we calculating the time der
 <p align="center">
 <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">
 </p>
+
+
+
 </td>
 </tr>
 
