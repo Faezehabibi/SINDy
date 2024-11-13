@@ -50,9 +50,10 @@ SINDy's dynamics can be presented in 3 main phases according to the figure 1.
 
 
 <table>
+   
 <tr>
 <td width="70%" valign="top">
-
+   
 ## Phase 1: Collecting Dataset
 
 This phase involves gathering the raw data points representing the system's states across time; In this example, capturing the x, y, and z coordinates of the system's states in this.
@@ -63,45 +64,39 @@ This phase involves gathering the raw data points representing the system's stat
 </td>
 </tr>
 
+
+
 <tr>
 <td width="70%" valign="top">
-
-
-
-
    
 ## Phase 2: Processing
 
 ### 2.A: Making Library
 In this step, using the dataset collected in step 1, given the pre-defined function terms, we construct the dictionary of candidate predictors for system's differential equations. These functions form the columns of our library matrix $\mathbf{\Theta}(\mathbf{X})$. To identify the dynamical structure of the system this library of candidate functions appear in the regression problem to propose the model's structure that later the coefficient matrix will give weight to them according to the problem setup. Assuming sparse models for the system, by sparsification (LASSO or thresholding weigths) decide which structure best describe the system's behavior using predictors. 
 
-
 </td>
 <td width="70%" align="center">
 <img src="../images/museum/sindy/Theta.png" width="300" alt="Library matrix representation">
-</td>
-</tr>
+
+
 
 <tr>
 <td width="70%" valign="top">
-
-
-
+   
 ### 2.B: Compute State Derivatives
 In this step, using the dataset collected in step 1, we calculating the time derivatives of each state variable with respect to time. In this example, we compute ẋ, ẏ, and ż to capture how the system evolves over time.
 
 </td>
 <td width="20%" align="center">
 <img src="../images/museum/sindy/dX_.png" width="130" alt="State derivatives visualization">
+   
 </td>
 </tr>
 
+
 <tr>
-<td width="20%" valign="top">
-
-
-
-
+<td width="70%" valign="top">
+   
 ## Phase 3: Sequential Thresholding Least Square (STLSQ)
 
 
