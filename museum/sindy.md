@@ -3,18 +3,10 @@
           <th>
                     Phase 3: Solving Sparse Regression (SR)
           </th>
-                          <!-- ------------------------------------------------------------------------------------------ -->
           <th>
                     Sequential Thresholding Least Square (STLSQ)
           </th>
     </tr>
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-    <tr>
-          <td colspan="2">
-                    - Sequential Thresholding Least Square (STLSQ)
-          </td>
-    </tr>
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
     <tr>
           <td colspan="2">
                     <p align="center">
@@ -22,12 +14,9 @@
                     </p>
           </td>
     </tr>
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
     <tr>  
           <td>
-              
                     ### 3.A: Least Square method (LSQ) → $\mathbf{W}$ 
-                    
                       Finds library coefficients by solving the following regression problem
                       $\mathbf{Ẋ} = \mathbf{\Theta}\mathbf{W}$ analytically $\mathbf{W}  = (\mathbf{\Theta}^T \mathbf{\Theta})^{-1} \mathbf{\Theta}^T \mathbf{Ẋ}$ 
           </td>     
