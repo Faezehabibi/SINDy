@@ -7,14 +7,16 @@
           <th>
                     Header 2
           </th>
-          <!-- ------------------------------------------------------------------------------------------ -->
-          <th>
-                    Header 3
-          </th>
     </tr>
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
     <tr>
-          <td colspan="3">
+          <td colspan="2">
+                    This cell spans all three columns
+          </td>
+    </tr>
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+    <tr>
+          <td colspan="2">
                     This cell spans all three columns
           </td>
     </tr>
@@ -23,13 +25,13 @@
           <td>      <!-- --------------------------------------------------------------------------- -->
                     Normal cell
           </td>     <!-- --------------------------------------------------------------------------- -->
-          <td colspan="2">      <!-- --------------------------------------------------------------------------- -->
+          <td>      <!-- --------------------------------------------------------------------------- -->
                     This cell spans two columns
           </td>     <!-- --------------------------------------------------------------------------- -->
     </tr>
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
     <tr>
-          <td colspan="2">
+          <td>
                     This spans two columns
           </td>
           <!-- ------------------------------------------------------------------------------------------ -->
