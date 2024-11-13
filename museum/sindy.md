@@ -273,7 +273,7 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
 
 $\mathbf{ẋ} = \mu_1x + \sigma xy$ \
 $\mathbf{ẏ} = \mu_2y + (\omega + \alpha y + \beta z)z - \sigma x^2$ \
-$\mathbf{ż} = \mu_2z - (\omega + \alpha y + \beta z)y$ \
+$\mathbf{ż} = \mu_2z - (\omega + \alpha y + \beta z)y$
 
 
    </td>
@@ -291,7 +291,7 @@ $\mathbf{ż} = \mu_2z - (\omega + \alpha y + \beta z)y$ \
    
 $\mathbf{ẋ} = 10(y - x)$ \
 $\mathbf{ẏ} = x(28 - z) - y$ \
-$\mathbf{ż} = xy - \frac{8}{3}z$ \
+$\mathbf{ż} = xy - \frac{8}{3}z$
 
    </td>
    <td> 
@@ -307,7 +307,7 @@ $\mathbf{ż} = xy - \frac{8}{3}z$ \
    ## Linear-2D
    
 $\mathbf{ẋ} = -0.1x + 2.0y$ \
-$\mathbf{ẏ} = -2.0x - 0.1y$ \
+$\mathbf{ẏ} = -2.0x - 0.1y$ 
    
 
    </td>
@@ -323,9 +323,9 @@ $\mathbf{ẏ} = -2.0x - 0.1y$ \
    
    ## Linear-3D
 
-$\mathbf{ẋ} = -0.1x + 2y$ \\
-$\mathbf{ẏ} = -2x - 0.1y$ \\
-$\mathbf{ż} = -0.3z$ \\
+$\mathbf{ẋ} = -0.1x + 2y$ \
+$\mathbf{ẏ} = -2x - 0.1y$ \
+$\mathbf{ż} = -0.3z$ 
 
 
    </td>
@@ -342,7 +342,7 @@ $\mathbf{ż} = -0.3z$ \\
    ## Cubic-2D
 
 $\mathbf{ẋ} = -0.1x^3 + 2.0y^3$ \
-$\mathbf{ẏ} = -2.0x^3 - 0.1y^3$ \
+$\mathbf{ẏ} = -2.0x^3 - 0.1y^3$ 
 
 
    </td>
