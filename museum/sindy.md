@@ -61,7 +61,6 @@ This phase involves gathering the raw data points representing the system's stat
 <td width="20%" align="center">
 <img src="../images/museum/sindy/X_.png" width="150" alt="Dataset collection showing x, y, z coordinates">
 </td>
-
 </tr>
 
 
@@ -97,14 +96,10 @@ In this step, using the dataset collected in step 1, we calculating the time der
 
 
 <tr>
-<td width="70%" valign="top">
+<td width="100%" valign="top">
    
 ## Phase 3: Sequential Thresholding Least Square (STLSQ)
-
-<p align="center">
-
-</p>
-
+</tr>
 
 <tr>
 <td width="100%" valign="top">
