@@ -74,35 +74,6 @@ This phase involves gathering the raw data points representing the system's stat
 </tr>
 
 </table>
-<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-<table>
-
-
-   
-<tr>
-   <td colspan="3"> A </td>
-</tr>
-
-   
-<tr>
-   <td> C </td>
-   <td> D </td>
-   <td rowspan="3"> J </td>
-</tr>
-
-<tr>
-   <td> E </td>
-   <td> F </td>
-</tr>
-<tr>
-   <td> G </td>
-   <td> H </td>
-</tr>
-
-
-
-</table>
-<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 <table>
 
 
@@ -195,6 +166,51 @@ In this step, using the dataset collected in step 1, we calculating the time der
 </p>
 
 
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<table>
+
+
+   
+<tr>
+   <td colspan="3"> 
+      
+## Phase 3: Sequential Thresholding Least Square (STLSQ)
+   </td>
+</tr>
+
+   
+<tr>
+   <td> 
+
+### 3.A: Least Square method (LSQ) → $\mathbf{W}$ 
+Finds library coefficients by solving the following regression problem $\mathbf{Ẋ} = \mathbf{\Theta}\mathbf{W}$ analytically $\mathbf{W}  = (\mathbf{\Theta}^T \mathbf{\Theta})^{-1} \mathbf{\Theta}^T \mathbf{Ẋ}$ 
+   </td>
+   <td> 
+         <p align="center">
+         <img src="../images/museum/sindy/flow_full.jpg" width="670" alt="State derivatives visualization">
+         </p>
+   </td>
+   <td rowspan="3"> 
+         <p align="center">
+         <img src="../images/museum/sindy/flow_full.jpg" width="670" alt="State derivatives visualization">
+         </p>
+   </td>
+</tr>
+
+<tr>
+   <td> E </td>
+   <td> F </td>
+</tr>
+<tr>
+   <td> G </td>
+   <td> H </td>
+</tr>
+
+
+
+</table>
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 <table>
