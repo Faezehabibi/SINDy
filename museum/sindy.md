@@ -68,7 +68,7 @@ This phase involves gathering the raw data points representing the system's stat
 <td width="30%" align="top">
    <p align="center">
    <img src="../images/museum/sindy/P1.png" width="100" alt="Dataset collection showing x, y, z coordinates">
-   <img src="../images/museum/sindy/X_.png" width="100" alt="x">
+   <img src="../images/museum/sindy/X_.png" width="100">
    </p>
 </td>
 </tr>
