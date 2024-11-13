@@ -1,11 +1,11 @@
 <table>
     <tr>  <!-- ------------------------------------------------------------------------------------------ -->
           <th>
-                    Header 1
+                    Phase 3: Solving Sparse Regression (SR)
           </th>
           <!-- ------------------------------------------------------------------------------------------ -->
           <th>
-                    colspaN
+                    Sequential Thresholding Least Square (STLSQ)
           </th>
     </tr>
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
