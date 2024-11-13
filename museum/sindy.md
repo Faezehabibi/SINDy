@@ -306,8 +306,8 @@ $\mathbf{ż} = \mathbf{xy} - \frac{8}{3}~\mathbf{z}$
    
    ## Linear-2D
    
-$\mathbf{ẋ} = -0.1\mathbf{x} + 2.0y$ \
-$\mathbf{ẏ} = -2.0\mathbf{x} - 0.1y$ 
+$\mathbf{ẋ} = -0.1\mathbf{x} + 2.0\mathbf{y}$ \
+$\mathbf{ẏ} = -2.0\mathbf{x} - 0.1\mathbf{y}$ 
    
 
    </td>
@@ -323,9 +323,9 @@ $\mathbf{ẏ} = -2.0\mathbf{x} - 0.1y$
    
    ## Linear-3D
 
-$\mathbf{ẋ} = -0.1x + 2y$ \
-$\mathbf{ẏ} = -2x - 0.1y$ \
-$\mathbf{ż} = -0.3z$ 
+$\mathbf{ẋ} = -0.1\mathbf{x} + 2\mathbf{y}$ \
+$\mathbf{ẏ} = -2\mathbf{x} - 0.1\mathbf{y}$ \
+$\mathbf{ż} = -0.3\mathbf{z}$ 
 
 
    </td>
@@ -341,8 +341,8 @@ $\mathbf{ż} = -0.3z$
    
    ## Cubic-2D
 
-$\mathbf{ẋ} = -0.1x^3 + 2.0y^3$ \
-$\mathbf{ẏ} = -2.0x^3 - 0.1y^3$ 
+$\mathbf{ẋ} = -0.1\mathbf{x}^3 + 2.0\mathbf{y}^3$ \
+$\mathbf{ẏ} = -2.0\mathbf{x}^3 - 0.1\mathbf{y}^3$ 
 
 
    </td>
