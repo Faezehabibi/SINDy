@@ -2,7 +2,7 @@
 
 In this section, we teach, create, simulate, and visualize the Sparse Identification of Non-linear Dynamical Systems (SINDy) [1] model implemention in NGC-Learn library (JAX). After going through this demonstration, you will:
 
-1.  Learn how to discover the differential equation of a dynamical system using SINDy algorithm only by the stapshots from the system.
+1.  Learn how to discover the differential equation of a dynamical system using SINDy algorithm only by the system's stapshots.
 2.  Learn how to build polynomial libraries with arbitrary order out of the dataset.
 3.  Learn how to solve the sparse regression problem in 2 ways
    - Iteratively finding the coefficient matrix by gradient descent.
