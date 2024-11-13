@@ -3,15 +3,11 @@
           <th>
                     Phase 3: Solving Sparse Regression (SR)
           </th>
-          <!-- ------------------------------------------------------------------------------------------ -->
-          <th>
-                    Sequential Thresholding Least Square (STLSQ)
-          </th>
     </tr>
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
     <tr>
           <td colspan="2">
-                    ## Phase 3: Sequential Thresholding Least Square (STLSQ)
+                    - Sequential Thresholding Least Square (STLSQ)
           </td>
     </tr>
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
