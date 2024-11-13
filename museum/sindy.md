@@ -285,8 +285,8 @@ $$\mathbf{ẋ} = \mu_1x + \sigma xy \\
    
    ## Lorenz
    
-$\mathbf{ẋ} = 10(y - x)$ \\
-$\mathbf{ẏ} = x(28 - z) - y$ \\
+$\mathbf{ẋ} = 10(y - x)$ \
+$\mathbf{ẏ} = x(28 - z) - y$ \
 $\mathbf{ż} = xy - \frac{8}{3}z$ \\
 
    </td>
