@@ -152,8 +152,19 @@ Solving the Sparse Regression problem (SR) can be done with various method such 
    <table>  
    <tr>
       <td colspan="3"> 
-      
+
+
+
 ### Solving SR by Sequential Thresholding Least Square (STLSQ)
+<!-- --------------------------------------------------------------------------------------------- -->
+<p align="center">
+  <img src="../images/museum/sindy/flow.png" width="800">
+
+------------------------------------------------------------------------------------------
+**Figure 1:** **Flow of three phases in SINDy.** **Phase-1)** Data collection: capturing system's states that are changing in time and making the state vector. **Phase-2A)** Library formation: manually creating the library of candidate predictors that could appear in the model. **Phase-2B)** Derivative computation: using the data collected in phase 1 and compute its derivative with respect to time. **Phase-3)**  Solving the sparse regression problem with STLSQ.
+</p>
+
+
    </td>
 </tr>  
 
@@ -224,13 +235,7 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
 
 
 </table>
-<!-- --------------------------------------------------------------------------------------------- -->
-<p align="center">
-  <img src="../images/museum/sindy/flow.png" width="800">
 
-------------------------------------------------------------------------------------------
-**Figure 1:** **Flow of three phases in SINDy.** **Phase-1)** Data collection: capturing system's states that are changing in time and making the state vector. **Phase-2A)** Library formation: manually creating the library of candidate predictors that could appear in the model. **Phase-2B)** Derivative computation: using the data collected in phase 1 and compute its derivative with respect to time. **Phase-3)**  Solving the sparse regression problem with STLSQ.
-</p>
 
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
