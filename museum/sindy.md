@@ -81,7 +81,7 @@ Library of Candidate Functions: $\Theta(\mathbf{X}) = [\mathbf{1} \quad \mathbf{
 </td>
 
 <td width="20%" align="top">
-<img src="../images/museum/sindy/X_.png" width="150" alt="Dataset collection showing x, y, z coordinates">
+<img src="../images/museum/sindy/Theta.png" width="300" alt="Dataset collection showing x, y, z coordinates">
 </td>
 </tr>
 
@@ -97,7 +97,7 @@ In this step, using the dataset collected in step 1, we calculating the time der
 
 </td>
 <td width="20%" align="top">
-<img src="../images/museum/sindy/X_.png" width="150" alt="Dataset collection showing x, y, z coordinates">
+<img src="../images/museum/sindy/dX_.png" width="150" alt="Dataset collection showing x, y, z coordinates">
 </td>
 </tr>
 
