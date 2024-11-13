@@ -87,6 +87,23 @@ In this step, using the dataset collected in step 1, given the pre-defined funct
 <td width="70%" valign="top">
 
 
+
+### 2.B: Compute State Derivatives
+In this step, using the dataset collected in step 1, we calculating the time derivatives of each state variable with respect to time. In this example, we compute ẋ, ẏ, and ż to capture how the system evolves over time.
+
+</td>
+<td width="20%" align="center">
+<img src="../images/museum/sindy/dX_.png" width="150" alt="State derivatives visualization">
+</td>
+</tr>
+
+
+<tr>
+<td width="70%" valign="top">
+
+
+
+   
 -----------------------------------------------------------------------------
 <!--
 Dictionary learning combined with LASSO (L1-norm) promotes the sparsity of the coefficient matrix
@@ -100,20 +117,6 @@ of a manually constructed dictionary from the state vector by a coefficient matr
 -->
 -----------------------------------------------------------------------------
 
-
-### 2.B: Compute State Derivatives
-In this step, using the dataset collected in step 1, we calculating the time derivatives of each state variable with respect to time. In this example, we compute ẋ, ẏ, and ż to capture how the system evolves over time.
-
-</td>
-<td width="50%" align="center">
-<img src="../images/museum/sindy/dX_.png" width="150" alt="State derivatives visualization">
-</td>
-</tr>
-
-
-<tr>
-<td width="70%" valign="top">
-   
 ## Phase 3: Sequential Thresholding Least Square (STLSQ)
 
 
