@@ -182,10 +182,9 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
 
 </td>
 <td width="30%" align="center">
-<img src="../images/museum/sindy/flow_full.jpg" width="400" alt="State derivatives visualization">
-  <img src="../images/museum/sindy/dx.png" width="170">
-  <img src="../images/museum/sindy/dy.png" width="170">
-  <img src="../images/museum/sindy/dz.png" width="170">
+  <img src="../images/museum/sindy/dx.png" width="270">
+  <img src="../images/museum/sindy/dy.png" width="270">
+  <img src="../images/museum/sindy/dz.png" width="270">
 </td>
 </tr>
 </table>
@@ -194,20 +193,6 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
 
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
-
-
-
-
-
-<!--
-| Left-aligned | Center-aligned | 
-|:-------------|:-------------:|
-| Left         | Center        | 
-| A         | <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">          | 
-| B         | <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">          | 
-| C         | <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">          | 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-
 
 
 
