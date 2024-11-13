@@ -101,7 +101,36 @@ In this step, using the dataset collected in step 1, we calculating the time der
 
 
 
-   
+
+## Phase 3: Sequential Thresholding Least Square (STLSQ)
+
+
+### 3.A: Least Square method (LSQ) → $\mathbf{W}$ 
+Finds library coefficients by solving the following regression problem $\mathbf{Ẋ} = \mathbf{\Theta}\mathbf{W}$ analytically $\mathbf{W}  = (\mathbf{\Theta}^T \mathbf{\Theta})^{-1} \mathbf{\Theta}^T \mathbf{Ẋ}$ 
+
+-----------------------------------------------------------------------------
+### 3.B: Thresholding → $\mathbf{W_s}$
+Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that corresponds to the effective terms in the library.
+
+-----------------------------------------------------------------------------
+### 3.C: Masking → $\mathbf{\Theta_s}$
+Sparsifies $\mathbf{\Theta}$ by keeping only the corresponding terms in $\mathbf{W}$ that are kept.
+
+-----------------------------------------------------------------------------
+### 3.D: Repeat A → B → C until convergence
+Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and find the new $\mathbf{W}$ and repreat steps B and C everytime.
+
+</td>
+<td width="50%" align="center">
+<img src="../images/museum/sindy/d_xyz.png" width="300" alt="State derivatives visualization">
+</td>
+</tr>
+</table>
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+
+
+ 
 -----------------------------------------------------------------------------
 <!--
 Dictionary learning combined with LASSO (L1-norm) promotes the sparsity of the coefficient matrix
@@ -113,30 +142,6 @@ lasso solution is the sparse model with coefficients corresponding to the releva
 of a pre-defined library coefficients.
 of a manually constructed dictionary from the state vector by a coefficient matrix.
 -->
------------------------------------------------------------------------------
-
-## Phase 3: Sequential Thresholding Least Square (STLSQ)
-
-
-### 3.A: Least Square method (LSQ) → $\mathbf{W}$ 
-Finds library coefficients by solving the following regression problem $\mathbf{Ẋ} = \mathbf{\Theta}\mathbf{W}$ analytically $\mathbf{W}  = (\mathbf{\Theta}^T \mathbf{\Theta})^{-1} \mathbf{\Theta}^T \mathbf{Ẋ}$ 
-
-### 3.B: Thresholding → $\mathbf{W_s}$
-Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that corresponds to the effective terms in the library.
-
-### 3.C: Masking → $\mathbf{\Theta_s}$
-Sparsifies $\mathbf{\Theta}$ by keeping only the corresponding terms in $\mathbf{W}$ that are kept.
-
-### 3.D: Repeat A → B → C until convergence
-Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and find the new $\mathbf{W}$ and repreat steps B and C everytime.
-
-</td>
-<td width="50%" align="center">
-<img src="../images/museum/sindy/d_xyz.png" width="300" alt="State derivatives visualization">
-</td>
-</tr>
-</table>
------------------------------------------------------------------------------
 -----------------------------------------------------------------------------
 
 
