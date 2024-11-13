@@ -284,11 +284,11 @@ $$\mathbf{ẋ} = \mu_1x + \sigma xy \\
    <td> 
    
    ## Lorenz
-$$
-\mathbf{ẋ} = 10(y - x)
-\mathbf{ẏ} = x(28 - z) - y 
-\mathbf{ż} = xy - \frac{8}{3}z 
-$$
+   
+$\mathbf{ẋ} = 10(y - x)$ \\
+$\mathbf{ẏ} = x(28 - z) - y$ \\
+$\mathbf{ż} = xy - \frac{8}{3}z$ \\
+
    </td>
    <td> 
       <p align="center">
@@ -302,10 +302,8 @@ $$
    
    ## Linear-2D
    
-$$
-\mathbf{ẋ} = -0.1x + 2.0y
-\mathbf{ẏ} = -2.0x - 0.1y
-$$
+$\mathbf{ẋ} = -0.1x + 2.0y$ \\
+$\mathbf{ẏ} = -2.0x - 0.1y$ \\
    
 
    </td>
@@ -321,35 +319,9 @@ $$
    
    ## Linear-3D
 
-$\dot{x} = -0.1x + 2y$
-$\dot{y} = -2x - 0.1y$
-$\dot{z} = -0.3z$
-
-
-$\begin{aligned}
-\dot{x} &= -0.1x + 2y \\
-\dot{y} &= -2x - 0.1y \\
-\dot{z} &= -0.3z
-\end{aligned}$
-
-
-$$
-\mathbf{ẋ} = -0.1x + 2y \\
-\mathbf{ẏ} = -2x - 0.1y \\
-\mathbf{ż} = -0.3z \\
-$$
-
-```math
-\mathbf{ẋ} = -0.1x + 2y \\
-\mathbf{ẏ} = -2x - 0.1y \\
-\mathbf{ż} = -0.3z \\
-```
-
-```latex
-\mathbf{ẋ} = -0.1x + 2y \\
-\mathbf{ẏ} = -2x - 0.1y \\
-\mathbf{ż} = -0.3z \\
-```
+$\mathbf{ẋ} = -0.1x + 2y$ \\
+$\mathbf{ẏ} = -2x - 0.1y$ \\
+$\mathbf{ż} = -0.3z$ \\
 
 
    </td>
@@ -365,10 +337,8 @@ $$
    
    ## Cubic-2D
 
-$$
-\mathbf{ẋ} = -0.1x^3 + 2.0y^3
-\mathbf{ẏ} = -2.0x^3 - 0.1y^3
-$$
+$\mathbf{ẋ} = -0.1x^3 + 2.0y^3$ \\
+$\mathbf{ẏ} = -2.0x^3 - 0.1y^3$ \\
 
 
    </td>
