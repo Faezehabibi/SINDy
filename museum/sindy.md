@@ -170,7 +170,13 @@ Solving the Sparse Regression problem (SR) can be done with various method such 
 
    <tr>
       <td colspan="3"> 
+         
 ### Sequential Thresholding Least Square (STLSQ)
+               <p align="center">
+
+         <img src="../images/museum/sindy/STLSQ.png" width="800" alt="State derivatives visualization">
+         </p>
+
    </td>
 </tr>  
 
