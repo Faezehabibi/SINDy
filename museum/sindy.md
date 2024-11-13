@@ -106,7 +106,6 @@ This phase involves gathering the raw data points representing the system's stat
    
 <tr>
    <td> 
-      A
       <table>
       <tr>
          <td> A </td>
@@ -122,7 +121,7 @@ This phase involves gathering the raw data points representing the system's stat
       </tr>
       </table>
    </td>
-   <td rowspan="4"> B </td>
+   <td rowspan="3"> B </td>
 </tr>
 </table>
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
