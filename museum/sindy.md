@@ -137,7 +137,6 @@ Finds library coefficients by solving the following regression problem $\mathbf{
 </tr>
 
 
------------------------------------------------------------------------------
 <tr>
 <td width="70%" valign="top">
    
@@ -150,7 +149,7 @@ Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that correspo
 </p>
 </td>
 </tr>
------------------------------------------------------------------------------
+
 <tr>
 <td width="70%" valign="top">
    
@@ -163,15 +162,14 @@ Sparsifies $\mathbf{\Theta}$ by keeping only the corresponding terms in $\mathbf
 </p>
 </td>
 </tr>
------------------------------------------------------------------------------
+
+
 <tr>
 <td width="70%" valign="top">
    
 ### 3.D: Repeat A → B → C until convergence
 Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and find the new $\mathbf{W}$ and repreat steps B and C everytime.
 
-</tr>
-<tr>
 </td>
 <td width="30%" align="center">
 <img src="../images/museum/sindy/flow_full.jpg" width="400" alt="State derivatives visualization">
@@ -184,6 +182,7 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
  
 
 
+-----------------------------------------------------------------------------
 
 
 ## Results
