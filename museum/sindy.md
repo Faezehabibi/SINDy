@@ -300,6 +300,7 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
    
 
  $\begin{cases} \dot{x} = -0.1x + 2.0y \ \dot{y} = -2.0x - 0.1y \end{cases}$
+ $\begin{cases} \dot{x} = -0.1x + 2.0y \ \dot{y} = -2.0x - 0.1y \end{cases}$
 
    </td>
    <td> 
