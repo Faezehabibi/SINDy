@@ -269,8 +269,11 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
    <td> 
    
    ## Oscillator
-   jsndckjsncjks jsndckjsncjks jsndckjsncjks 
-   jsndckjsncjks jsndckjsncjks jsndckjsncjks 
+$$
+\mathbf{ẋ} = \mu_1x + \sigma xy 
+\mathbf{ẏ} = \mu_2y + (\omega + \alpha y + \beta z)z - \sigma x^2
+\mathbf{ż} = \mu_2z - (\omega + \alpha y + \beta z)y
+$$
    </td>
    <td> 
       <p align="center">
@@ -283,11 +286,10 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
    <td> 
    
    ## Lorenz
-$$\left{
-\begin{matrix} 
-\dot{x} = -0.1x + 2.0y \\
-\dot{y} = -2.0x - 0.1y 
-\end{matrix}
+$$
+\mathbf{ẋ} = 10(y - x)
+\mathbf{ẏ} = x(28 - z) - y 
+\mathbf{ż} = xy - \frac{8}{3}z 
 $$
    </td>
    <td> 
@@ -302,10 +304,10 @@ $$
    
    ## Linear-2D
    
-$$\begin{cases}
-\dot{x} = -0.1x + 2.0y \\
-\dot{y} = -2.0x - 0.1y
-\end{cases}$$
+$$
+\mathbf{ẋ} = -0.1x + 2.0y
+\mathbf{ẏ} = -2.0x - 0.1y
+$$
    
 
    </td>
@@ -320,7 +322,12 @@ $$\begin{cases}
    <td> 
    
    ## Linear-3D
-$\begin{aligned} \dot{x} &= -0.1x + 2.0y \ \dot{y} &= -2.0x - 0.1y \end{aligned}$
+
+$$
+\mathbf{ẋ} = -0.1x + 2y
+\mathbf{ẏ} = -2x - 0.1y
+\mathbf{ż} = -0.3z
+$$
    </td>
    <td> 
       <p align="center">
@@ -333,8 +340,13 @@ $\begin{aligned} \dot{x} &= -0.1x + 2.0y \ \dot{y} &= -2.0x - 0.1y \end{aligned}
    <td> 
    
    ## Cubic-2D
-   jsndckjsncjks jsndckjsncjks jsndckjsncjks 
-   jsndckjsncjks jsndckjsncjks jsndckjsncjks 
+
+$$
+\mathbf{ẋ} = -0.1x^3 + 2.0y^3
+\mathbf{ẏ} = -2.0x^3 - 0.1y^3
+$$
+
+
    </td>
    <td> 
       <p align="center">
