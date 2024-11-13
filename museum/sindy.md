@@ -121,7 +121,7 @@ In this step, using the dataset collected in step 1, we calculating the time der
 </tr>
 
 <tr>
-<td width="30%" valign="top">
+<td colspan="2">
 <p align="center">
 <img src="../images/museum/sindy/flow_full.jpg" width="500" alt="State derivatives visualization">
 </p>
