@@ -119,7 +119,7 @@ of a manually constructed dictionary from the state vector by a coefficient matr
 ## Phase 3: Sequential Thresholding Least Square (STLSQ)
 
 
-### 3.A: Least Square method (LSQ): $\mathbf{f}(\mathbf{X}(t)) = \mathbf{\Theta}(\mathbf{X})~\mathbf{W}$
+### 3.A: Least Square method (LSQ): $\mathbf{Ẋ} = \mathbf{\Theta}~\mathbf{W}$
 ### 3.B: Thresholding
 ### 3.C: Masking
 ### 3.D: Repeat A → B → C until convergence
