@@ -124,7 +124,7 @@ Finds library coefficients by solving the following regression problem $\mathbf{
 ### 3.B: Thresholding → $\mathbf{W_s}$
 Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that corresponds to the effective terms in the library.
 
-### 3.C: Masking → $\mathbf{Theta_s}$
+### 3.C: Masking → $\mathbf{\Theta_s}$
 Sparsifies $\mathbf{\Theta}$ by keeping only the corresponding terms in $\mathbf{W}$ that are kept.
 
 ### 3.D: Repeat A → B → C until convergence
