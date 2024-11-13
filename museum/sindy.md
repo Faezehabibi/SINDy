@@ -271,9 +271,9 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
    ## Oscillator
 
 
-$\mathbf{ẋ} = \mu_1x + \sigma xy$ \
-$\mathbf{ẏ} = \mu_2y + (\omega + \alpha y + \beta z)z - \sigma x^2$ \
-$\mathbf{ż} = \mu_2z - (\omega + \alpha y + \beta z)y$
+$\mathbf{ẋ} = \mu_1\mathbf{x} + \sigma \mathbf{xy}$ \
+$\mathbf{ẏ} = \mu_2\mathbf{y} + (\omega + \alpha \mathbf{y} + \beta \mathbf{z})\mathbf{z} - \sigma \mathbf{x}^2$ \
+$\mathbf{ż} = \mu_2\mathbf{z} - (\omega + \alpha \mathbf{y} + \beta \mathbf{z})\mathbf{y}$
 
 
    </td>
@@ -289,9 +289,9 @@ $\mathbf{ż} = \mu_2z - (\omega + \alpha y + \beta z)y$
    
    ## Lorenz
    
-$\mathbf{ẋ} = 10(y - x)$ \
-$\mathbf{ẏ} = x(28 - z) - y$ \
-$\mathbf{ż} = xy - \frac{8}{3}z$
+$\mathbf{ẋ} = 10~(\mathbf{y} - \mathbf{x})$ \
+$\mathbf{ẏ} = \mathbf{x}~(28 - \mathbf{z}) - \mathbf{y}$ \
+$\mathbf{ż} = \mathbf{xy} - \frac{8}{3}~\mathbf{z}$
 
    </td>
    <td> 
@@ -306,8 +306,8 @@ $\mathbf{ż} = xy - \frac{8}{3}z$
    
    ## Linear-2D
    
-$\mathbf{ẋ} = -0.1x + 2.0y$ \
-$\mathbf{ẏ} = -2.0x - 0.1y$ 
+$\mathbf{ẋ} = -0.1\mathbf{x} + 2.0y$ \
+$\mathbf{ẏ} = -2.0\mathbf{x} - 0.1y$ 
    
 
    </td>
