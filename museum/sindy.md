@@ -114,7 +114,7 @@ In this step, using the dataset collected in step 1, we calculating the time der
 
 <table>
 <tr>
-<td width="70%" valign="top">
+<td>
 ## Phase 3: Sequential Thresholding Least Square (STLSQ)
 </td>
 </tr>
