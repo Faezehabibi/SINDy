@@ -88,11 +88,14 @@ This phase involves gathering the raw data points representing the system's stat
    
 <tr>
    <td> A </td>
-</tr>
-<tr>
    <td> A </td>
 </tr>
 <tr>
+   <td> A </td>
+   <td> A </td>
+</tr>
+<tr>
+   <td> A </td>
    <td> A </td>
 </tr>
 
