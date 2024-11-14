@@ -293,7 +293,7 @@ $\mathbf{ż} = \mu_2\mathbf{z} - (\omega + \alpha \mathbf{y} + \beta \mathbf{z})
    </td>
    <td> 
      <p align="center">
-      <img src="../images/museum/sindy/oscillator.png" width="500">
+      <img src="../images/museum/sindy/oscillator.png" width="1000">
      </p>
    </td>
 </tr>
@@ -323,7 +323,7 @@ $[𝑥^0.𝑦^0.𝓏^1, 𝑥^0.𝑦^0.𝓏^2, 𝑥^0.𝑦^1.𝓏^0, 𝑥^0.𝑦^
    </td>
    <td> 
      <p align="center">
-      <img src="../images/museum/sindy/lorenz.png" width="500">
+      <img src="../images/museum/sindy/lorenz.png" width="1000">
      </p>
    </td>
 </tr>
@@ -349,7 +349,7 @@ $\mathbf{ẏ} = -2.0\mathbf{x} - 0.1\mathbf{y}$
    </td>
    <td> 
      <p align="center">
-      <img src="../images/museum/sindy/linear_2D.png" width="500">
+      <img src="../images/museum/sindy/linear_2D.png" width="1000">
      </p>
    </td>
 </tr>
@@ -377,7 +377,7 @@ $\mathbf{ż} = -0.3\mathbf{z}$
    </td>
    <td> 
      <p align="center">
-      <img src="../images/museum/sindy/linear_3D.png" width="500">
+      <img src="../images/museum/sindy/linear_3D.png" width="1000">
      </p>
    </td>
 </tr>
@@ -402,7 +402,7 @@ $\mathbf{ẏ} = -2.0\mathbf{x}^3 - 0.1\mathbf{y}^3$
    </td>
    <td> 
      <p align="center">
-      <img src="../images/museum/sindy/cubic_2D.png" width="500">
+      <img src="../images/museum/sindy/cubic_2D.png" width="1000">
      </p>
    </td>
 </tr>
