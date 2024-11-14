@@ -23,7 +23,7 @@ SINDy is a data-driven algorithm that discovers the governing behavior of a dyna
 
 ### SINDy Dynamics
 
-If $X$ is a system that only depends on variable $t$, a very small change in the independant variable ($dt$) can cause changing the system by $dX$ amount. 
+If $\mathbf{X}$ is a system that only depends on variable $t$, a very small change in the independant variable ($dt$) can cause changing the system by $dX$ amount. 
 ```math
 d\mathbf{X} = \mathbf{Ẋ}(t)~dt
 ```
