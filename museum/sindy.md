@@ -266,6 +266,8 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 ## Code
 
+<!--
+-->
 
 ```python
 
@@ -288,9 +290,9 @@ ts, X = solve_ode('rk4', t0, x0, T=T, dfx=dfx, dt=dt, params=None, sols_only=Tru
 lib_creator = PolynomialLibrary(poly_order=deg, include_bias=include_bias)
 feature_lib, feature_names = lib_creator.fit([X[:, i] for i in range(X.shape[1])])
 
-dX = jnp.array(np.gradient(jnp.array(X), ts.ravel(), axis=0))
+dX = jnp.array(np.gradient(X, ts.ravel(), axis=0))
 
-coef = jnp.linalg.lstsq(lib, dx, rcond=None)[0]
+coef = jnp.linalg.lstsq(feature_lib, dX, rcond=None)[0]
 for i in range(max_iter):
     coef_pre = jnp.array(coef)
     coef_zero = jnp.zeros_like(coef)
@@ -298,10 +300,12 @@ for i in range(max_iter):
     res_idx = jnp.where(jnp.abs(coef) >= self.threshold, True, False)
 
     res_mask = jnp.any(res_idx, axis=1)
-    res_lib = lib[:, res_mask]
+    res_lib = feature_lib[:, res_mask]
 
-    coef_new = jnp.linalg.lstsq(res_lib, dx, rcond=None)[0]
+    coef_new = jnp.linalg.lstsq(res_lib, dX, rcond=None)[0]
     coef = coef_zero.at[res_mask].set(coef_new)
+
+print(coef)
 ```
 
 
