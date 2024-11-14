@@ -63,7 +63,7 @@ SINDy's dynamics can be presented in 3 main phases according to the figure 1.
 <td width="70%" valign="top">
    
 ## Phase 1: Collecting Dataset → $\mathbf{X}_{(m \times n)}$
-This phase involves gathering the raw data points representing the system's states across time; In this example, capturing the x, y, and z coordinates of the system's states in this.
+This phase involves gathering the raw data points representing the system's states across time; In this example, capturing the x, y, and z coordinates of the system's states in this. Here, $m$ represents the number of data points (number of the spanshots/time length) and $n$ is the system's dimensions.
 </td>
 <td width="30%" align="top">
    <p align="center">
@@ -98,7 +98,7 @@ This phase involves gathering the raw data points representing the system's stat
    <td> 
 
 ### 2.A: Making Library  → $\mathbf{\Theta}_{(m \times p)}$
-In this step, using the dataset collected in step 1, given the pre-defined function terms, we construct the dictionary of candidate predictors for system's differential equations. These functions form the columns of our library matrix $\mathbf{\Theta}(\mathbf{X})$. To identify the dynamical structure of the system this library of candidate functions appear in the regression problem to propose the model's structure that later the coefficient matrix will give weight to them according to the problem setup. Assuming sparse models for the system, by sparsification (LASSO or thresholding weigths) decide which structure best describe the system's behavior using predictors. 
+In this step, using the dataset collected in step 1, given the pre-defined function terms, we construct the dictionary of candidate predictors for system's differential equations. These functions form the columns of our library matrix $\mathbf{\Theta}(\mathbf{X})$ and $p$ is the number of candidate predictors. To identify the dynamical structure of the system this library of candidate functions appear in the regression problem to propose the model's structure that later the coefficient matrix will give weight to them according to the problem setup. Assuming sparse models for the system, by sparsification (LASSO or thresholding weigths) decide which structure best describe the system's behavior using predictors. 
 Given a set of time-series measurements of a dynamical system state variables ($\mathbf{X}_{(m \times n)}$) we construct:
 Library of Candidate Functions: $\Theta(\mathbf{X}) = [\mathbf{1} \quad \mathbf{X} \quad \mathbf{X}^2 \quad \mathbf{X}^3 \quad \sin(\mathbf{X}) \quad \cos(\mathbf{X}) \quad ...]$
    </td>
