@@ -323,12 +323,13 @@ for i in range(max_iter):
    
    ## Oscillator
 
-
+True model's equation
 $\mathbf{ẋ} = \mu_1\mathbf{x} + \sigma \mathbf{xy}$ \
 $\mathbf{ẏ} = \mu_2\mathbf{y} + (\omega + \alpha \mathbf{y} + \beta \mathbf{z})\mathbf{z} - \sigma \mathbf{x}^2$ \
 $\mathbf{ż} = \mu_2\mathbf{z} - (\omega + \alpha \mathbf{y} + \beta \mathbf{z})\mathbf{y}$
 
 ```python
+--- SINDy results ----
 ẋ =  0.050 𝑥 + 1.100 𝑥𝑦 
 ẏ =  2.999 𝓏 -4.999 𝓏^2
      -0.010 𝑦 -1.998 𝑦𝓏 -1.100 𝑥^2 
@@ -354,6 +355,7 @@ $\mathbf{ż} = \mu_2\mathbf{z} - (\omega + \alpha \mathbf{y} + \beta \mathbf{z})
    
    ## Lorenz
    
+True model's equation
 $\mathbf{ẋ} = 10(\mathbf{y} - \mathbf{x})$ \
 $\mathbf{ẏ} = \mathbf{x}(28 - \mathbf{z}) - \mathbf{y}$ \
 $\mathbf{ż} = \mathbf{xy} - \frac{8}{3}~\mathbf{z}$
@@ -361,6 +363,7 @@ $\mathbf{ż} = \mathbf{xy} - \frac{8}{3}~\mathbf{z}$
 
 
 ```python
+--- SINDy results ----
 ẋ =  9.969 𝑦 -9.966 𝑥 
 ẏ = -0.972 𝑦 + 27.833 𝑥 -0.995 𝑥𝓏 
 ż = -2.657 𝓏 + 0.997 𝑥𝑦
@@ -383,11 +386,13 @@ $\mathbf{ż} = \mathbf{xy} - \frac{8}{3}~\mathbf{z}$
    <td> 
    
    ## Linear-2D
-   
+
+True model's equation
 $\mathbf{ẋ} = -0.1\mathbf{x} + 2.0\mathbf{y}$ \
 $\mathbf{ẏ} = -2.0\mathbf{x} - 0.1\mathbf{y}$ 
 
 ```python
+--- SINDy results ----
 ẋ =  2.000  𝑦 -0.100  𝑥 
 ẏ = -0.100  𝑦 -2.000  𝑥
 
@@ -410,11 +415,13 @@ $[𝑦, 𝑦^2, 𝑥, 𝑥𝑦, 𝑥^2]$
    
    ## Linear-3D
 
+True model's equation
 $\mathbf{ẋ} = -0.1\mathbf{x} + 2\mathbf{y}$ \
 $\mathbf{ẏ} = -2\mathbf{x} - 0.1\mathbf{y}$ \
 $\mathbf{ż} = -0.3\mathbf{z}$ 
 
 ```python
+--- SINDy results ----
 ẋ =  2.000 𝑦 -0.100 𝑥 
 ẏ = -0.100 𝑦 -2.000 𝑥 
 ż = -0.300 𝓏
@@ -438,10 +445,12 @@ $\mathbf{ż} = -0.3\mathbf{z}$
    
    ## Cubic-2D
 
+True model's equation
 $\mathbf{ẋ} = -0.1\mathbf{x}^3 + 2.0\mathbf{y}^3$ \
 $\mathbf{ẏ} = -2.0\mathbf{x}^3 - 0.1\mathbf{y}^3$ 
 
 ```python
+--- SINDy results ----
 ẋ =  1.999  𝑦^3 -0.100  𝑥^3 
 ẏ = -0.099  𝑦^3 -1.998  𝑥^3
 
