@@ -114,7 +114,7 @@ Library of Candidate Functions: $\Theta(\mathbf{X}) = [\mathbf{1} \quad \mathbf{
    <td> 
    
 ### 2.B: Compute State Derivatives → $\mathbf{Ẋ}_{(m \times n)}$
-Given a set of time-series measurements of a dynamical system state variables $\mathbf{X}_{(m \times n)}$ we construct the derivative matrix: $\dot{\mathbf{X}}_{(m \times n)}$ (computed numerically)
+Given a set of time-series measurements of a dynamical system state variables $\mathbf{X}_{(m \times n)}$ we construct the derivative matrix: $\mathbf{Ẋ}_{(m \times n)}$ (computed numerically)
 In this step, using the dataset collected in step 1, we calculating the time derivatives of each state variable with respect to time. In this example, we compute ẋ, ẏ, and ż to capture how the system evolves over time.
    </td>
    <td> 
