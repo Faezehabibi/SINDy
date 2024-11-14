@@ -34,8 +34,8 @@ If $\mathbf{X}$ is a system that only depends on variable $t$, a very small chan
 ```math
 d\mathbf{X} = \mathbf{Ẋ}(t)~dt
 ```
-SINDy models the derivative[] (a linear operation) as a linear transformations with:
-[]: Derivative is a linear operation that acts on dt and gives the differential that is the linearization approximation of the taylor series of the function.
+SINDy models the derivative[^1] (a linear operation) as a linear transformations with:
+[^1]: Derivative is a linear operation that acts on dt and gives the differential that is the linearization approximation of the taylor series of the function.
 ```math
 \frac{d\mathbf{X}(t)}{dt} = \mathbf{Ẋ}(t) = \mathbf{f}(\mathbf{X}(t))
 ```
