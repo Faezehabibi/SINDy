@@ -290,9 +290,7 @@ feature_lib, feature_names = lib_creator.fit([X[:, i] for i in range(X.shape[1])
 
 dX = jnp.array(np.gradient(jnp.array(X), ts.ravel(), axis=0))
 
-
 coef = jnp.linalg.lstsq(lib, dx, rcond=None)[0]
-
 for i in range(max_iter):
     coef_pre = jnp.array(coef)
     coef_zero = jnp.zeros_like(coef)
@@ -305,9 +303,6 @@ for i in range(max_iter):
     coef_new = jnp.linalg.lstsq(res_lib, dx, rcond=None)[0]
     coef = coef_zero.at[res_mask].set(coef_new)
 ```
-
-
-lib_creator = PolynomialLibrary(poly_order=deg, include_bias=include_bias)
 
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
