@@ -1,4 +1,11 @@
-
+<!--
+Results section jumps to complex examples without first showing a simple case
+No clear connection between the code section and the theoretical explanation
+Missing explanation of hyperparameter selection (threshold, max_iter, etc.)
+Some diagrams (like P1.png and P2.png) are too small to read clearly
+Flow diagrams lack clear directional indicators
+Inconsistent color schemes across visualizations
+-->
 
 
 # Sparse Identification of Non-linear Dynamical Systems (SINDy)[1]
