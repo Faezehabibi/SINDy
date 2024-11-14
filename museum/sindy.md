@@ -16,9 +16,9 @@ The model **code** for this exhibit can be found [here](https://github.com/NACLa
 
 
 ## SINDy 
-<div align="justify">
+
 SINDy is a data-driven algorithm that discovers the governing behavior of a dynamical system in terms of symbolic differential equation. It solves the sparse regression problem over the coefficients of pre-defined library that includes $p$ candidate predictors. It tries to find sparse model that only uses $s$ predictors out of $p$ where $s\leqp$ that best describes the dynamics (time-derivatives) of the system only from the dataset collected over time. SINDy assumes systems follow parsimonious theorem where the balace between the complexity and accuracy results generalization.
-</div>
+
 
 
 ### SINDy Dynamics
@@ -258,6 +258,60 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
    <img src="../images/museum/sindy/dy.png" width="300">
    <img src="../images/museum/sindy/dz.png" width="300">
    </p>
+
+
+
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+## Code
+
+
+```python
+
+from ngclearn.utils.diffeq.feature_library import PolynomialLibrary
+from ngclearn.utils.diffeq.ode_utils_scanner import solve_ode
+from ngclearn.utils.diffeq.odes import loren
+
+dfx = lorenz
+x0 = jnp.array([3, -1.5])
+deg = 2
+threshold = 0.01
+max_iter=100
+T = 2000
+include_bias = False
+
+dt = 1e-2
+t0 = 0.
+ts, X = solve_ode('rk4', t0, x0, T=T, dfx=dfx, dt=dt, params=None, sols_only=True)
+
+lib_creator = PolynomialLibrary(poly_order=deg, include_bias=include_bias)
+feature_lib, feature_names = lib_creator.fit([X[:, i] for i in range(X.shape[1])])
+
+dX = jnp.array(np.gradient(jnp.array(X), ts.ravel(), axis=0))
+
+
+coef = jnp.linalg.lstsq(lib, dx, rcond=None)[0]
+
+for i in range(max_iter):
+    coef_pre = jnp.array(coef)
+    coef_zero = jnp.zeros_like(coef)
+
+    res_idx = jnp.where(jnp.abs(coef) >= self.threshold, True, False)
+
+    res_mask = jnp.any(res_idx, axis=1)
+    res_lib = lib[:, res_mask]
+
+    coef_new = jnp.linalg.lstsq(res_lib, dx, rcond=None)[0]
+    coef = coef_zero.at[res_mask].set(coef_new)
+```
+
+
+lib_creator = PolynomialLibrary(poly_order=deg, include_bias=include_bias)
+
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
 ## Results
 
