@@ -8,8 +8,8 @@ In this section, we teach, create, simulate, and visualize the Sparse Identifica
 1.  Learn how to discover the differential equation of a dynamical system using SINDy algorithm only by the system's stapshots.
 2.  Learn how to build polynomial libraries with arbitrary order out of the dataset.
 3.  Learn how to solve the sparse regression problem in 2 ways
-   - Iteratively finding the coefficient matrix by gradient descent.
-   - Iteratively performing the least squares (LSQ) method followed by thresholding-- Sequential Thresholding Least Square (STLSQ) for the given model.
+  - Iteratively finding the coefficient matrix by gradient descent.
+  - Iteratively performing the least squares (LSQ) method followed by thresholding-- Sequential Thresholding Least Square (STLSQ) for the given model.
    
    
 The model **code** for this exhibit can be found [here](https://github.com/NACLab/ngc-museum/exhibits/sindy/sindy.py).
@@ -83,13 +83,13 @@ This phase involves gathering the raw data points representing the system's stat
    
 <tr>
    <td colspan="2"> 
-      
+     
 ## Phase 2: Processing
    </td>
-      <td rowspan="3" colspan="5"> 
-         <p align="center">
-         <img src="../images/museum/sindy/P2.png" width="10000">
-         </p>
+     <td rowspan="3" colspan="5"> 
+   <p align="center">
+   <img src="../images/museum/sindy/P2.png" width="10000">
+   </p>
    </td>
 </tr>
 
@@ -103,9 +103,9 @@ Given a set of time-series measurements of a dynamical system state variables ($
 Library of Candidate Functions: $\Theta(\mathbf{X}) = [\mathbf{1} \quad \mathbf{X} \quad \mathbf{X}^2 \quad \mathbf{X}^3 \quad \sin(\mathbf{X}) \quad \cos(\mathbf{X}) \quad ...]$
    </td>
    <td> 
-         <p align="center">
-         <img src="../images/museum/sindy/Xtheta.png" width="3000">
-         </p>
+   <p align="center">
+   <img src="../images/museum/sindy/Xtheta.png" width="3000">
+   </p>
    </td>
 </tr>
 
@@ -118,10 +118,10 @@ Given a set of time-series measurements of a dynamical system state variables $\
 In this step, using the dataset collected in step 1, we calculating the time derivatives of each state variable with respect to time. In this example, we compute ẋ, ẏ, and ż to capture how the system evolves over time.
    </td>
    <td> 
-         <p align="center">
-         <img src="../images/museum/sindy/xdx.png" width="200">
-         <img src="../images/museum/sindy/dX_.png" width="200">
-         </p>
+   <p align="center">
+   <img src="../images/museum/sindy/xdx.png" width="200">
+   <img src="../images/museum/sindy/dX_.png" width="200">
+   </p>
    </td>
 </tr>
 
@@ -151,7 +151,7 @@ Solving the Sparse Regression problem (SR) can be done with various method such 
 <tr>
    <table>  
    <tr>
-      <td colspan="3"> 
+     <td colspan="3"> 
 
 
 
@@ -169,18 +169,18 @@ Solving the Sparse Regression problem (SR) can be done with various method such 
 
 
    <tr>
-      <td colspan="3"> 
-         
+     <td colspan="3"> 
+   
 ### Sequential Thresholding Least Square (STLSQ)
    </td>
 </tr>  
 
 
    <tr>
-      <td colspan="3"> 
-               <p align="center">
-         <img src="../images/museum/sindy/STLSQ.png" width="800" alt="State derivatives visualization">
-         </p>
+     <td colspan="3"> 
+        <p align="center">
+   <img src="../images/museum/sindy/STLSQ.png" width="800" alt="State derivatives visualization">
+   </p>
    </td>
 </tr>  
 
@@ -192,9 +192,9 @@ Solving the Sparse Regression problem (SR) can be done with various method such 
 Finds library coefficients by solving the following regression problem $\mathbf{Ẋ} = \mathbf{\Theta}\mathbf{W}$ analytically $\mathbf{W}  = (\mathbf{\Theta}^T \mathbf{\Theta})^{-1} \mathbf{\Theta}^T \mathbf{Ẋ}$ 
    </td>
    <td> 
-         <p align="center">
-         <img src="../images/museum/sindy/LSQ.png" width="200" alt="State derivatives visualization">
-         </p>
+   <p align="center">
+   <img src="../images/museum/sindy/LSQ.png" width="200" alt="State derivatives visualization">
+   </p>
    </td>
 </tr>
 
@@ -205,9 +205,9 @@ Finds library coefficients by solving the following regression problem $\mathbf{
 Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that corresponds to the effective terms in the library.
    </td>
    <td> 
-         <p align="center">
-         <img src="../images/museum/sindy/Thresholding.png" width="200" alt="State derivatives visualization">
-         </p>
+   <p align="center">
+   <img src="../images/museum/sindy/Thresholding.png" width="200" alt="State derivatives visualization">
+   </p>
    </td>
 </tr>
 <tr>
@@ -217,9 +217,9 @@ Sparsifies $\mathbf{W}$ by keeping only some terms in $\mathbf{W}$ that correspo
 Sparsifies $\mathbf{\Theta}$ by keeping only the corresponding terms in $\mathbf{W}$ that are kept.
    </td>
    <td> 
-         <p align="center">
-         <img src="../images/museum/sindy/Masking.png" width="200" alt="State derivatives visualization">
-         </p>
+   <p align="center">
+   <img src="../images/museum/sindy/Masking.png" width="200" alt="State derivatives visualization">
+   </p>
    </td>
 </tr>
 
@@ -231,9 +231,9 @@ Sparsifies $\mathbf{\Theta}$ by keeping only the corresponding terms in $\mathbf
 Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and find the new $\mathbf{W}$ and repreat steps B and C everytime.
    </td>
    <td> 
-         <p align="center">
-         <img src="../images/museum/sindy/iterin.png" width="500" alt="State derivatives visualization">
-         </p>
+   <p align="center">
+   <img src="../images/museum/sindy/iterin.png" width="500" alt="State derivatives visualization">
+   </p>
    </td>
 </tr>
 
@@ -281,23 +281,20 @@ $\mathbf{ż} = \mu_2\mathbf{z} - (\omega + \alpha \mathbf{y} + \beta \mathbf{z})
 
 ```python
 ẋ =  0.050 𝑥^1.𝑦^0.𝓏^0 + 1.100 𝑥^1.𝑦^1.𝓏^0 
-ẏ =  2.999 𝑥^0.𝑦^0.𝓏^1  -4.999 𝑥^0.𝑦^0.𝓏^2  -0.010 𝑥^0.𝑦^1.𝓏^0  -1.998 𝑥^0.𝑦^1.𝓏^1  -1.100 𝑥^2.𝑦^0.𝓏^0 
-ż =  -0.010 𝑥^0.𝑦^0.𝓏^1  -3.000 𝑥^0.𝑦^1.𝓏^0 + 5.000 𝑥^0.𝑦^1.𝓏^1 + 1.999 𝑥^0.𝑦^2.𝓏^0
+ẏ =  2.999 𝑥^0.𝑦^0.𝓏^1 -4.999 𝑥^0.𝑦^0.𝓏^2 -0.010 𝑥^0.𝑦^1.𝓏^0 -1.998 𝑥^0.𝑦^1.𝓏^1 -1.100 𝑥^2.𝑦^0.𝓏^0 
+ż = -0.010 𝑥^0.𝑦^0.𝓏^1 -3.000 𝑥^0.𝑦^1.𝓏^0 + 5.000 𝑥^0.𝑦^1.𝓏^1 + 1.999 𝑥^0.𝑦^2.𝓏^0
 
-['𝑥^0.𝑦^0.𝓏^1', '𝑥^0.𝑦^0.𝓏^2', '𝑥^0.𝑦^1.𝓏^0', '𝑥^0.𝑦^1.𝓏^1', '𝑥^0.𝑦^2.𝓏^0', '𝑥^1.𝑦^0.𝓏^0', '𝑥^1.𝑦^0.𝓏^1', '𝑥^1.𝑦^1.𝓏^0', '𝑥^2.𝑦^0.𝓏^0']
-[[ 0.          0.          0.          0.          0.          0.
-   0.0499962   0.          1.0999302   0.        ]
- [ 0.          2.9993012  -4.9985266  -0.01016273 -1.9980576   0.
-   0.          0.          0.         -1.0997902 ]
- [ 0.         -0.00999166  0.         -2.999943    4.999957    1.9992388
-   0.          0.          0.          0.        ]]
+[1, 𝓏^1, 𝓏^2, 𝑦^1, 𝑦^1.𝓏^1, 𝑦^2, 𝑥^1, 𝑥^1𝓏^1, 𝑥^1.𝑦^1, 𝑥^2]
+[[ 0.  0.  0.  0.  0.  0.  0.049  0.  1.099  0.]
+ [ 0.  2.99 -4.99 -0.010 -1.99  0.  0.  0.  0. -1.099]
+ [ 0. -0.009  0. -2.99  4.99  1.99  0.  0.  0.  0.]]
 ```
 
    </td>
    <td> 
-      <p align="center">
-        <img src="../images/museum/sindy/oscillator.png" width="500">
-      </p>
+     <p align="center">
+      <img src="../images/museum/sindy/oscillator.png" width="500">
+     </p>
    </td>
 </tr>
 
@@ -313,21 +310,21 @@ $\mathbf{ż} = \mathbf{xy} - \frac{8}{3}~\mathbf{z}$
 $[𝑥^0.𝑦^0.𝓏^1, 𝑥^0.𝑦^0.𝓏^2, 𝑥^0.𝑦^1.𝓏^0, 𝑥^0.𝑦^1.𝓏^1, 𝑥^0.𝑦^2.𝓏^0, 𝑥^1.𝑦^0.𝓏^0, 𝑥^1.𝑦^0.𝓏^1, 𝑥^1.𝑦^1.𝓏^0, 𝑥^2.𝑦^0.𝓏^0]$
 
 ```python
-ẋ =  9.969 𝑥^0.𝑦^1.𝓏^0  -9.966 𝑥^1.𝑦^0.𝓏^0 
-ẏ =  -0.972 𝑥^0.𝑦^1.𝓏^0 + 27.833 𝑥^1.𝑦^0.𝓏^0  -0.995 𝑥^1.𝑦^0.𝓏^1 
-ż =  -2.657 𝑥^0.𝑦^0.𝓏^1 + 0.997 𝑥^1.𝑦^1.𝓏^0
+ẋ =  9.969 𝑥^0.𝑦^1.𝓏^0 -9.966 𝑥^1.𝑦^0.𝓏^0 
+ẏ = -0.972 𝑥^0.𝑦^1.𝓏^0 + 27.833 𝑥^1.𝑦^0.𝓏^0 -0.995 𝑥^1.𝑦^0.𝓏^1 
+ż = -2.657 𝑥^0.𝑦^0.𝓏^1 + 0.997 𝑥^1.𝑦^1.𝓏^0
 
-['𝑥^0.𝑦^0.𝓏^1', '𝑥^0.𝑦^0.𝓏^2', '𝑥^0.𝑦^1.𝓏^0', '𝑥^0.𝑦^1.𝓏^1', '𝑥^0.𝑦^2.𝓏^0', '𝑥^1.𝑦^0.𝓏^0', '𝑥^1.𝑦^0.𝓏^1', '𝑥^1.𝑦^1.𝓏^0', '𝑥^2.𝑦^0.𝓏^0']
-[[ 0.          0.          9.968765    0.          0.         -9.965788          0.          0.          0.        ]
- [ 0.          0.         -0.9715555   0.          0.         27.832611          -0.99519217  0.          0.        ]
- [-2.6568031   0.          0.          0.          0.          0.                0.          0.996901    0.        ]]
+[𝓏^1, 𝓏^2, 𝑦^1, 𝑦^1.𝓏^1, 𝑦^2, 𝑥^1, 𝑥^1𝓏^1, 𝑥^1.𝑦^1, 𝑥^2]
+[[ 0.  0.  9.968  0.  0. -9.965  0.  0.  0.]
+ [ 0.  0. -0.971  0.  0.  27.832 -0.995  0.  0.]
+ [-2.656  0.  0.  0.  0.  0.  0.  0.996  0.]]
 ```
 
    </td>
    <td> 
-      <p align="center">
-        <img src="../images/museum/sindy/lorenz.png" width="500">
-      </p>
+     <p align="center">
+      <img src="../images/museum/sindy/lorenz.png" width="500">
+     </p>
    </td>
 </tr>
 
@@ -340,20 +337,20 @@ $\mathbf{ẋ} = -0.1\mathbf{x} + 2.0\mathbf{y}$ \
 $\mathbf{ẏ} = -2.0\mathbf{x} - 0.1\mathbf{y}$ 
 
 ```python
-ẋ =  2.000  𝑥^0𝑦^1  -0.100  𝑥^1𝑦^0 
-ẏ =  -0.100  𝑥^0𝑦^1  -2.000  𝑥^1𝑦^0
+ẋ =  2.000  𝑥^0𝑦^1 -0.100  𝑥^1𝑦^0 
+ẏ = -0.100  𝑥^0𝑦^1 -2.000  𝑥^1𝑦^0
 
-[' 𝑥^0𝑦^1', ' 𝑥^0𝑦^2', ' 𝑥^1𝑦^0', ' 𝑥^1𝑦^1', ' 𝑥^2𝑦^0']
-[[ 1.9998767   0.         -0.10003971  0.          0.        ]
- [-0.09999826  0.         -1.9998107   0.          0.        ]]
+[𝑦^1, 𝑦^2, 𝑥^1, 𝑥^1𝑦^1, 𝑥^2]
+[[ 1.999  0. -0.100  0.  0.]
+ [-0.099  0. -1.999  0.  0.]]
 ```
    
 
    </td>
    <td> 
-      <p align="center">
-        <img src="../images/museum/sindy/linear_2D.png" width="500">
-      </p>
+     <p align="center">
+      <img src="../images/museum/sindy/linear_2D.png" width="500">
+     </p>
    </td>
 </tr>
 
@@ -367,20 +364,21 @@ $\mathbf{ẏ} = -2\mathbf{x} - 0.1\mathbf{y}$ \
 $\mathbf{ż} = -0.3\mathbf{z}$ 
 
 ```python
-['𝑥^0.𝑦^0.𝓏^1', '𝑥^0.𝑦^0.𝓏^2', '𝑥^0.𝑦^1.𝓏^0', '𝑥^0.𝑦^1.𝓏^1', '𝑥^0.𝑦^2.𝓏^0', '𝑥^1.𝑦^0.𝓏^0', '𝑥^1.𝑦^0.𝓏^1', '𝑥^1.𝑦^1.𝓏^0', '𝑥^2.𝑦^0.𝓏^0']
-ẋ =  2.000 𝑥^0.𝑦^1.𝓏^0  -0.100 𝑥^1.𝑦^0.𝓏^0 
-ẏ =  -0.100 𝑥^0.𝑦^1.𝓏^0  -2.000 𝑥^1.𝑦^0.𝓏^0 
-ż =  -0.300 𝑥^0.𝑦^0.𝓏^1 
-[[ 0.          0.          1.9998001   0.          0.         -0.10002322          0.          0.          0.        ]
- [ 0.          0.         -0.10001389  0.          0.         -1.9998811          0.          0.          0.        ]
- [-0.29999724  0.          0.          0.          0.          0.          0.          0.          0.        ]]
+ẋ =  2.000 𝑥^0.𝑦^1.𝓏^0 -0.100 𝑥^1.𝑦^0.𝓏^0 
+ẏ = -0.100 𝑥^0.𝑦^1.𝓏^0 -2.000 𝑥^1.𝑦^0.𝓏^0 
+ż = -0.300 𝑥^0.𝑦^0.𝓏^1
+
+[1, 𝓏^1, 𝓏^2, 𝑦^1, 𝑦^1.𝓏^1, 𝑦^2, 𝑥^1, 𝑥^1𝓏^1, 𝑥^1.𝑦^1, 𝑥^2]
+[[ 0.  0.  1.999  0.  0. -0.100  0.  0.  0.]
+ [ 0.  0. -0.100  0.  0. -1.999  0.  0.  0.]
+ [-0.299  0.  0.  0.  0.  0.  0.  0.  0.]]
 ```
 
    </td>
    <td> 
-      <p align="center">
-        <img src="../images/museum/sindy/linear_3D.png" width="500">
-      </p>
+     <p align="center">
+      <img src="../images/museum/sindy/linear_3D.png" width="500">
+     </p>
    </td>
 </tr>
 
@@ -393,19 +391,19 @@ $\mathbf{ẋ} = -0.1\mathbf{x}^3 + 2.0\mathbf{y}^3$ \
 $\mathbf{ẏ} = -2.0\mathbf{x}^3 - 0.1\mathbf{y}^3$ 
 
 ```python
-ẋ =  1.999  𝑥^0𝑦^3  -0.100  𝑥^3𝑦^0 
-ẏ =  -0.099  𝑥^0𝑦^3  -1.998  𝑥^3𝑦^0
+ẋ =  1.999  𝑥^0𝑦^3 -0.100  𝑥^3𝑦^0 
+ẏ = -0.099  𝑥^0𝑦^3 -1.998  𝑥^3𝑦^0
 
-[' 𝑥^0𝑦^1', ' 𝑥^0𝑦^2', ' 𝑥^0𝑦^3', ' 𝑥^1𝑦^0', ' 𝑥^1𝑦^1', ' 𝑥^1𝑦^2', ' 𝑥^2𝑦^0', ' 𝑥^2𝑦^1', ' 𝑥^3𝑦^0']
-[[ 0.          0.          1.9987925   0.          0.          0.          0.          0.         -0.1004039 ]
- [ 0.          0.         -0.09948911  0.          0.          0.          0.          0.         -1.9984219 ]]
+[𝑦^1, 𝑦^2, 𝑦^3, 𝑥^1, 𝑥^1𝑦^1, 𝑥^1𝑦^2, 𝑥^2, 𝑥^2𝑦^1, 𝑥^3]
+[[ 0.  0.  1.99  0.   0.   0.   0.   0. -0.100]
+ [ 0.  0. -0.099  0.   0.   0.   0.   0. -1.99]]
 ```
 
    </td>
    <td> 
-      <p align="center">
-        <img src="../images/museum/sindy/cubic_2D.png" width="500">
-      </p>
+     <p align="center">
+      <img src="../images/museum/sindy/cubic_2D.png" width="500">
+     </p>
    </td>
 </tr>
    
