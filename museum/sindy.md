@@ -255,7 +255,45 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
 
 
 
+<style>
+  .slideshow {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
 
+  .slideshow img {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    width: 100%;
+  }
+
+  .slideshow img:nth-child(1) {
+    animation: slideshow 9s infinite;
+  }
+
+  .slideshow img:nth-child(2) {
+    animation: slideshow 9s infinite 3s;
+  }
+
+  .slideshow img:nth-child(3) {
+    animation: slideshow 9s infinite 6s;
+  }
+
+  @keyframes slideshow {
+    0%, 26% { opacity: 1; }
+    33%, 93% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+</style>
+
+<div class="slideshow">
+  <img src="../images/museum/sindy/dx.png" alt="dx">
+  <img src="../images/museum/sindy/dy.png" alt="dy">
+  <img src="../images/museum/sindy/dz.png" alt="dz">
+</div>
 
 
 
