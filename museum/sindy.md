@@ -298,14 +298,6 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
 
 
 
-   <p align="center">
-   <img src="../images/museum/sindy/dx.png" width="300">
-   <img src="../images/museum/sindy/dy.png" width="300">
-   <img src="../images/museum/sindy/dz.png" width="300">
-   </p>
-
-
-
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
