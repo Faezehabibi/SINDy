@@ -162,7 +162,7 @@ Solving the Sparse Regression problem (SR) can be done with various method such 
 
 
 
-### Solving SR by Sequential Thresholding Least Square (STLSQ)
+### Solving Sparse Regression by Sequential Thresholding Least Square (STLSQ)
 <!-- --------------------------------------------------------------------------------------------- -->
 <p align="center">
   <img src="../images/museum/sindy/flow.png" width="800">
