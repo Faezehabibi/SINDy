@@ -296,7 +296,10 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
 </div>
 
 
-
+![Slideshow](path/to/your/animated.gif)
+![dx](../images/museum/sindy/dx.png)
+![dy](../images/museum/sindy/dy.png)
+![dz](../images/museum/sindy/dz.png)
 
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
