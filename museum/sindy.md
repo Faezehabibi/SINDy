@@ -127,11 +127,11 @@ In this step, using the dataset collected in step 1, we calculating the time der
    <td> 
    <p align="center">
    <img src="../images/museum/sindy/xdx.png" width="200">
-   <img src="../images/museum/sindy/dX_.png" width="200">
    </p>
    </td>
 </tr>
 
+<!-- <img src="../images/museum/sindy/dX_.png" width="200"> -->
 
 
 
