@@ -288,18 +288,19 @@ include_bias = False
 threshold = 0.01
 max_iter=100
 
-## solving ode
+## Phase 1: Collecting Dataset (solving ode)
 ts, X = solve_ode('rk4', t0, x0, T=T, dfx=dfx, dt=dt, params=None, sols_only=True)
 
-## polynomial library creation 
+## Phase 2.A: Making Library (polynomial library) 
 lib_creator = PolynomialLibrary(poly_order=deg, include_bias=include_bias)
 feature_lib, feature_names = lib_creator.fit([X[:, i] for i in range(X.shape[1])])
 
-## calculating derivatives 
+## Phase 2.B: Compute State Derivatives
 dX = jnp.array(np.gradient(X, ts.ravel(), axis=0))
 
-## sequential thresholding least square (STLSQ)
-coef = jnp.linalg.lstsq(feature_lib, dX, rcond=None)[0]    ## 3.A: initial least square
+##########  Solving Sparse Regression by STLSQ  ##########
+## 3.A: Least Square
+coef = jnp.linalg.lstsq(feature_lib, dX, rcond=None)[0]
 for i in range(max_iter):
     coef_pre = jnp.array(coef)
     coef_zero = jnp.zeros_like(coef)
@@ -308,7 +309,7 @@ for i in range(max_iter):
     ## 3.C: masking
     res_mask = jnp.any(res_idx, axis=1)                                    ## residual mask
     res_lib = feature_lib[:, res_mask]                                     ## residual predictors
-    ## 3.A: least square (LSQ)
+    ## 3.A: Least Square  
     coef_new = jnp.linalg.lstsq(res_lib, dX, rcond=None)[0]                ## least square
 
     coef = coef_zero.at[res_mask].set(coef_new)
