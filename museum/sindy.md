@@ -1,4 +1,5 @@
 <!--
+Make a working code
 Results section jumps to complex examples without first showing a simple case
 No clear connection between the code section and the theoretical explanation
 Missing explanation of hyperparameter selection (threshold, max_iter, etc.)
