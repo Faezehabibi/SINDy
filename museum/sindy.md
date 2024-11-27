@@ -299,18 +299,19 @@ feature_lib, feature_names = lib_creator.fit([X[:, i] for i in range(X.shape[1])
 ## calculating derivatives 
 dX = jnp.array(np.gradient(X, ts.ravel(), axis=0))
 
-## sequential thresholding least square
-coef = jnp.linalg.lstsq(feature_lib, dX, rcond=None)[0]
+## sequential thresholding least square (STLSQ)
+coef = jnp.linalg.lstsq(feature_lib, dX, rcond=None)[0]    ## 3.A: initial least square
 for i in range(max_iter):
     coef_pre = jnp.array(coef)
     coef_zero = jnp.zeros_like(coef)
+    ## 3.B: thresholding
+    res_idx = jnp.where(jnp.abs(coef) >= self.threshold, True, False)  
+    ## 3.C: masking
+    res_mask = jnp.any(res_idx, axis=1)                                    ## residual mask
+    res_lib = feature_lib[:, res_mask]                                     ## residual predictors
+    ## 3.A: least square (LSQ)
+    coef_new = jnp.linalg.lstsq(res_lib, dX, rcond=None)[0]                ## least square
 
-    res_idx = jnp.where(jnp.abs(coef) >= self.threshold, True, False)
-
-    res_mask = jnp.any(res_idx, axis=1)
-    res_lib = feature_lib[:, res_mask]
-
-    coef_new = jnp.linalg.lstsq(res_lib, dX, rcond=None)[0]
     coef = coef_zero.at[res_mask].set(coef_new)
 
 print(coef)
