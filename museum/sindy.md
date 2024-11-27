@@ -255,46 +255,6 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
 
 
 
-<style>
-  .slideshow {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-  }
-
-  .slideshow img {
-    position: absolute;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    width: 100%;
-  }
-
-  .slideshow img:nth-child(1) {
-    animation: slideshow 9s infinite;
-  }
-
-  .slideshow img:nth-child(2) {
-    animation: slideshow 9s infinite 3s;
-  }
-
-  .slideshow img:nth-child(3) {
-    animation: slideshow 9s infinite 6s;
-  }
-
-  @keyframes slideshow {
-    0%, 26% { opacity: 1; }
-    33%, 93% { opacity: 0; }
-    100% { opacity: 0; }
-  }
-</style>
-
-<div class="slideshow">
-  <img src="../images/museum/sindy/dx.png" alt="dx">
-  <img src="../images/museum/sindy/dy.png" alt="dy">
-  <img src="../images/museum/sindy/dz.png" alt="dz">
-</div>
-
 
 ![Slideshow](path/to/your/animated.gif)
 ![dx](../images/museum/sindy/dx.png)
@@ -313,25 +273,33 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
 
 from ngclearn.utils.diffeq.feature_library import PolynomialLibrary
 from ngclearn.utils.diffeq.ode_utils_scanner import solve_ode
-from ngclearn.utils.diffeq.odes import loren
+from ngclearn.utils.diffeq.odes import lorenz
 
+## system's ode function
 dfx = lorenz
-x0 = jnp.array([3, -1.5])
-deg = 2
-threshold = 0.01
-max_iter=100
-T = 2000
+
+x0 = jnp.array([3, -1.5])     ## initial values
+t0 = 0.                       ## starting time
+dt = 1e-2                     ## time steps
+T = 2000                      ## #of steps
+
+deg = 2                       ## polynomial library degree
 include_bias = False
 
-dt = 1e-2
-t0 = 0.
+threshold = 0.01
+max_iter=100
+
+## solving ode
 ts, X = solve_ode('rk4', t0, x0, T=T, dfx=dfx, dt=dt, params=None, sols_only=True)
 
+## polynomial library creation 
 lib_creator = PolynomialLibrary(poly_order=deg, include_bias=include_bias)
 feature_lib, feature_names = lib_creator.fit([X[:, i] for i in range(X.shape[1])])
 
+## calculating derivatives 
 dX = jnp.array(np.gradient(X, ts.ravel(), axis=0))
 
+## sequential thresholding least square
 coef = jnp.linalg.lstsq(feature_lib, dX, rcond=None)[0]
 for i in range(max_iter):
     coef_pre = jnp.array(coef)
