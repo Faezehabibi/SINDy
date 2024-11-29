@@ -160,16 +160,6 @@ Solving the Sparse Regression problem (SR) can be done with various method such 
 </tr>
 
 <tr>
-  <td colspan="2">
-   <p align="center">
-   <img src="../images/museum/sindy/dx.png" width="260">
-   <img src="../images/museum/sindy/dy.png" width="260">
-   <img src="../images/museum/sindy/dz.png" width="260">
-   </p>
-  </td>
-</tr>
-
-<tr>
    <table>  
    <tr>
      <td colspan="3"> 
@@ -266,12 +256,13 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
 </table>
 
 
-
+<!--
    <p align="center">
    <img src="../images/museum/sindy/dx.png" width="300">
    <img src="../images/museum/sindy/dy.png" width="300">
    <img src="../images/museum/sindy/dz.png" width="300">
    </p>
+   -->
 
 
 
