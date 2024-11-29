@@ -271,9 +271,9 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
 
 
    <p align="center">
-   <img src="../images/museum/sindy/dx.png" width="200">
-   <img src="../images/museum/sindy/dy.png" width="200">
-   <img src="../images/museum/sindy/dz.png" width="200">
+   <img src="../images/museum/sindy/dx.png" width="300">
+   <img src="../images/museum/sindy/dy.png" width="300">
+   <img src="../images/museum/sindy/dz.png" width="300">
    </p>
 
 
@@ -301,7 +301,7 @@ jnp.set_printoptions(suppress=True, precision=5)
 ## system's ode function
 dfx = lorenz
 
-x0 = jnp.array([-8, 7, 27], dtype=jnp.float32)    ## initial values
+x0 = jnp.array([-8, 7, 27], dtype=jnp.float32)    ## initial state
 
 t0 = 0.                             ## starting time
 dt = 1e-2                           ## time steps
