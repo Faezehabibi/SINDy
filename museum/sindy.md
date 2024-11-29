@@ -357,7 +357,7 @@ for dim in range(dX.shape[1]):
 ## Results
 
 <table>
-<th>
+<th colspan="2>
    Model
 </th>
 <th>
