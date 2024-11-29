@@ -308,9 +308,9 @@ dt = 1e-2                           ## time steps
 T = 2000                            ## #of steps
 
 deg = 2                       ## polynomial library degree
-include_bias = False          ## if include bias in making polynomial library
+include_bias = False          ## if include bias in making poly library
 threshold = 0.02              ## sparaity threshold
-max_iter=10                   ## max number of repeating STLSQ (stopping criteria)
+max_iter=10          
 
 ## Phase 1: Collecting Dataset (solving ode)
 ts, X = solve_ode('rk4', t0, x0, T=T, dfx=dfx, dt=dt, params=None, sols_only=True)
@@ -338,15 +338,15 @@ for dim in range(dX.shape[1]):
                                               True,
                                               False)
         ## 3.C: masking
-        res_mask = jnp.any(res_idx, axis=1)                                         ## residual mask
-        res_lib = feature_lib[:, res_mask]                                          ## residual predictors
+        res_mask = jnp.any(res_idx, axis=1)     ## residual mask
+        res_lib = feature_lib[:, res_mask]      ## residual predictors
 
         ## 3.A: Least Square
         coef_new = jnp.linalg.lstsq(res_lib, dX[:, dim][:, None],
                                     rcond=None
-                                    )[0]    ## least square
+                                    )[0]        ## least square
         
-        coef = coef_zero.at[res_mask].set(coef_new)                                 ## coeff full matrix
+        coef = coef_zero.at[res_mask].set(coef_new)
         
     ## 3.B: 'Final' thresholding
     coeff = jnp.where(jnp.abs(coef) >= threshold, coef, 0.)
