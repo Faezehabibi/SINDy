@@ -322,7 +322,9 @@ feature_lib, feature_names = lib_creator.fit([X[:, i] for i in range(X.shape[1])
 ## Phase 2.B: Compute State Derivatives
 dX = jnp.array(np.gradient(X, ts.ravel(), axis=0))
 
-##########  Solving Sparse Regression by STLSQ  (for each dimension separately) ##########
+##########  Solving Sparse Regression (for each dimension) ##########
+#~~~~~~~~~~~~  By Seqyential Thresholding Least Square  ~~~~~~~~~~~~~
+
 for dim in range(dX.shape[1]):
     ## 3.A: 'Initial' Least Square
     coef = jnp.linalg.lstsq(feature_lib, dX[:, dim][:, None], rcond=None)[0]
@@ -332,12 +334,17 @@ for dim in range(dX.shape[1]):
         coef_zero = jnp.zeros_like(coef)
         
         ## 3.B: thresholding
-        res_idx = jnp.where(jnp.abs(coef) >= threshold, True, False)
+        res_idx = jnp.where(jnp.abs(coef) >= threshold,
+                                              True,
+                                              False)
         ## 3.C: masking
         res_mask = jnp.any(res_idx, axis=1)                                         ## residual mask
         res_lib = feature_lib[:, res_mask]                                          ## residual predictors
+
         ## 3.A: Least Square
-        coef_new = jnp.linalg.lstsq(res_lib, dX[:, dim][:, None], rcond=None)[0]    ## least square
+        coef_new = jnp.linalg.lstsq(res_lib, dX[:, dim][:, None],
+                                    rcond=None
+                                    )[0]    ## least square
         
         coef = coef_zero.at[res_mask].set(coef_new)                                 ## coeff full matrix
         
