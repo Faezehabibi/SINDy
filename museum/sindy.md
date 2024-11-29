@@ -394,6 +394,15 @@ $\mathbf{ż} = \mu_2\mathbf{z} - (\omega + \alpha \mathbf{y} + \beta \mathbf{z})
       <img src="../images/museum/sindy/oscillator.png" width="1000">
      </p>
    </td>
+
+
+      </td>
+   <td> 
+     <p align="center">
+      <img src="../images/museum/sindy/O3D.png" width="1000">
+     </p>
+   </td>
+   
 </tr>
 
 <tr>
