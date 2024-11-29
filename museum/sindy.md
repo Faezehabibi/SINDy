@@ -360,6 +360,8 @@ for dim in range(dX.shape[1]):
 <th colspan="2>
    Model
 </th>
+  <th>
+</th>
 <th>
    Results
 </th>
