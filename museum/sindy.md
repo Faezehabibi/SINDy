@@ -287,23 +287,30 @@ Solving LSQ with the sparse matrix $\mathbf{\Theta_s}$ and $\mathbf{W_s}$ and fi
 
 ```python
 
-from ngclearn.utils.diffeq.feature_library import PolynomialLibrary
-from ngclearn.utils.diffeq.ode_utils_scanner import solve_ode
-from ngclearn.utils.diffeq.odes import lorenz
+
+
+import numpy as np
+import jax.numpy as jnp
+from ngclearn.utils.feature_dictionaries.polynomialLibrary import PolynomialLibrary
+from ngclearn.utils.diffeq.ode_solver import solve_ode
+from ngclearn.utils.diffeq.odes import lorenz, linear_2D
+
+jnp.set_printoptions(suppress=True, precision=5)
+
 
 ## system's ode function
 dfx = lorenz
 
-x0 = jnp.array([3, -1.5])     ## initial values
-t0 = 0.                       ## starting time
-dt = 1e-2                     ## time steps
-T = 2000                      ## #of steps
+x0 = jnp.array([-8, 7, 27], dtype=jnp.float32)    ## initial values
+
+t0 = 0.                             ## starting time
+dt = 1e-2                           ## time steps
+T = 2000                            ## #of steps
 
 deg = 2                       ## polynomial library degree
-include_bias = False
-
-threshold = 0.01
-max_iter=100
+include_bias = False          ## if include bias in making polynomial library
+threshold = 0.02              ## sparaity threshold
+max_iter=10                   ## max number of repeating STLSQ (stopping criteria)
 
 ## Phase 1: Collecting Dataset (solving ode)
 ts, X = solve_ode('rk4', t0, x0, T=T, dfx=dfx, dt=dt, params=None, sols_only=True)
@@ -315,23 +322,32 @@ feature_lib, feature_names = lib_creator.fit([X[:, i] for i in range(X.shape[1])
 ## Phase 2.B: Compute State Derivatives
 dX = jnp.array(np.gradient(X, ts.ravel(), axis=0))
 
-##########  Solving Sparse Regression by STLSQ  ##########
-## 3.A: Least Square
-coef = jnp.linalg.lstsq(feature_lib, dX, rcond=None)[0]
-for i in range(max_iter):
-    coef_pre = jnp.array(coef)
-    coef_zero = jnp.zeros_like(coef)
-    ## 3.B: thresholding
-    res_idx = jnp.where(jnp.abs(coef) >= self.threshold, True, False)  
-    ## 3.C: masking
-    res_mask = jnp.any(res_idx, axis=1)                                    ## residual mask
-    res_lib = feature_lib[:, res_mask]                                     ## residual predictors
-    ## 3.A: Least Square  
-    coef_new = jnp.linalg.lstsq(res_lib, dX, rcond=None)[0]                ## least square
+##########  Solving Sparse Regression by STLSQ  (for each dimension separately) ##########
+for dim in range(dX.shape[1]):
+    ## 3.A: 'Initial' Least Square
+    coef = jnp.linalg.lstsq(feature_lib, dX[:, dim][:, None], rcond=None)[0]
+    
+    for i in range(max_iter):
+        coef_pre = jnp.array(coef)
+        coef_zero = jnp.zeros_like(coef)
+        
+        ## 3.B: thresholding
+        res_idx = jnp.where(jnp.abs(coef) >= threshold, True, False)
+        ## 3.C: masking
+        res_mask = jnp.any(res_idx, axis=1)                                         ## residual mask
+        res_lib = feature_lib[:, res_mask]                                          ## residual predictors
+        ## 3.A: Least Square
+        coef_new = jnp.linalg.lstsq(res_lib, dX[:, dim][:, None], rcond=None)[0]    ## least square
+        
+        coef = coef_zero.at[res_mask].set(coef_new)                                 ## coeff full matrix
+        
+    ## 3.B: 'Final' thresholding
+    coeff = jnp.where(jnp.abs(coef) >= threshold, coef, 0.)
 
-    coef = coef_zero.at[res_mask].set(coef_new)
+    print(f"coefficients for dimension {dim+1}: \n", coeff.T)
 
-print(coef)
+
+
 ```
 
 
