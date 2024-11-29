@@ -160,7 +160,7 @@ Solving the Sparse Regression problem (SR) can be done with various method such 
 </tr>
 
 <tr>
-  <td width="70%">
+  <td width="100%">
    <p align="center">
    <img src="../images/museum/sindy/dx.png" width="260">
    <img src="../images/museum/sindy/dy.png" width="260">
