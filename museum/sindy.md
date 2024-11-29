@@ -426,6 +426,8 @@ $\mathbf{ż} = \mathbf{xy} - \frac{8}{3}~\mathbf{z}$
    <td> 
      <p align="center">
       <img src="../images/museum/sindy/lorenz.png" width="1000">
+      <img src="../images/museum/sindy/Lorenz3D.png" width="1000">
+       
      </p>
    </td>
 </tr>
@@ -453,7 +455,8 @@ $[𝑦, 𝑦^2, 𝑥, 𝑥𝑦, 𝑥^2]$
    </td>
    <td> 
      <p align="center">
-      <img src="../images/museum/sindy/linear_2D.png" width="1000">
+      <img src="../images/museum/sindy/linear_2D.png" width="800">
+      <img src="../images/museum/sindy/L2D.png" width="800">
      </p>
    </td>
 </tr>
@@ -484,6 +487,8 @@ $\mathbf{ż} = -0.3\mathbf{z}$
    <td> 
      <p align="center">
       <img src="../images/museum/sindy/linear_3D.png" width="1000">
+      <img src="../images/museum/sindy/L3D.png" width="1000">
+       
      </p>
    </td>
 </tr>
@@ -511,6 +516,8 @@ $\mathbf{ẏ} = -2.0\mathbf{x}^3 - 0.1\mathbf{y}^3$
    <td> 
      <p align="center">
       <img src="../images/museum/sindy/cubic_2D.png" width="1000">
+      <img src="../images/museum/sindy/C2D.png" width="1000">
+       
      </p>
    </td>
 </tr>
