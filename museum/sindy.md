@@ -371,7 +371,7 @@ for dim in range(dX.shape[1]):
    
    ## Oscillator
 
-True model's equation
+True model's equation \
 $\mathbf{ẋ} = \mu_1\mathbf{x} + \sigma \mathbf{xy}$ \
 $\mathbf{ẏ} = \mu_2\mathbf{y} + (\omega + \alpha \mathbf{y} + \beta \mathbf{z})\mathbf{z} - \sigma \mathbf{x}^2$ \
 $\mathbf{ż} = \mu_2\mathbf{z} - (\omega + \alpha \mathbf{y} + \beta \mathbf{z})\mathbf{y}$
@@ -404,7 +404,7 @@ $\mathbf{ż} = \mu_2\mathbf{z} - (\omega + \alpha \mathbf{y} + \beta \mathbf{z})
    
    ## Lorenz
    
-True model's equation
+True model's equation \
 $\mathbf{ẋ} = 10(\mathbf{y} - \mathbf{x})$ \
 $\mathbf{ẏ} = \mathbf{x}(28 - \mathbf{z}) - \mathbf{y}$ \
 $\mathbf{ż} = \mathbf{xy} - \frac{8}{3}~\mathbf{z}$
@@ -437,7 +437,7 @@ $\mathbf{ż} = \mathbf{xy} - \frac{8}{3}~\mathbf{z}$
    
    ## Linear-2D
 
-True model's equation
+True model's equation \
 $\mathbf{ẋ} = -0.1\mathbf{x} + 2.0\mathbf{y}$ \
 $\mathbf{ẏ} = -2.0\mathbf{x} - 0.1\mathbf{y}$ 
 
@@ -466,7 +466,7 @@ $[𝑦, 𝑦^2, 𝑥, 𝑥𝑦, 𝑥^2]$
    
    ## Linear-3D
 
-True model's equation
+True model's equation \
 $\mathbf{ẋ} = -0.1\mathbf{x} + 2\mathbf{y}$ \
 $\mathbf{ẏ} = -2\mathbf{x} - 0.1\mathbf{y}$ \
 $\mathbf{ż} = -0.3\mathbf{z}$ 
