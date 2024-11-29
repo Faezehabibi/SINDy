@@ -515,8 +515,8 @@ $\mathbf{ẏ} = -2.0\mathbf{x}^3 - 0.1\mathbf{y}^3$
    </td>
    <td> 
      <p align="center">
-      <img src="../images/museum/sindy/cubic_2D.png" width="200">
-      <img src="../images/museum/sindy/C2D.png" width="200">
+      <img src="../images/museum/sindy/cubic_2D.png" width="250">
+      <img src="../images/museum/sindy/C2D.png" width="250">
      </p>
    </td>
 </tr>
