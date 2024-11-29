@@ -500,7 +500,7 @@ $\mathbf{ż} = -0.3\mathbf{z}$
    
    ## Cubic-2D
 
-True model's equation
+True model's equation \
 $\mathbf{ẋ} = -0.1\mathbf{x}^3 + 2.0\mathbf{y}^3$ \
 $\mathbf{ẏ} = -2.0\mathbf{x}^3 - 0.1\mathbf{y}^3$ 
 
