@@ -360,8 +360,6 @@ for dim in range(dX.shape[1]):
 <th>
    Model
 </th>
-  <th>
-</th>
 <th>
    Results
 </th>
