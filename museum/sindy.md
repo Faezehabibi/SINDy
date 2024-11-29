@@ -144,32 +144,29 @@ In this step, using the dataset collected in step 1, we calculating the time der
 <table>
    
 <tr>
-<td width="50%" valign="top">
+<td width="70%" valign="top">
    
 ## Phase 3: Solving Sparse Regression Problem → $\mathbf{W_s}_{(p \times n)}$
 Solving the Sparse Regression problem (SR) can be done with various method such as Lasso, STLSQ, Elastic Net, and many others. Here we describe STLSQ to solve the SR problem according to the SINDy method.
 </td>
 
-<td width="50%" align="top">
+<td width="30%" align="top">
    <p align="center">
-        <img src="../images/museum/sindy/dx.png" width="130">
-   <img src="../images/museum/sindy/dy.png" width="130">
-   <img src="../images/museum/sindy/dz.png" width="130">
    <img src="../images/museum/sindy/SRin.png" width="390" alt="Dataset collection showing x, y, z coordincates">
    </p>
 </td>
 
-<!--
-<td width="25%" align="top">
+
+</tr>
+
+<tr>
+  <td width="70%">
    <p align="center">
-   <img src="../images/museum/sindy/dx.png" width="200">
-   <img src="../images/museum/sindy/dy.png" width="200">
-   <img src="../images/museum/sindy/dz.png" width="200">
+   <img src="../images/museum/sindy/dx.png" width="300">
+   <img src="../images/museum/sindy/dy.png" width="300">
+   <img src="../images/museum/sindy/dz.png" width="300">
    </p>
-</td>
-__>
-
-
+  </td>
 </tr>
 
 <tr>
