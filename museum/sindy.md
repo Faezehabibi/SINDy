@@ -365,7 +365,7 @@ for dim in range(dX.shape[1]):
 </th>
 
 <tr>
-   <td> 
+   <td colspan="2"> 
    
    ## Oscillator
 
@@ -398,7 +398,7 @@ $\mathbf{ż} = \mu_2\mathbf{z} - (\omega + \alpha \mathbf{y} + \beta \mathbf{z})
 </tr>
 
 <tr>
-   <td> 
+   <td colspan="2"> 
    
    ## Lorenz
    
@@ -431,7 +431,7 @@ $\mathbf{ż} = \mathbf{xy} - \frac{8}{3}~\mathbf{z}$
 </tr>
 
 <tr>
-   <td> 
+   <td colspan="2"> 
    
    ## Linear-2D
 
@@ -460,7 +460,7 @@ $[𝑦, 𝑦^2, 𝑥, 𝑥𝑦, 𝑥^2]$
 </tr>
 
 <tr>
-   <td> 
+   <td colspan="2"> 
    
    ## Linear-3D
 
@@ -486,13 +486,12 @@ $\mathbf{ż} = -0.3\mathbf{z}$
      <p align="center">
       <img src="../images/museum/sindy/linear_3D.png" width="400">
       <img src="../images/museum/sindy/L3D.png" width="400">
-       
      </p>
    </td>
 </tr>
 
 <tr>
-   <td> 
+   <td colspan="2"> 
    
    ## Cubic-2D
 
