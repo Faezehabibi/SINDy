@@ -152,10 +152,10 @@ Solving the Sparse Regression problem (SR) can be done with various method such 
 
 <td width="50%" align="top">
    <p align="center">
-        <img src="../images/museum/sindy/dx.png" width="100">
-   <img src="../images/museum/sindy/dy.png" width="100">
-   <img src="../images/museum/sindy/dz.png" width="100">
-   <img src="../images/museum/sindy/SRin.png" width="650" alt="Dataset collection showing x, y, z coordincates">
+        <img src="../images/museum/sindy/dx.png" width="150">
+   <img src="../images/museum/sindy/dy.png" width="150">
+   <img src="../images/museum/sindy/dz.png" width="150">
+   <img src="../images/museum/sindy/SRin.png" width="500" alt="Dataset collection showing x, y, z coordincates">
    </p>
 </td>
 
