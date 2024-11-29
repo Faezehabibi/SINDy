@@ -391,8 +391,8 @@ $\mathbf{ż} = \mu_2\mathbf{z} - (\omega + \alpha \mathbf{y} + \beta \mathbf{z})
    </td>
    <td> 
      <p align="center">
-      <img src="../images/museum/sindy/oscillator.png" width="100">
-      <img src="../images/museum/sindy/O3D.png" width="100">
+      <img src="../images/museum/sindy/oscillator.png" width="250">
+      <img src="../images/museum/sindy/O3D.png" width="250">
      </p>
    </td>
 </tr>
@@ -424,8 +424,8 @@ $\mathbf{ż} = \mathbf{xy} - \frac{8}{3}~\mathbf{z}$
    </td>
    <td> 
      <p align="center">
-      <img src="../images/museum/sindy/lorenz.png" width="100">
-      <img src="../images/museum/sindy/Lorenz3D.png" width="100">
+      <img src="../images/museum/sindy/lorenz.png" width="250">
+      <img src="../images/museum/sindy/Lorenz3D.png" width="250">
      </p>
    </td>
 </tr>
@@ -453,8 +453,8 @@ $[𝑦, 𝑦^2, 𝑥, 𝑥𝑦, 𝑥^2]$
    </td>
    <td> 
      <p align="center">
-      <img src="../images/museum/sindy/linear_2D.png" width="100">
-      <img src="../images/museum/sindy/L2D.png" width="100">
+      <img src="../images/museum/sindy/linear_2D.png" width="250">
+      <img src="../images/museum/sindy/L2D.png" width="250">
      </p>
    </td>
 </tr>
@@ -484,8 +484,8 @@ $\mathbf{ż} = -0.3\mathbf{z}$
    </td>
    <td> 
      <p align="center">
-      <img src="../images/museum/sindy/linear_3D.png" width="200">
-      <img src="../images/museum/sindy/L3D.png" width="200">
+      <img src="../images/museum/sindy/linear_3D.png" width="250">
+      <img src="../images/museum/sindy/L3D.png" width="250">
      </p>
    </td>
 </tr>
