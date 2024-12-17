@@ -55,7 +55,7 @@ SINDy's dynamics can be presented in 3 main phases according to the figure 1.
 ------------------------------------------------------------------------------------------
 
 <p align="center">
-  <img src="../images/museum/sindy/flow_SR.png" width="100">
+  <img src="../images/museum/sindy/flow_SR.png" width="250">
 </p>
 
 ------------------------------------------------------------------------------------------
@@ -64,8 +64,13 @@ SINDy's dynamics can be presented in 3 main phases according to the figure 1.
   <img src="../images/museum/sindy/flow_SR.png" width="1000">
 </p>
 ------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 
+<p align="center">
+  <img src="../images/museum/sindy/flow_SR.png" width="2000">
+</p>
 
+------------------------------------------------------------------------------------------
 <p align="center">
   <img src="../images/museum/sindy/flow_SR.png" width="700">
 
